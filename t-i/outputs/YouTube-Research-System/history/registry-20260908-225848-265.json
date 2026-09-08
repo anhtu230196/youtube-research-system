@@ -4,12 +4,9 @@
   "channel": {
     "owner": "Tú",
     "topics": [
-      "kỳ án có thật",
-      "mất tích và danh tính bí ẩn",
-      "án tồn đọng và nghi ngờ sai",
-      "hiện trường dàn dựng",
-      "bí ẩn internet và điều tra số",
-      "tội phạm tài chính — nhánh phụ"
+      "bí ẩn internet",
+      "lừa đảo",
+      "điều tra số"
     ],
     "audience": "US",
     "narration_language": "en",
@@ -39,10 +36,6 @@
       {
         "date": "2026-09-08",
         "change": "Imported three additional storytelling samples REF-06 to REF-08. Eight inputs, seven unique references. Added dual-purpose details, evidence accumulation, causal attitude changes, progressive scope reveals and explicit attribution rules. Topic selection remains pending."
-      },
-      {
-        "date": "2026-09-08",
-        "change": "User approved broader evidence-led true-mystery channel, adapted mystery-case-script skill and project rules; no fixed runtime or mandatory false trail; Vietnamese approval before English retained."
       }
     ],
     "duration_policy": "Story-driven, no fixed runtime. Prioritize compelling narration in the full Vietnamese review draft and English final; never pad or invent details.",
@@ -54,10 +47,9 @@
       "max_sentences": 1,
       "like_button_skits": false,
       "interrupt_climax": false
-    },
-    "script_skill": "mystery-case-script"
+    }
   },
-  "next_case_number": 7,
+  "next_case_number": 6,
   "statuses": [
     "proposed",
     "selected",
@@ -104,7 +96,7 @@
         "https://www.linkedin.com/posts/cnbc-ambition_how-did-a-break-in-at-jimmy-zhongs-house-activity-7120520197240709120-Z68z",
         "https://www.youtube.com/watch?v=3Nq3ye-QCyM"
       ],
-      "status": "deferred",
+      "status": "selected",
       "first_proposed_on": "2026-09-08",
       "batch_id": "2026-09-08-01",
       "episode_path": "episodes/NET-0001-james-zhong",
@@ -120,21 +112,6 @@
           "date": "2026-09-08",
           "status": "selected",
           "reason": "User selected NET-0001; authorized research, downloads and Vietnamese review draft."
-        },
-        {
-          "date": "2026-09-08",
-          "status": "researching",
-          "reason": "User requested script; verifying sources and preparing full Vietnamese review draft."
-        },
-        {
-          "date": "2026-09-08",
-          "status": "awaiting_review",
-          "reason": "Delivered complete Vietnamese review script, clean Vietnamese reading copy and source-linked production dossier; English awaits user review per existing requirement."
-        },
-        {
-          "date": "2026-09-08",
-          "status": "deferred",
-          "reason": "User moved focus away from financial crime; existing Vietnamese draft retained, not published."
         }
       ]
     },
@@ -321,60 +298,6 @@
           "date": "2026-09-08",
           "status": "proposed",
           "reason": "First verified topic shortlist; awaiting user choice."
-        }
-      ]
-    },
-    {
-      "id": "NET-0006",
-      "canonical_title": "Sherri Rasmussen murder — Stephanie Lazarus",
-      "aliases": [
-        "Sherri Rae Rasmussen",
-        "Sheri Rasmussen",
-        "People v. Lazarus",
-        "The Bite Mark"
-      ],
-      "entities": [
-        "Sherri Rasmussen",
-        "Stephanie Lazarus",
-        "John Ruetten",
-        "LAPD"
-      ],
-      "event_dates": [
-        "1986-02-24",
-        "2005",
-        "2009-06-05",
-        "2012",
-        "2015",
-        "2025"
-      ],
-      "fingerprint": "sherri-rasmussen|homicide-1986|stephanie-lazarus",
-      "title_vi": "Dấu vết bị bỏ lại suốt hai mươi ba năm",
-      "sources": [
-        "https://law.justia.com/cases/california/court-of-appeal/2015/b241172.html",
-        "https://cdn.ca9.uscourts.gov/datastore/memoranda/2023/09/05/21-55483.pdf",
-        "https://www.cdcr.ca.gov/bph/2026/04/08/october-2026-hearing-calendar/"
-      ],
-      "status": "awaiting_review",
-      "first_proposed_on": "2026-09-08",
-      "batch_id": null,
-      "episode_path": "episodes/NET-0006-sherri-rasmussen",
-      "published_url": null,
-      "included_case_ids": [],
-      "history": [
-        {
-          "date": "2026-09-08",
-          "status": "selected",
-          "reason": "User explicitly requested a new Vietnamese trial script; supplied Claude production claims not imported as actual completed work."
-        },
-        {
-          "date": "2026-09-09",
-          "status": "researching",
-          "reason": "Verified appellate and later records; completing Vietnamese script and editorial checks."
-        },
-        {
-          "date": "2026-09-09",
-          "status": "awaiting_review",
-          "reason": "Completed 14-scene Vietnamese review script and clean reading copy, source/claim ledger, timeline, gaps and production plans. English awaits user approval."
         }
       ]
     }

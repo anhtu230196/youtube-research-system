@@ -1,22 +1,10 @@
 # Bộ tiêu chí kể chuyện của kênh
 
-## Cập nhật đã duyệt — phạm vi và cách kể kỳ án
-
-Người dùng duyệt ngày 2026-09-08: mở rộng sang kỳ án có thật và bí ẩn được lần ra bằng chứng cứ. Bộ mystery-case-script đã điều chỉnh là công cụ hỗ trợ; không áp dụng nguyên PROJECT-INSTRUCTIONS.md của Claude. Giữ bảy mẫu cũ làm tham khảo phong cách.
-
-Ưu tiên người thật, câu hỏi rõ, chi tiết xuất hiện trước và được giải thích sau, rồi quá trình kiểm tra lời giải. Hướng điều tra sai chỉ dùng khi hồ sơ chứng minh ai tin, vì sao và điều gì làm thay đổi hướng đó. Không cần đúng ba manh mối, một lần đảo chiều, lỗi hệ thống hay 25–45 phút. Một kết quả DNA có thể bác bỏ cách giải thích nhưng chưa xác định người cụ thể; phải kể đủ các bước giữa hai việc.
-
-Cho phần lời giải đủ chỗ nối lại chi tiết cũ và trình bày kiểm chứng. Không kết ngay khi đọc tên hung thủ. Không dùng cử chỉ, tình trạng hôn nhân, dấu cắn, tài sản còn lại hay cửa không bị phá làm bằng chứng đơn lẻ đủ kết luận. Tái dựng tại tòa cần quy nguồn, không biến thành cảnh được tận mắt chứng kiến.
-
-Nạn nhân được giới thiệu bằng nghề nghiệp, mối quan hệ hoặc dự định có nguồn. Mô tả bạo lực trung tính, chỉ giữ chi tiết thực sự phục vụ điều tra. Kiểm tra cả lời kể, hình, âm thanh, thumbnail và tiêu đề; né từ không bảo đảm tránh gậy, giới hạn tuổi hoặc hạn chế quảng cáo.
-
-Lập dàn ý trước prose nhưng không thêm vòng xin duyệt dàn ý khi người dùng đã yêu cầu viết kịch bản. Bản tiếng Việt đầy đủ vẫn phải được duyệt trước tiếng Anh theo yêu cầu người dùng. Kiểm tra TTS thành bước riêng; không gán số giây nghỉ cố định cho dấu câu hay tự chèn phiên âm vào lời đọc.
-
-Phiên bản 3 — 2026-09-08. Rút ra từ bảy kịch bản khác nhau người dùng cung cấp qua hai đợt.
+Phiên bản 2 — 2026-09-08. Rút ra từ bảy kịch bản khác nhau người dùng cung cấp qua hai đợt.
 
 ## Mục tiêu đã thống nhất
 
-Kênh tiếng Anh cho khán giả Mỹ, về kỳ án có thật và những bí ẩn được lần ra bằng chứng cứ; tội phạm tài chính là nhánh phụ. Người dùng duyệt bản đầy đủ tiếng Việt trước. Không đặt số phút cố định. Điều người dùng thích ở mẫu là cách dẫn dắt và mở đầu gây tò mò; lời kêu gọi đăng ký cần đơn giản.
+Kênh tiếng Anh cho khán giả Mỹ, về bí ẩn internet, lừa đảo và điều tra số. Người dùng duyệt bản đầy đủ tiếng Việt trước. Không đặt số phút cố định. Điều người dùng thích ở mẫu là cách dẫn dắt và mở đầu gây tò mò; lời kêu gọi đăng ký cần đơn giản.
 
 Đây là bộ nguyên tắc biên tập để xây giọng riêng, không phải yêu cầu tái tạo nguyên văn phong cách một tác giả. Các nhận xét dưới đây phân tích cách văn bản hoạt động, không xác nhận sự thật của những vụ được kể. Không có dữ liệu giữ chân người xem để khẳng định hiệu quả bằng con số.
 
@@ -102,7 +90,7 @@ Yêu cầu người dùng: đơn giản. Mặc định biên tập của hệ th
 
 Không dùng tiểu phẩm với nút like, lời kêu gọi thông báo dài, giới thiệu lịch đăng chưa có hoặc nhiều yêu cầu liên tiếp. Không nhập phần tài trợ trong mẫu vào kịch bản của kênh.
 
-Một câu mẫu có thể dùng sau khi kênh xác định tên: “Subscribe for more true mysteries and the evidence behind them.” Đây là gợi ý câu CTA, không phải bắt buộc lặp nguyên văn mọi tập.
+Một câu mẫu có thể dùng sau khi kênh xác định tên: “Subscribe for more stories about internet mysteries and digital investigations.” Đây là gợi ý câu CTA, không phải bắt buộc lặp nguyên văn mọi tập.
 
 ## 7. Kiểm tra trước khi đưa bản tiếng Việt cho người dùng
 
@@ -152,4 +140,3 @@ REF-08 có chất liệu hấp dẫn về điều nhân vật cho rằng đã th
 Các mẫu dành thời gian cho chuyện chuyển nhà, chuyến du lịch, bữa ăn, tiếng nhạc hoặc việc đổi được khách sạn. Chúng giúp người nghe hiểu điều nhân vật muốn giữ hoặc sắp mất. Kịch bản không cần câu nào cũng đe dọa hay úp mở. Đoạn đời thường phải làm rõ con người, niềm tin hoặc hệ quả; cắt khi chỉ kéo dài thời lượng.
 
 Bổ sung vào quality-review.md: kiểm tra nguồn của từng lần đổi thái độ; độ nhất quán của góc nhìn; giải thích thay thế cho các bất thường; các lớp tiết lộ có cùng trả lời câu hỏi trung tâm không; và xác nhận đã trả lời manh mối quan trọng trước CTA.
-

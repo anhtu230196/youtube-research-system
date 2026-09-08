@@ -11,3 +11,6 @@ desktop.ini
 # Local scratch
 tmp/
 *.log
+
+# Local validation runtime
+/t-i/work/skill-validation-deps/

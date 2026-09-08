@@ -1,0 +1,12 @@
+claim_id,claim,source_ids,locators,confidence,claim_status,conflicts,script_segment
+C01,"Báo trộm 13/03/2019",S03,"Đầu bài; cuối bài",medium,established,"Qua bản đăng lại CNBC",B01
+C02,"Khai thác rút tiền Silk Road 09/2012",S01,"Zhong’s Scheme to Defraud",high,established,,B02
+C03,"Giao dịch Bitcoin công khai; danh tính cần liên kết",S06,"Understanding Bitcoin traceability",high,established,,B03
+C04,"Dữ liệu máy chủ phục vụ điều tra",S05,"PDF trang 7",high,established,,B03
+C05,"Liên kết đầu vào; thông tin sàn và IP",S04,"The hack of Silk Road; đoạn Eventually",high,established,"Không đồng nhất giao dịch CNBC",B04
+C06,"Tiếp cận dưới lý do giúp vụ báo trộm",S03,"Đoạn Together the three investigators",medium,established,"Chưa xem bodycam gốc",B05
+C07,"Khám xét và các nơi giữ thiết bị",S02,"The Government’s Seizure",high,established,"Các tổng có phạm vi khác nhau",B06
+C08,"Nhận tội 04/11/2022",S01,"Mở đầu",high,established,,B07
+C09,"Án 14/04/2023 và tịch thu",S02,"Mở đầu",high,established,,B07
+C10,"Công tố thừa nhận hợp tác giảm nhẹ",S05,"PDF trang 2–3",high,established,"Lập luận công tố; không phải lý do đầy đủ của tòa",B07
+C11,"Đối chiếu hai vai trò nạn nhân và người phạm tội",S01;S03,"C01 và C02",high,inference,"Nhận xét biên tập",B08

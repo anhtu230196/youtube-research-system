@@ -1,0 +1,7 @@
+asset_id,description,source_id,url,local_path,download_status,rights,credit,planned_segment,replacement_if_unavailable
+A01,Ảnh chân dung Sherri,S02,https://abcnews.com/Nightline/story?id=8031774&page=1,,link_only,unknown,Kiểm tra chủ sở hữu ảnh trước sử dụng,B02 B14,Thẻ tên và bối cảnh nghề nghiệp; không tạo chân dung giả làm ảnh thật
+A02,Phán quyết và tài liệu pháp lý,S01,https://law.justia.com/cases/california/court-of-appeal/2015/b241172.html,,link_only,public_domain_judicial_text_only,California Court of Appeal,B05 B10 B12,Tự dựng thẻ trích văn bản; không dùng logo ngụ ý bảo trợ
+A03,Video phỏng vấn2009 được phán quyết mô tả,S01,https://law.justia.com/cases/california/court-of-appeal/2015/b241172.html,,missing,unknown,Chưa xác lập nguồn media gốc,B09,Sơ đồ câu hỏi và lời đáp diễn đạt lại; không giả video gốc
+A04,Thiết bị âm thanh và cửa gara,,,,missing,to_be_created,,B01 B03 B11,Minh họa tự dựng và gắn nhãn
+A05,Que mẫu ống và biểu đồ DNA,,,,missing,to_be_created,,B03 B05 B07 B10,Minh họa khái niệm; không vẽ mã locus giả như kết quả thật
+A06,Lịch parole,S07,https://www.cdcr.ca.gov/bph/2026/04/08/october-2026-hearing-calendar/,,link_only,unknown,California Board of Parole Hearings,B13,Tự dựng dòng ngày đã kiểm tra

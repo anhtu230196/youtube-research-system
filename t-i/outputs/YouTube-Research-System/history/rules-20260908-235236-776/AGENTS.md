@@ -4,7 +4,7 @@
 
 ## Phạm vi và skill
 
-Kênh về kỳ án có thật và những bí ẩn được lần ra bằng chứng cứ: mất tích, danh tính bí ẩn, án tồn đọng, hiện trường dàn dựng, nghi ngờ sai và điều tra số. Tội phạm tài chính là nhánh phụ, không còn là trọng tâm. Dùng bộ mystery-case-script đã điều chỉnh theo phê duyệt ngày 2026-09-08; bản nguồn trong thư mục skills/mystery-case-script ở gốc workspace, bản cài ở C:/Users/AnhTu/.codex/skills/mystery-case-script/SKILL.md. Không áp dụng các quy tắc cũ của Claude chưa được giữ trong bản điều chỉnh. Không bắt buộc giả thuyết sai, đúng ba manh mối, một lần đảo chiều, lỗi hệ thống, kết án hoặc số phút cố định. Bài đăng gốc đã xác thực là nguồn trực tiếp cho việc tài khoản đã đăng nội dung gì; không tự xác nhận các cáo buộc trong bài đăng đó. Hồ sơ cơ quan điều tra cũng cần phân biệt cáo buộc với kết luận, và kiểm tra cập nhật sau đó.
+Kênh về bí ẩn internet, lừa đảo và điều tra số, không phải riêng án mạng. Có thể dùng mystery-case-script cho nghiên cứu và kể chuyện, nhưng không áp dụng máy móc yêu cầu phải có giả thuyết sai, người bị kết án, hoặc cấu trúc án mạng. Bài đăng gốc đã xác thực là nguồn trực tiếp cho việc tài khoản đã đăng nội dung gì; không tự xác nhận các cáo buộc trong bài đăng đó. Hồ sơ cơ quan điều tra cũng cần phân biệt cáo buộc với kết luận, và kiểm tra cập nhật sau đó.
 
 ## Chống trùng
 
@@ -42,7 +42,7 @@ Hoàn tất nghiên cứu khi câu hỏi trung tâm, diễn biến và kết lu�
 
 STORYTELLING.md lưu phân tích bảy mẫu duy nhất người dùng cung cấp qua hai đợt và các quy tắc đã thích nghi cho kênh. Các file references/ chỉ là mẫu kể chuyện, không phải nguồn chứng minh vụ việc và không phải tập của người dùng đã kể. Không đưa chúng vào registry.cases khi chưa có yêu cầu chọn hoặc loại trừ câu chuyện cụ thể.
 
-Theo phiên bản 3 của hướng dẫn: theo dõi ai biết/tin điều gì tại từng đoạn, nguyên nhân của thay đổi thái độ, chức năng của chi tiết và các lớp tiết lộ. Phân biệt lời kể, niềm tin, chứng cứ và suy luận; nhiều bất thường chưa được giải thích không tự chứng minh một âm mưu. Tài liệu xác nhận một phần sự việc không xác nhận toàn bộ câu chuyện lan truyền.
+Theo phiên bản 2 của hướng dẫn: theo dõi ai biết/tin điều gì tại từng đoạn, nguyên nhân của thay đổi thái độ, chức năng của chi tiết và các lớp tiết lộ. Phân biệt lời kể, niềm tin, chứng cứ và suy luận; nhiều bất thường chưa được giải thích không tự chứng minh một âm mưu. Tài liệu xác nhận một phần sự việc không xác nhận toàn bộ câu chuyện lan truyền.
 
 CTA: người dùng muốn đơn giản. Mặc định tối đa một câu cuối tập, sau phần trả lời câu chuyện; không tiểu phẩm với nút like, không ngắt hook/cao trào. Không đưa quảng cáo tài trợ từ mẫu vào bài mới.
 
@@ -61,4 +61,3 @@ Giọng kể riêng: gần gũi, rõ ràng, giàu chi tiết được chứng mi
 Kịch bản làm việc gắn claim_id theo đoạn; bản narration sạch không đọc nguồn/cue dựng. Đối chiếu mọi thông tin trước bàn giao, đọc riêng một lượt để kiểm tra nhịp kể, một lượt kiểm tra quảng cáo theo chính sách YouTube đang có hiệu lực, rồi một lượt kiểm tra định dạng thu âm. Không dùng né từ đơn lẻ như bảo đảm kiếm tiền.
 
 Chỉ ghi scripted khi bản cuối theo ngôn ngữ đã chọn được bàn giao; bản chờ duyệt ghi awaiting_review và vẫn bị khóa đề xuất. Ghi published chỉ khi có xác nhận. Không gửi tin, xin phép nguồn, thanh toán hoặc xuất bản ra ngoài nếu chưa được người dùng cho phép.
-

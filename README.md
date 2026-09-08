@@ -1,6 +1,8 @@
 # YouTube Research System
 
-Hệ thống sản xuất nội dung cho kênh YouTube về bí ẩn internet, lừa đảo và điều tra số.
+Hệ thống sản xuất nội dung cho kênh YouTube về kỳ án có thật và những bí ẩn được lần ra bằng chứng cứ. Tội phạm tài chính là nhánh phụ.
+
+Bộ skill đã điều chỉnh nằm trong [skills/mystery-case-script/SKILL.md](skills/mystery-case-script/SKILL.md); bản cài cá nhân ở `C:/Users/AnhTu/.codex/skills/mystery-case-script/`. Các bản gốc Claude do người dùng gửi là tài liệu tham khảo, không phải quy tắc đang hoạt động.
 
 Nội dung chính nằm trong [`t-i/outputs/YouTube-Research-System/`](t-i/outputs/YouTube-Research-System/):
 

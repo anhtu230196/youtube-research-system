@@ -350,11 +350,9 @@
       "fingerprint": "sherri-rasmussen|homicide-1986|stephanie-lazarus",
       "title_vi": "Dấu vết bị bỏ lại suốt hai mươi ba năm",
       "sources": [
-        "https://law.justia.com/cases/california/court-of-appeal/2015/b241172.html",
-        "https://cdn.ca9.uscourts.gov/datastore/memoranda/2023/09/05/21-55483.pdf",
-        "https://www.cdcr.ca.gov/bph/2026/04/08/october-2026-hearing-calendar/"
+        "https://law.justia.com/cases/california/court-of-appeal/2015/b241172.html"
       ],
-      "status": "awaiting_review",
+      "status": "researching",
       "first_proposed_on": "2026-09-08",
       "batch_id": null,
       "episode_path": "episodes/NET-0006-sherri-rasmussen",
@@ -370,11 +368,6 @@
           "date": "2026-09-09",
           "status": "researching",
           "reason": "Verified appellate and later records; completing Vietnamese script and editorial checks."
-        },
-        {
-          "date": "2026-09-09",
-          "status": "awaiting_review",
-          "reason": "Completed 14-scene Vietnamese review script and clean reading copy, source/claim ledger, timeline, gaps and production plans. English awaits user approval."
         }
       ]
     }

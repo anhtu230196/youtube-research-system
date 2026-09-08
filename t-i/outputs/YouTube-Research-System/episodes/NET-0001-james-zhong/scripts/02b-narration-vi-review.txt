@@ -1,0 +1,93 @@
+Ngày 13 tháng 3 năm 2019, tại Athens, Georgia, Jimmy Zhong gọi 911. Anh báo mình bị mất số tiền điện tử trị giá hàng trăm nghìn đô la.
+
+Hơn hai năm sau, nhà chức trách khám xét nhà anh và thu giữ số Bitcoin trị giá hàng tỷ đô la.
+
+Nhưng đó là tiền của một vụ trộm khác.
+
+Muốn hiểu vì sao người gọi cảnh sát lại trở thành đối tượng điều tra, phải quay về thời điểm trước cuộc gọi ấy bảy năm.
+
+
+
+Tháng 9 năm 2012. Silk Road, một chợ đen trên mạng, sử dụng Bitcoin làm phương tiện thanh toán.
+
+Zhong tìm cách lấy tiền từ chính hệ thống đó.
+
+Theo Bộ Tư pháp Mỹ, anh tạo khoảng chín tài khoản, khai thác lỗi xử lý rút tiền để lấy ra nhiều Bitcoin hơn số đã nạp.
+
+Một lần, Zhong nạp năm trăm Bitcoin. Ngay sau đó, năm lệnh rút, mỗi lệnh năm trăm Bitcoin, được thực hiện liên tiếp trong cùng một giây.
+
+Nạp năm trăm. Nhận lại hai nghìn năm trăm.
+
+Hai nghìn Bitcoin chênh lệch không đến từ việc bán hàng hay đầu tư sinh lời. Hệ thống đã trả số tiền mà anh không có quyền nhận.
+
+Qua hơn một trăm bốn mươi giao dịch, Zhong lấy khoảng năm mươi nghìn Bitcoin rồi chuyển chúng sang những địa chỉ do mình kiểm soát.
+
+Tiền đã ra khỏi Silk Road. Nhưng dấu vết của nó vẫn còn.
+
+
+
+Hãy hình dung một cuốn sổ mà ai cũng xem được: địa chỉ này chuyển bao nhiêu Bitcoin sang địa chỉ kia. Cuốn sổ lưu lại giao dịch, nhưng không tự điền tên người đứng sau mỗi địa chỉ.
+
+Đó là khác biệt rất quan trọng. Nhìn thấy tiền di chuyển chưa có nghĩa đã biết ai đang điều khiển nó.
+
+Và đổi địa chỉ cũng không làm những dòng cũ biến mất. Khi tìm được một mối liên hệ với danh tính ngoài đời, điều tra viên có thể quay lại xem những giao dịch trước đó.
+
+Trong vụ Zhong, họ còn có một nguồn dữ liệu khác: bản sao máy chủ Silk Road.
+
+Hồ sơ công tố cho biết nhánh điều tra này bắt đầu năm 2019. Điều tra viên phân tích dữ liệu tài khoản, nạp tiền và rút tiền của khu chợ đã ngừng hoạt động.
+
+Một vụ việc từ năm 2012 vẫn có thể được dựng lại từ những bản ghi ấy.
+
+
+
+Theo Chainalysis, công ty hỗ trợ điều tra, một giao dịch năm 2020 đã tạo ra mối liên hệ cần thiết.
+
+Trong cùng giao dịch xuất hiện tiền từ một địa chỉ nhận Bitcoin của vụ trộm Silk Road và một địa chỉ có thể lần tới Zhong. Các điều tra viên từ đó xác định mối liên hệ kiểm soát giữa hai địa chỉ.
+
+Sàn giao dịch còn cung cấp thông tin xác minh khách hàng và địa chỉ IP liên quan đến tài khoản. Những dữ liệu này cũng dẫn về Zhong.
+
+Giờ đây, đường tiền đã gắn với một con người cụ thể.
+
+Nhưng dựng được mối nối trên màn hình vẫn khác với tìm thấy bằng chứng trong nhà người đó. Cuộc điều tra phải bước ra ngoài dữ liệu.
+
+
+
+Theo tường thuật CNBC, điều tra viên liên bang phối hợp với cảnh sát địa phương, tiếp cận Zhong dưới lý do hỗ trợ vụ mất trộm anh từng báo.
+
+Zhong cho họ vào nhà, rồi mở máy tính cho xem ví Bitcoin. Cuộc gặp giúp họ thu thập thêm thông tin để xin lệnh khám xét.
+
+Người chủ nhà đang hợp tác với những người đến điều tra. Điều anh chưa biết là đối tượng họ đang điều tra chính là mình.
+
+
+
+Ngày 9 tháng 11 năm 2021, nhà chức trách thực hiện lệnh khám xét căn nhà của Zhong tại Gainesville, Georgia.
+
+Theo Bộ Tư pháp, họ tìm thấy tài sản liên quan đến vụ việc trong két dưới sàn và trên một máy tính bo mạch đơn.
+
+Chiếc máy tính ấy nằm trong hộp bỏng ngô, dưới những chiếc chăn, trong tủ ở phòng tắm.
+
+Tổng Bitcoin thu giữ tại nhà vượt năm mươi nghìn. Hộp bỏng ngô chỉ là một trong những nơi cất thiết bị, không phải nơi chứa toàn bộ gia tài.
+
+Đường đi từ những giao dịch năm 2012 giờ đã dẫn tới vật chứng trong một căn nhà ở Georgia.
+
+
+
+Ngày 4 tháng 11 năm 2022, Zhong nhận tội gian lận qua phương tiện điện tử.
+
+Ngày 14 tháng 4 năm 2023, anh bị tuyên một năm và một ngày tù. Tổng Bitcoin thuộc các lệnh tịch thu cuối cùng vượt năm mươi mốt nghìn sáu trăm tám mươi, bao gồm cả phần bàn giao thêm sau khám xét.
+
+Vì sao bản án chỉ hơn một năm?
+
+Trong hồ sơ trước tuyên án, chính công tố cũng thừa nhận những yếu tố giảm nhẹ, đặc biệt việc Zhong giúp nhà chức trách tiếp cận tài sản. Họ đồng ý đề nghị mức án thấp hơn khung hướng dẫn, nhưng vẫn yêu cầu phạt tù.
+
+Đó là lập luận của công tố; không thể từ riêng tài liệu này kết luận toàn bộ lý do thẩm phán chọn mức án cuối cùng.
+
+
+
+Còn vụ trộm khiến Zhong gọi 911? Theo CNBC vào tháng 10 năm 2023, vụ đó vẫn chưa được giải quyết.
+
+Cuộc gọi không tự tiết lộ bí mật Silk Road. Dấu vết giao dịch dẫn điều tra viên tới Zhong; hồ sơ báo trộm giúp họ tiếp cận anh.
+
+Một người có thể là nạn nhân trong hồ sơ này, đồng thời là người phạm tội trong hồ sơ khác. Với Zhong, hai hồ sơ ấy cuối cùng gặp nhau ngay trước cửa nhà.
+
+Đăng ký kênh để theo dõi thêm những câu chuyện bí ẩn và điều tra trên internet.

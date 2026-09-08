@@ -1,4 +1,4 @@
-# Hệ thống sản xuất kênh kỳ án có thật
+# Hệ thống sản xuất kênh bí ẩn internet
 
 Chủ sở hữu: Tú. Khởi tạo: 2026-09-08.
 
@@ -8,7 +8,7 @@ Trong cuộc trò chuyện này, nhắn: **Gợi ý 5 chuyện mới cho kênh**
 
 Trong cuộc trò chuyện mới, gửi đường dẫn thư mục này và nhắn: **Đọc AGENTS.md và tiếp tục hệ thống kênh của tôi**. Việc lưu file không bảo đảm một cuộc trò chuyện mới tự biết đường dẫn hoặc tự đọc lịch sử.
 
-Thư mục cố định: `C:\Users\AnhTu\Desktop\youtube-research-system\t-i\outputs\YouTube-Research-System`.
+Thư mục cố định: `C:\Users\tu.vu\Documents\Codex\2026-09-08\t-i\outputs\YouTube-Research-System`.
 
 ## Luồng làm việc
 
@@ -32,7 +32,7 @@ Thư mục cố định: `C:\Users\AnhTu\Desktop\youtube-research-system\t-i\out
 
 ## Phạm vi
 
-Chủ đề: kỳ án có thật và những bí ẩn được lần ra bằng chứng cứ. Bao gồm mất tích, danh tính bí ẩn, án tồn đọng, hiện trường dàn dựng, nghi ngờ sai và điều tra số; tội phạm tài chính là nhánh phụ. Ưu tiên câu chuyện có chứng cứ, con người cụ thể, hệ quả rõ và phát hiện đáng nhớ. Không bắt buộc vụ nào cũng có một giả thuyết sai hay đã giải quyết hoàn toàn.
+Chủ đề: bí ẩn internet, lừa đảo, điều tra số. Ưu tiên câu chuyện có chứng cứ, con người cụ thể, hệ quả rõ và phát hiện đáng nhớ. Không bắt buộc vụ nào cũng có một giả thuyết sai hay đã giải quyết hoàn toàn.
 
 Mục tiêu kể chuyện: gây tò mò bằng chi tiết cụ thể, giải thích dễ hiểu, tăng mức độ quan trọng theo diễn biến, đặt manh mối trước lời giải, kết thúc trả lời câu hỏi mở đầu. Giọng kể riêng; không sao chép câu văn, câu cửa miệng hoặc kịch bản MrBallen.
 
@@ -61,4 +61,3 @@ Hệ thống hoạt động khi người dùng yêu cầu trong cuộc trò chuy
 - `episodes/`: từng tập và tư liệu.
 
 Chưa nhập các video cũ của người dùng. Những chuyện đã làm ngoài hệ thống chỉ được loại trừ sau khi được bổ sung vào sổ.
-

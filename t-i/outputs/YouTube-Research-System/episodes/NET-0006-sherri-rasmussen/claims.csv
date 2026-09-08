@@ -1,0 +1,27 @@
+claim_id,claim,source_ids,locators,confidence,claim_status,conflicts,script_segment
+C01,"Sherri là điều dưỡng 29 tuổi; cưới John 11/1985",S01;S02,"S01 pp3/11; S02 opening",high,established,"Không dùng lỗi childhood ở S02",B02
+C02,"24/02/1986: John đi 07:20; gọi từ 10:00; về khoảng 18:00",S01,"pp3–4",high,established,"Không chuyển thành giờ tử vong",B02
+C03,"Đồ âm thanh xếp gần cửa gara; ngăn kéo đổ; không dấu đột nhập cưỡng bức; nhiều phòng nguyên",S01,"pp5–7",high,established,"Phân biệt cửa kính vỡ và dấu vào nhà",B01 B03
+C04,"Mẫu dấu cắn cẳng tay do Lloyd Mahaney thu; ống đựng trong phong bì giữ lạnh",S01,"pp4–5 notes7–8",high,established,"Không so hình răng để nhận diện",B03 B05
+C05,"BMW tìm 07/03/1986 cách nhà 2.5 miles; chìa còn; không tháo phụ tùng",S01,"p3 note3",high,established,,B04 B11
+C06,"Điều tra đầu hướng 1–2 kẻ trộm; vụ khác sáu tuần sau được viện dẫn",S01,"pp6/67–69",high,established,"Không nói vụ sau xảy ra trước; không gọi là cùng hung thủ",B03 B04
+C07,"Gia đình/John nêu người cũ; hồ sơ tranh luận về bỏ sót hướng điều tra",S01,"pp16–19",high,established,"Lời khai/hồ sơ tố tụng; không tự kết luận bao che",B04 B12
+C08,"Yêu cầu kiểm tra từ 2003; tìm lại cuối2004; xét nghiệm2005",S01,"pp6–7/18",high,established,"Các mốc là các bước khác nhau",B05
+C09,"Francis tìm hồ sơ chính của nữ; hồ sơ phụ phù hợp Sherri; database không khớp",S01,"pp7–8",high,established,"Không chứng minh mọi DNA tại hiện trường là nữ",B05
+C10,"2009 xem xét phụ nữ liên quan; hồ sơ giao 02/2009",S01,"pp7/18",high,established,,B06
+C11,"Cốc và ống hút bỏ đi cho hồ sơ một phần khớp 11 vị trí",S01,"pp7–8 note13",high,established,"Không gọi là toàn bộ profile15 loci",B07
+C12,"Lazarus và John quen thời đại học; lời khai về quan hệ và lần gặp tại bệnh viện",S01,"pp10–12",high,established,"Động cơ quy công tố; không đổ lỗi John hoặc Sherri",B06 B08
+C13,"Nhật ký và thư cho mẹ John phản ánh tình cảm; tài liệu thu sau bắt",S01,"pp11–12",high,established,"Không nói điều tra viên đã đọc trước phỏng vấn",B10
+C14,"Súng dự phòng Model49; báo mất09/03/1986; không thu được để đối chiếu",S01,"pp9–10/19",high,established,"Không gọi là hung khí khớp chắc chắn",B10
+C15,"Chuyên gia công tố liên hệ loại đạn/súng; chuyên gia bào chữa phản bác",S01,"pp4–5/14–15",high,established,"Chứng cứ tranh luận",B10
+C16,"Phỏng vấn 05/06/2009 lấy cớ chuyên môn trộm tranh; hỏi John và Sherri",S01,"pp13–14/42–43",high,established,"Không bịa lời thoại; không suy từ cử chỉ",B09
+C17,"Rời phòng rồi bị bắt; mẫu miệng khớp13 loci",S01,"pp8/43",high,established,"Không gọi phỏng vấn là thú tội",B09 B10
+C18,"2010 SERI xét mẫu thứ hai; amylase và profile khớp15 loci",S01,"pp8–9",high,established,"Đại diện bào chữa có mặt",B10
+C19,"Phong bì rách khi tìm; ống có vẻ nguyên; DNA/dấu tay khác chưa xác định",S01,"pp5–9 notes9/11/19; pp14–15",high,established,"Không tuyên bố mọi vật chứng đều chỉ tới Lazarus",B05 B10
+C20,"Chuyên gia công tố giải thích hiện trường dàn dựng",S01,"pp6–7 note10; pp67–69",high,alleged,"Diễn giải chuyên gia; không phải camera tái dựng",B11
+C21,"Kết án2012; tổng27 năm đến chung thân; giữ án2015",S01;S03,"S01 p15 and disposition; S03 pp1–2",high,established,,B12
+C22,"Bác cứu xét habeas được giữ nguyên2023",S03,"pp1–5",high,established,"Tòa giả định cáo buộc để phân tích; không xác nhận cover-up",B12
+C23,"Rút quyết định parole02/10/2024",S04,"Opening",high,established,,B13
+C24,"Từ chối parole12/02/2025",S05,"Opening",high,established,"Không dùng lỗi leg hoặc năm DNA trong bài",B13
+C25,"Lịch hiện tại dự kiến09/10/2026 08:30; không phải quyết định thả",S07,"Row LAZARUS WE4479",high,established,"Lịch có thể đổi; kiểm tra08/09/2026",B13
+C26,"Mẫu giữ lại cần cả xét nghiệm lẫn đối chiếu danh tính; bài học về cách đọc chứng cứ",S01,"Synthesis C04 C09 C11 C18",high,inference,"Nhận xét biên tập; không phải phán quyết về cả LAPD",B14
