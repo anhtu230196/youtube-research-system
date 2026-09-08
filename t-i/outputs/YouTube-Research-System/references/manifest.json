@@ -1,0 +1,74 @@
+[
+  {
+    "id": "REF-01",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\6563f9f8-a829-45ef-809c-dfe3b5654bd5\\pasted-text.txt",
+    "local_path": "references/ref-01-college-opening.txt",
+    "sha256": "791DA6FEDA73290E109B2EE3C6F7103B8293BA7A43DF918E63A9603D0E5CF923",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-02",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\00424649-3ff0-4e98-801d-f6e8934c0454\\pasted-text.txt",
+    "local_path": "references/ref-02-haunting-pictures.txt",
+    "sha256": "63E982311F30A44C2C5F1C33DB4E7623020CA96A82A42A017F207AF3F46847E5",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-03",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\caf7b6bf-e481-446a-94a7-5190ec3eff76\\pasted-text.txt",
+    "local_path": "references/ref-03-not-what-they-seem.txt",
+    "sha256": "76C46C80489BEB61B610B58D65E88CC1B8FC2DEF7C3DA7330BA10E78E568D849",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-04",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\ca324069-4525-40d4-bfdb-4bfeb1c49900\\pasted-text.txt",
+    "local_path": "references/ref-04-perfect-plans.txt",
+    "sha256": "DD66459654FA3B766D35D9D8B18BD648189B2AA7BDA0F5B081AAEB941AB45B2E",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-05",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\f19be031-810e-4ad0-bd58-00ef035c327b\\pasted-text.txt",
+    "local_path": "references/ref-04-perfect-plans.txt",
+    "sha256": "DD66459654FA3B766D35D9D8B18BD648189B2AA7BDA0F5B081AAEB941AB45B2E",
+    "duplicate_of": "REF-04",
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-06",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\cb8aa6e1-a010-4611-8397-ece63f6fdb14\\pasted-text.txt",
+    "local_path": "references/ref-06-hospital-waiting-room.txt",
+    "sha256": "82DDA623174D08CB82F74F23DFA6A69BEE93DDAA1A97709F8A77D0CD1E566C01",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-07",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\846dfdf5-d6a8-4e5d-9ac7-4d84d49c37fd\\pasted-text.txt",
+    "local_path": "references/ref-07-conflicting-evidence.txt",
+    "sha256": "389CE6228EF8189517A9C201483FBB03DD72A5682E4AB8B9F4BF4233723A8BB1",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-08",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\02692d28-6dc3-456d-b163-3d12d8cb3fa9\\pasted-text.txt",
+    "local_path": "references/ref-08-impossible-accounts.txt",
+    "sha256": "22366319C6C1A15DE52F0C951506198086C95DA8BE3F96612F720368BA00367B",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  }
+]

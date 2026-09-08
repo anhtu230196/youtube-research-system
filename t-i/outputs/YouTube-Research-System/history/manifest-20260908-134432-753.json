@@ -1,0 +1,47 @@
+[
+  {
+    "id": "REF-01",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\6563f9f8-a829-45ef-809c-dfe3b5654bd5\\pasted-text.txt",
+    "local_path": "references/ref-01-college-opening.txt",
+    "sha256": "791DA6FEDA73290E109B2EE3C6F7103B8293BA7A43DF918E63A9603D0E5CF923",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-02",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\00424649-3ff0-4e98-801d-f6e8934c0454\\pasted-text.txt",
+    "local_path": "references/ref-02-haunting-pictures.txt",
+    "sha256": "63E982311F30A44C2C5F1C33DB4E7623020CA96A82A42A017F207AF3F46847E5",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-03",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\caf7b6bf-e481-446a-94a7-5190ec3eff76\\pasted-text.txt",
+    "local_path": "references/ref-03-not-what-they-seem.txt",
+    "sha256": "76C46C80489BEB61B610B58D65E88CC1B8FC2DEF7C3DA7330BA10E78E568D849",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-04",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\ca324069-4525-40d4-bfdb-4bfeb1c49900\\pasted-text.txt",
+    "local_path": "references/ref-04-perfect-plans.txt",
+    "sha256": "DD66459654FA3B766D35D9D8B18BD648189B2AA7BDA0F5B081AAEB941AB45B2E",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-05",
+    "original_path": "C:\\Users\\tu.vu\\.codex\\attachments\\f19be031-810e-4ad0-bd58-00ef035c327b\\pasted-text.txt",
+    "local_path": "references/ref-04-perfect-plans.txt",
+    "sha256": "DD66459654FA3B766D35D9D8B18BD648189B2AA7BDA0F5B081AAEB941AB45B2E",
+    "duplicate_of": "REF-04",
+    "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
+    "imported_on": "2026-09-08"
+  }
+]

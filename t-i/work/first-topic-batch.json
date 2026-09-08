@@ -1,0 +1,237 @@
+[
+  {
+    "id": "NET-0001",
+    "canonical_title": "James Zhong — Silk Road bitcoin theft and recovery",
+    "aliases": [
+      "Jimmy Zhong",
+      "James Zhong",
+      "Crypto 911"
+    ],
+    "entities": [
+      "James Zhong",
+      "IRS-CI",
+      "Athens-Clarke County Police",
+      "Silk Road"
+    ],
+    "event_dates": [
+      "2012",
+      "2019",
+      "2021",
+      "2023"
+    ],
+    "fingerprint": "james-zhong|silk-road-theft-2012|seizure-2021",
+    "title_vi": "Người gọi cảnh sát báo mất trộm đang che giấu một gia tài",
+    "scores": [
+      5,
+      5,
+      4,
+      2,
+      4,
+      5
+    ],
+    "sources": [
+      "https://www.justice.gov/usao-sdny/pr/silk-road-dark-web-fraud-defendant-sentenced-following-seizure-and-forfeiture-over-34",
+      "https://www.linkedin.com/posts/cnbc-ambition_how-did-a-break-in-at-jimmy-zhongs-house-activity-7120520197240709120-Z68z",
+      "https://www.youtube.com/watch?v=3Nq3ye-QCyM"
+    ],
+    "status": "proposed",
+    "first_proposed_on": "2026-09-08",
+    "batch_id": "2026-09-08-01",
+    "episode_path": null,
+    "published_url": null,
+    "included_case_ids": [],
+    "history": [
+      {
+        "date": "2026-09-08",
+        "status": "proposed",
+        "reason": "First verified topic shortlist; awaiting user choice."
+      }
+    ]
+  },
+  {
+    "id": "NET-0002",
+    "canonical_title": "The Shed at Dulwich — fabricated Tripadvisor restaurant",
+    "aliases": [
+      "The Shed",
+      "Oobah Butler fake restaurant",
+      "Shed at Dulwich"
+    ],
+    "entities": [
+      "Oobah Butler",
+      "Tripadvisor",
+      "VICE"
+    ],
+    "event_dates": [
+      "2017"
+    ],
+    "fingerprint": "shed-at-dulwich|tripadvisor-hoax-2017",
+    "title_vi": "Nhà hàng đứng đầu London chưa từng phục vụ khách",
+    "scores": [
+      4,
+      4,
+      4,
+      2,
+      5,
+      5
+    ],
+    "sources": [
+      "https://www.vice.com/en/article/i-made-my-shed-the-top-rated-restaurant-on-tripadvisor/",
+      "https://www.irishtimes.com/life-and-style/food-and-drink/i-made-my-shed-the-top-rated-restaurant-on-trip-advisor-1.3318770",
+      "https://www.nprillinois.org/generationlisten/2019-04-23/internet-prankster-oobah-butler-faked-it-until-he-made-it"
+    ],
+    "status": "proposed",
+    "first_proposed_on": "2026-09-08",
+    "batch_id": "2026-09-08-01",
+    "episode_path": null,
+    "published_url": null,
+    "included_case_ids": [],
+    "history": [
+      {
+        "date": "2026-09-08",
+        "status": "proposed",
+        "reason": "First verified topic shortlist; awaiting user choice."
+      }
+    ]
+  },
+  {
+    "id": "NET-0003",
+    "canonical_title": "XZ Utils backdoor discovery",
+    "aliases": [
+      "CVE-2024-3094",
+      "Jia Tan",
+      "Andres Freund XZ"
+    ],
+    "entities": [
+      "Andres Freund",
+      "Lasse Collin",
+      "Jia Tan",
+      "XZ Utils"
+    ],
+    "event_dates": [
+      "2024"
+    ],
+    "fingerprint": "xz-utils|cve-2024-3094|discovery-2024",
+    "title_vi": "Nửa giây chậm trễ làm lộ một cuộc tấn công âm thầm",
+    "scores": [
+      5,
+      5,
+      3,
+      2,
+      5,
+      3
+    ],
+    "sources": [
+      "https://www.openwall.com/lists/oss-security/2024/03/29/4",
+      "https://tukaani.org/xz-backdoor/"
+    ],
+    "coverage_url": "https://www.youtube.com/watch?v=aoag03mSuXQ",
+    "status": "proposed",
+    "first_proposed_on": "2026-09-08",
+    "batch_id": "2026-09-08-01",
+    "episode_path": null,
+    "published_url": null,
+    "included_case_ids": [],
+    "history": [
+      {
+        "date": "2026-09-08",
+        "status": "proposed",
+        "reason": "First verified topic shortlist; awaiting user choice."
+      }
+    ]
+  },
+  {
+    "id": "NET-0004",
+    "canonical_title": "ANOM — Operation Trojan Shield",
+    "aliases": [
+      "AN0M",
+      "Operation Ironside",
+      "Trojan Shield",
+      "Dark Wire"
+    ],
+    "entities": [
+      "ANOM",
+      "FBI",
+      "Australian Federal Police"
+    ],
+    "event_dates": [
+      "2018",
+      "2021"
+    ],
+    "fingerprint": "anom|trojan-shield|operation-2018-2021",
+    "title_vi": "Chiếc điện thoại được tin là an toàn nhất lại là chiếc bẫy",
+    "scores": [
+      5,
+      5,
+      4,
+      3,
+      3,
+      5
+    ],
+    "sources": [
+      "https://www.justice.gov/usao-sdca/pr/fbi-s-encrypted-phone-platform-infiltrated-hundreds-criminal-syndicates-result-massive",
+      "https://www.404media.co/watch-inside-the-fbis-secret-phone-company/"
+    ],
+    "status": "proposed",
+    "first_proposed_on": "2026-09-08",
+    "batch_id": "2026-09-08-01",
+    "episode_path": null,
+    "published_url": null,
+    "included_case_ids": [],
+    "history": [
+      {
+        "date": "2026-09-08",
+        "status": "proposed",
+        "reason": "First verified topic shortlist; awaiting user choice."
+      }
+    ]
+  },
+  {
+    "id": "NET-0005",
+    "canonical_title": "OneCoin fraud and disappearance of Ruja Ignatova",
+    "aliases": [
+      "Missing Cryptoqueen",
+      "Ruja Ignatova",
+      "OneCoin"
+    ],
+    "entities": [
+      "Ruja Ignatova",
+      "Karl Sebastian Greenwood",
+      "OneCoin"
+    ],
+    "event_dates": [
+      "2014",
+      "2017",
+      "2023",
+      "2026"
+    ],
+    "fingerprint": "onecoin|ruja-ignatova-disappearance-2017",
+    "title_vi": "Người bán giấc mơ thay thế Bitcoin biến mất",
+    "scores": [
+      5,
+      5,
+      4,
+      2,
+      4,
+      2
+    ],
+    "sources": [
+      "https://www.justice.gov/usao-sdny/pr/co-founder-multibillion-dollar-cryptocurrency-scheme-onecoin-sentenced-20-years-prison",
+      "https://www.fbi.gov/wanted/topten/ruja-ignatova",
+      "https://www.fbi.gov/news/stories/compensation-for-victims-of-onecoin-cryptocurrency-investment-fraud"
+    ],
+    "coverage_url": "https://www.youtube.com/watch?v=B4joiYkmQr8",
+    "status": "proposed",
+    "first_proposed_on": "2026-09-08",
+    "batch_id": "2026-09-08-01",
+    "episode_path": null,
+    "published_url": null,
+    "included_case_ids": [],
+    "history": [
+      {
+        "date": "2026-09-08",
+        "status": "proposed",
+        "reason": "First verified topic shortlist; awaiting user choice."
+      }
+    ]
+  }
+]

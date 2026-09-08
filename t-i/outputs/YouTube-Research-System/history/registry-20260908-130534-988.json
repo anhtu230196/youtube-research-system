@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-09-08",
+  "channel": {
+    "owner": "Tú",
+    "topics": [
+      "bí ẩn internet",
+      "lừa đảo",
+      "điều tra số"
+    ],
+    "audience": "US",
+    "narration_language": "en",
+    "target_minutes": null,
+    "proposed_defaults": {
+      "audience": "US",
+      "narration_language": "en",
+      "target_minutes": [
+        20,
+        30
+      ]
+    },
+    "review_language": "vi",
+    "vietnamese_review_before_english": true,
+    "suggestion_batch_size": 5,
+    "previous_external_episodes_imported": false,
+    "configuration_history": [
+      {
+        "date": "2026-09-08",
+        "change": "User confirmed US audience, English narration, and required approval of the full Vietnamese script before English writing."
+      }
+    ]
+  },
+  "next_case_number": 1,
+  "statuses": [
+    "proposed",
+    "selected",
+    "researching",
+    "awaiting_review",
+    "scripted",
+    "published",
+    "deferred",
+    "excluded"
+  ],
+  "cases": [],
+  "batches": []
+}
