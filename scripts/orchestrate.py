@@ -26,6 +26,16 @@ import thread as th  # noqa: E402
 CONFIG = Path(__file__).resolve().parents[1] / "coordination" / "agents.json"
 MAX_TURNS = 12
 
+# Dau hieu het quota / bi chan toc do trong dau ra cua CLI. Phan biet voi loi
+# that vi cach xu ly khac han: doi, doi tai khoan, hoac de agent khac nhan luot.
+QUOTA_MARKS = ("429", "quota", "rate limit", "ratelimit", "resource_exhausted",
+               "resource exhausted", "usage limit", "overloaded", "too many requests")
+
+
+def looks_like_quota(*chunks: str) -> bool:
+    blob = " ".join(c or "" for c in chunks).lower()
+    return any(m in blob for m in QUOTA_MARKS)
+
 PREAMBLE_READ = """Ban dang chay o che do TU DONG, khong co nguoi doc man hinh cua ban.
 
 Luat cua che do nay:
@@ -70,7 +80,10 @@ def load_config() -> dict:
     return json.loads(CONFIG.read_text(encoding="utf-8"))["agents"]
 
 
-def run_cli(spec: dict, prompt: str, write: bool):
+PROBE_TIMEOUT = 60
+
+
+def run_cli(spec: dict, prompt: str, write: bool, timeout: int | None = None):
     """Goi CLI, tra ve (ma thoat, stdout, stderr, giay)."""
     template = spec["write_cmd" if write else "cmd"]
     cmd = [prompt if part == "{prompt}" else part.replace("{prompt}", prompt)
@@ -80,15 +93,19 @@ def run_cli(spec: dict, prompt: str, write: bool):
     resolved = shutil.which(cmd[0])
     if resolved:
         cmd[0] = resolved
+    secs_cap = timeout or spec.get("timeout", 600)
     t0 = time.time()
     try:
         p = subprocess.run(cmd, cwd=th.repo_root(), capture_output=True,
+                           # Khong co stdin: cac CLI headless doi du lieu ong dan
+                           # va treo 3-30s neu de mac dinh.
+                           stdin=subprocess.DEVNULL,
                            text=True, encoding="utf-8", errors="replace",
-                           timeout=spec.get("timeout", 1200))
+                           timeout=secs_cap)
     except FileNotFoundError:
         return 127, "", f"khong tim thay lenh {cmd[0]!r}", 0.0
     except subprocess.TimeoutExpired:
-        return 124, "", f"qua {spec.get('timeout', 1200)}s", time.time() - t0
+        return 124, "", f"qua {secs_cap}s — CLI khong tra loi kip", time.time() - t0
     return p.returncode, p.stdout or "", p.stderr or "", time.time() - t0
 
 
@@ -106,14 +123,18 @@ def cmd_doctor(args) -> int:
             bad += 1
             continue
         if args.probe:
-            code, out, err, secs = run_cli(spec, "Tra loi dung mot tu: OK", write=False)
+            code, out, err, secs = run_cli(spec, "Tra loi dung mot tu: OK",
+                                           write=False, timeout=PROBE_TIMEOUT)
             first = (out.strip().splitlines() or [""])[0][:60]
             if code == 0 and first:
                 print(f"         probe: OK ({secs:.1f}s) — {first!r}")
+            elif looks_like_quota(err, out):
+                bad += 1
+                print(f"         probe: HET QUOTA / BI CHAN TOC DO ({secs:.0f}s)")
             else:
                 bad += 1
-                msg = (err.strip().splitlines() or ["khong co stderr"])[0][:120]
-                print(f"         probe: LOI (ma {code}) — {msg}")
+                msg = (err.strip().splitlines() or ["khong co stderr"])[-1][:120]
+                print(f"         probe: LOI (ma {code}, {secs:.0f}s) — {msg}")
     return 1 if bad else 0
 
 
@@ -145,6 +166,12 @@ def one_turn(slug: str, agents: dict, dry: bool) -> str:
 
     code, out, err, secs = run_cli(spec, prompt, write=t["needs_write"])
     if code != 0 or not out.strip():
+        if looks_like_quota(err, out):
+            print(f"    HET QUOTA hoac BI CHAN TOC DO sau {secs:.0f}s.")
+            print("    Phan lon thoi gian do la CLI tu thu lai, khong phai lam viec.")
+            print("    Doi quota hoi, doi tai khoan, hoac de agent khac nhan luot nay.")
+            print("    THREAD.md khong bi doi — chay lai lenh nay sau la duoc.")
+            return "quota"
         print(f"    LOI: ma thoat {code} sau {secs:.0f}s")
         for line in (err.strip().splitlines() or ["khong co stderr"])[-5:]:
             print(f"    {line[:160]}")
@@ -185,6 +212,8 @@ def cmd_run(args) -> int:
                 print("Luong da chot. Doc lai cac file vong truoc khi tin ket qua.")
             elif status == "blocked":
                 print("Con diem mo sau khi het tran vong — can Tu quyet.")
+            elif status == "quota":
+                print("Luong giu nguyen trang thai. Chay lai `run` sau khi quota hoi.")
             return 0 if status == "settled" else 1
     print(f"\nDung vi cham tran {args.max_turns} luot.")
     return 1

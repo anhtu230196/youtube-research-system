@@ -5,7 +5,7 @@
       "bin": "claude",
       "cmd": ["claude", "-p", "{prompt}", "--permission-mode", "plan"],
       "write_cmd": ["claude", "-p", "{prompt}", "--permission-mode", "acceptEdits"],
-      "timeout": 1200,
+      "timeout": 600,
       "verified": true,
       "note": "Can dang nhap truoc: chay `claude login` trong terminal that."
     },
@@ -13,15 +13,15 @@
       "bin": "gemini",
       "cmd": ["gemini", "-p", "{prompt}", "--approval-mode", "plan", "-o", "text"],
       "write_cmd": ["gemini", "-p", "{prompt}", "--approval-mode", "auto_edit", "-o", "text"],
-      "timeout": 1200,
+      "timeout": 600,
       "verified": true,
-      "note": ""
+      "note": "Tra 429 khi het quota; CLI tu retry rat lau truoc khi bo cuoc nen de timeout 600s."
     },
     "codex": {
       "bin": "codex",
       "cmd": ["codex", "exec", "{prompt}", "--sandbox", "read-only"],
       "write_cmd": ["codex", "exec", "{prompt}", "--sandbox", "workspace-write"],
-      "timeout": 1200,
+      "timeout": 600,
       "verified": false,
       "note": "CHUA KIEM CHUNG tren may nay — codex chua duoc cai. Cai bang `npm i -g @openai/codex`, roi chay `python scripts/orchestrate.py doctor --probe` va sua lai cac co o day neu sai."
     }
