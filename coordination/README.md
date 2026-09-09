@@ -2,6 +2,14 @@
 
 Nơi các agent nói cho nhau biết ai đang làm gì. Luật đầy đủ ở [`../AGENTS.md`](../AGENTS.md).
 
+**Lớp này chạy ở hai repo.** `veo3-auto-generation` dùng bản chép y hệt: `scripts/thread.py`, `scripts/orchestrate.py`, `scripts/claims.py` giữ nguyên từng byte, chỉ `coordination/RULES.md` bên đó khác (bảng bước của repo đó, và chốt cuối ở nhánh chứ chưa ở PR). Sửa ba file script ở đây thì chép sang:
+
+```bash
+cp scripts/thread.py scripts/orchestrate.py scripts/claims.py    /c/Users/tu.vu/Desktop/veo3-auto-generation/scripts/
+```
+
+Sửa luật review ở `AGENTS.md` mục 8 thì phải áp lại tay vào `coordination/RULES.md` bên kia — hai file đó cố ý khác nhau.
+
 | Thư mục | Dùng để |
 | --- | --- |
 | `claims/` | Một file cho một việc đang giữ. Chống hai agent làm trùng. |
