@@ -238,9 +238,15 @@ Không agent nào tự đánh thức agent khác.
 
 ```bash
 python scripts/orchestrate.py doctor --probe   # CLI nao dung duoc, con dang nhap khong
+python scripts/orchestrate.py start "<yeu cau>"  # mo luong moi tu mot cau roi chay luon
 python scripts/orchestrate.py turn <slug>      # chay dung mot luot roi dung
 python scripts/orchestrate.py run <slug>       # chay den khi hoi tu hoac het tran
 ```
+
+`start` là cửa vào cho một yêu cầu mới nói bằng lời thường. Nó suy slug từ câu yêu cầu,
+mở luồng với tác giả mặc định `codex` và hai agent còn lại làm người review, đặt artifact
+ở `coordination/drafts/<slug>.md` nếu không chỉ định `--artifact`, rồi chạy tới khi hội tụ
+hoặc chạm trần. Đổi người viết bản đầu bằng `--author claude`.
 
 Luật an toàn của chế độ tự động:
 

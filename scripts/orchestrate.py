@@ -5,6 +5,7 @@ Moi luot goi CLI tuong ung o che do headless, lay stdout lam file vong, roi
 cap nhat THREAD.md. Luot review chay che do chi doc; chi luot tac gia moi duoc
 sua artifact. Xem AGENTS.md muc 8.
 
+    python scripts/orchestrate.py start "<yeu cau>" # mo luong moi roi chay luon
     python scripts/orchestrate.py doctor            # CLI nao dung duoc
     python scripts/orchestrate.py doctor --probe    # goi thu mot cau ngan
     python scripts/orchestrate.py turn <slug>       # chay dung mot luot
@@ -15,11 +16,13 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import shutil
 import signal
 import subprocess
 import sys
 import time
+import unicodedata
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -292,10 +295,60 @@ def cmd_run(args) -> int:
     return 1
 
 
+def slugify(text: str, limit: int = 48) -> str:
+    """Bo dau tieng Viet, con lai chu thuong va gach ngang."""
+    s = text.replace("đ", "d").replace("Đ", "d")
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    s = re.sub(r"[^A-Za-z0-9]+", "-", s).strip("-").lower()
+    if len(s) > limit:
+        s = s[:limit].rsplit("-", 1)[0]
+    return s or "luong"
+
+
+def cmd_start(args) -> int:
+    """Mot cau yeu cau -> mot luong review -> chay den khi hoi tu."""
+    topic = args.topic.strip()
+    slug = args.slug or slugify(topic)
+    author = args.author
+    reviewers = [a for a in th.AGENTS if a != author]
+    artifact = args.artifact or f"coordination/drafts/{slug}.md"
+
+    d = th.threads_dir() / slug
+    if d.exists():
+        print(f"Luong {slug} da co — chay tiep chu khong tao moi.")
+    else:
+        (th.repo_root() / artifact).parent.mkdir(parents=True, exist_ok=True)
+        th.cmd_new(argparse.Namespace(
+            slug=slug, author=author, reviewers=",".join(reviewers),
+            artifact=artifact, step=args.step, question=topic))
+        print(f"  tac gia: {author} · review: {', '.join(reviewers)}")
+        print(f"  artifact: {artifact}")
+
+    if args.no_run:
+        print(f"Buoc tiep: python scripts/orchestrate.py run {slug}")
+        return 0
+    print()
+    return cmd_run(argparse.Namespace(slug=slug, max_turns=args.max_turns))
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest="command", required=True)
+
+    p_start = sub.add_parser(
+        "start", help="mo luong moi tu mot cau yeu cau roi chay luon")
+    p_start.add_argument("topic", help='vi du: "xay dung kich ban chu de vu an X"')
+    p_start.add_argument("--author", default="codex", choices=th.AGENTS,
+                         help="agent viet ban dau tien (mac dinh codex)")
+    p_start.add_argument("--artifact", help="mac dinh coordination/drafts/<slug>.md")
+    p_start.add_argument("--slug", help="mac dinh suy ra tu topic")
+    p_start.add_argument("--step", help="so buoc trong bang AGENTS.md muc 8")
+    p_start.add_argument("--no-run", action="store_true",
+                         help="chi tao luong, khong goi CLI")
+    p_start.add_argument("--max-turns", type=int, default=MAX_TURNS)
+    p_start.set_defaults(func=cmd_start)
 
     p_doc = sub.add_parser("doctor", help="kiem tra CLI nao dung duoc")
     p_doc.add_argument("--probe", action="store_true", help="goi thu mot cau ngan")

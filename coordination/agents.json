@@ -42,8 +42,8 @@
         "text"
       ],
       "timeout": 600,
-      "verified": true,
-      "note": "2026-09-09: dang bi 429 (het quota). CLI tu retry rat lau va con chau giu ong dan, nen orchestrator phai giet ca cay tien trinh khi qua han."
+      "verified": false,
+      "note": "2026-09-09: probe THAT BAI (429 roi 503). Nguyen nhan: ~/.gemini/settings.json dang de auth.selectedType = gemini-api-key va google_accounts.json co active = null, tuc CLI khong dung goi Gemini Pro nao ca. Sua: chay `gemini` roi go /auth, chon dang nhap Google bang tai khoan co Gemini Pro. CLI tu retry rat lau va con chau giu ong dan, nen orchestrator phai giet ca cay tien trinh khi qua han."
     },
     "codex": {
       "bin": "codex",
