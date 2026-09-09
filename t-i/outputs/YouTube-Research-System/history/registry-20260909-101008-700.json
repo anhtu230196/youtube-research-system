@@ -49,7 +49,7 @@
       "interrupt_climax": false
     }
   },
-  "next_case_number": 7,
+  "next_case_number": 6,
   "statuses": [
     "proposed",
     "selected",
@@ -298,58 +298,6 @@
           "date": "2026-09-08",
           "status": "proposed",
           "reason": "First verified topic shortlist; awaiting user choice."
-        }
-      ]
-    },
-    {
-      "id": "NET-0006",
-      "canonical_title": "Sherri Rasmussen — 1986 Van Nuys killing solved by DNA, LAPD detective Stephanie Lazarus convicted",
-      "aliases": [
-        "Sherri Rasmussen",
-        "Stephanie Lazarus",
-        "Van Nuys 1986 nurse killing"
-      ],
-      "entities": [
-        "Sherri Rasmussen",
-        "Stephanie Lazarus",
-        "John Ruetten",
-        "LAPD"
-      ],
-      "event_dates": [
-        "1986",
-        "2004",
-        "2009",
-        "2012",
-        "2023",
-        "2026"
-      ],
-      "fingerprint": "sherri-rasmussen|van-nuys-killing-1986|dna-match-2009",
-      "title_vi": "Những món đồ chưa kịp mang đi",
-      "scores": [],
-      "sources": [
-        "https://law.justia.com/cases/california/court-of-appeal/2015/b241172.html",
-        "https://cdn.ca9.uscourts.gov/datastore/memoranda/2023/09/05/21-55483.pdf",
-        "https://abcnews.com/Nightline/story?id=8031774&page=1",
-        "https://apnews.com/article/fee7812abf96bcbe35129b5dff4b7c70",
-        "https://www.cbsnews.com/losangeles/news/stephanie-lazarus-former-lapd-detective-who-shot-ex-lovers-new-wife-has-parole-denied-again/",
-        "https://www.cdcr.ca.gov/bph/2026/04/08/october-2026-hearing-calendar/"
-      ],
-      "status": "awaiting_review",
-      "first_proposed_on": "2026-09-09",
-      "batch_id": null,
-      "episode_path": "episodes/NET-0006-sherri-rasmussen",
-      "published_url": null,
-      "included_case_ids": [],
-      "history": [
-        {
-          "date": "2026-09-09",
-          "status": "selected",
-          "reason": "Tap duoc lam ngoai luong goi y batch; ghi nhan hoi to. Khong co batch_id va chua cham scores."
-        },
-        {
-          "date": "2026-09-09",
-          "status": "awaiting_review",
-          "reason": "Ban tieng Viet day du (scripts/02-script-vi.md) va ban narration sach da nop, cho Tu duyet noi dung truoc khi viet ban tieng Anh."
         }
       ]
     }
