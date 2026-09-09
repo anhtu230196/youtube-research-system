@@ -14,7 +14,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import shutil
+import signal
 import subprocess
 import sys
 import time
@@ -81,6 +83,20 @@ def load_config() -> dict:
 
 
 PROBE_TIMEOUT = 60
+IS_WIN = os.name == "nt"
+
+
+def kill_tree(proc: subprocess.Popen) -> None:
+    """Giet ca cay tien trinh. Giet moi tien trinh cha khong du: cac CLI la
+    shim goi node, va con chau con song se giu ong dan mai."""
+    if IS_WIN:
+        subprocess.run(["taskkill", "/F", "/T", "/PID", str(proc.pid)],
+                       capture_output=True)
+        return
+    try:
+        os.killpg(os.getpgid(proc.pid), signal.SIGKILL)
+    except (ProcessLookupError, PermissionError):
+        proc.kill()
 
 
 def run_cli(spec: dict, prompt: str, write: bool, timeout: int | None = None):
@@ -96,17 +112,31 @@ def run_cli(spec: dict, prompt: str, write: bool, timeout: int | None = None):
     secs_cap = timeout or spec.get("timeout", 600)
     t0 = time.time()
     try:
-        p = subprocess.run(cmd, cwd=th.repo_root(), capture_output=True,
-                           # Khong co stdin: cac CLI headless doi du lieu ong dan
-                           # va treo 3-30s neu de mac dinh.
-                           stdin=subprocess.DEVNULL,
-                           text=True, encoding="utf-8", errors="replace",
-                           timeout=secs_cap)
+        proc = subprocess.Popen(
+            cmd, cwd=th.repo_root(),
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            # Khong co stdin: cac CLI headless doi du lieu ong dan va treo
+            # 3-30s neu de mac dinh.
+            stdin=subprocess.DEVNULL,
+            text=True, encoding="utf-8", errors="replace",
+            **({} if IS_WIN else {"start_new_session": True}))
     except FileNotFoundError:
         return 127, "", f"khong tim thay lenh {cmd[0]!r}", 0.0
+
+    try:
+        out, err = proc.communicate(timeout=secs_cap)
+        return proc.returncode, out or "", err or "", time.time() - t0
     except subprocess.TimeoutExpired:
-        return 124, "", f"qua {secs_cap}s — CLI khong tra loi kip", time.time() - t0
-    return p.returncode, p.stdout or "", p.stderr or "", time.time() - t0
+        # subprocess.run(timeout=) mot minh khong du: no giet tien trinh cha
+        # nhung con chau van giu ong dan, va communicate() cho vo han. Cac CLI
+        # nay deu la shim goi node nen luon co con chau.
+        kill_tree(proc)
+        try:
+            out, err = proc.communicate(timeout=15)
+        except subprocess.TimeoutExpired:
+            out, err = "", ""
+        return 124, out or "", (err or "") + f"\nqua {secs_cap}s — da giet cay tien trinh", \
+            time.time() - t0
 
 
 def cmd_doctor(args) -> int:
