@@ -46,7 +46,7 @@
         "--print-timeout",
         "25m",
         "--model",
-        "gemini-3.8-flash-high"
+        "gemini-3.1-pro-high"
       ],
       "write_cmd": [
         "agy",
@@ -59,11 +59,11 @@
         "--print-timeout",
         "25m",
         "--model",
-        "gemini-3.8-flash-high"
+        "gemini-3.1-pro-high"
       ],
       "timeout": 1800,
       "verified": true,
-      "note": "Antigravity CLI (agy), khong phai 'gemini' CLI nua: Google da ngat OAuth cua gemini CLI cho tai khoan ca nhan tu 2026-06-18 (Gemini Code Assist for individuals / AI Pro / Ultra), chi con API key tra tien moi dung duoc. Da kiem chung 2026-09-09 tren may AnhTu bang subprocess: doc file trong repo OK khong can --add-dir, web OK (mo example.com that), ghi BI CHAN that. Canh bao: --mode plan KHONG phai hang rao — do lai thi no van ghi duoc file. Chan ghi la nho permissions.deny ['write_file(*)','command(*)'] trong ~/.gemini/antigravity-cli/settings.json. Vi vay write_cmd o day chua dung duoc: muon cho Gemini cam vai tac gia thi phai go deny do ra truoc. AGENTS.md muc 2 va muc 8 khong giao cho Gemini vai tac gia o buoc nao nen tam thoi khong can. Dang nhap: agy dung chung phien voi app Antigravity da cai san. Model chot 2026-09-09: --model gemini-3.8-flash-high, do thu chay OK. Canh bao: 'agy models' co ca claude-opus-4-6-thinking va gpt-oss-120b — cam nham vao ghe nay thi luong mat gia tri ba model doc lap soi nhau."
+      "note": "Antigravity CLI (agy), khong phai 'gemini' CLI nua: Google da ngat OAuth cua gemini CLI cho tai khoan ca nhan tu 2026-06-18 (Gemini Code Assist for individuals / AI Pro / Ultra), chi con API key tra tien moi dung duoc. Da kiem chung 2026-09-09 tren may AnhTu bang subprocess: doc file trong repo OK khong can --add-dir, web OK (mo example.com that), ghi BI CHAN that. Canh bao: --mode plan KHONG phai hang rao — do lai thi no van ghi duoc file. Chan ghi la nho permissions.deny ['write_file(*)','command(*)'] trong ~/.gemini/antigravity-cli/settings.json. Vi vay write_cmd o day chua dung duoc: muon cho Gemini cam vai tac gia thi phai go deny do ra truoc. AGENTS.md muc 2 va muc 8 khong giao cho Gemini vai tac gia o buoc nao nen tam thoi khong can. Dang nhap: agy dung chung phien voi app Antigravity da cai san. Model chot 2026-09-09: --model gemini-3.1-pro-high (Gemini 3.1 Pro High, model suy luan sau nhat tren tai khoan nay), do thu chay OK. Canh bao: 'agy models' co ca claude-opus-4-6-thinking va gpt-oss-120b — cam nham vao ghe nay thi luong mat gia tri ba model doc lap soi nhau."
     },
     "codex": {
       "bin": "codex",
