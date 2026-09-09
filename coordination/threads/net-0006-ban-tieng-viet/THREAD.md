@@ -8,7 +8,7 @@ reviewers:
   - claude
   - gemini
 round: 1
-turn: claude
+turn: gemini
 turn_role: reviewer
 status: open
 opened: 2026-09-09
@@ -27,6 +27,13 @@ Moi nut that cua kich ban co nguon truc tiep do khong? Cac ma C01-C26 va S01-S07
 
 | ID | Nêu bởi | Vòng | Nội dung | Trạng thái |
 | --- | --- | --- | --- | --- |
+| D01 | claude | r1 | sources/S01-excerpt.md + claims.csv:2-27 · Nguồn không kiểm được nội dung — S01 gánh 24/26 claim, chỉ 1 câu nguyên văn được lưu | mở |
+| D02 | claude | r1 | scripts/02-script-vi.md:23-35 · B02: Glendale, Van Nuys, đồ ngủ, gọi báo ốm, John khóa cửa — không mã C nào đỡ | mở |
+| D03 | claude | r1 | scripts/02-script-vi.md:131-133 · Cú lật trung tâm "Lazarus là cảnh sát 1986" không được C10/C12 viện dẫn đỡ | mở |
+| D04 | claude | r1 | scripts/02-script-vi.md:181,217,249 · Tên Stearns/Jaramillo/Fedor/Safarik không có trong ledger | mở |
+| D05 | claude | r1 | scripts/02-script-vi.md:167-169 · B08: trình tự "tối hôm ấy" (đối mặt → về buồn → John thú nhận) dựng như sự thật | mở |
+| D06 | claude | r1 | scripts/02-script-vi.md:105,267 · "cơ sở dữ liệu quốc gia" và "giết người cấp độ một" nói cụ thể hơn C09/C21 | mở |
+| D07 | claude | r1 | scripts/02-script-vi.md:79 · B04: chi tiết Sherri "bị đe dọa" vượt C07 và nghịch guardrail của B08 | mở |
 
 ## Nhật ký vòng
 
