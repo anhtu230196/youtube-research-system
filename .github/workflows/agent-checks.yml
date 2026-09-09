@@ -1,0 +1,27 @@
+name: agent-checks
+
+# Kiem tra bat buoc cho moi PR cua moi agent (Codex, Claude, Gemini).
+# Luat: AGENTS.md muc 10.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Kiem tra claim
+        run: python scripts/claims.py check
+
+      - name: Kiem tra registry
+        run: python scripts/registry.py check --diff-base origin/${{ github.base_ref || 'main' }}
