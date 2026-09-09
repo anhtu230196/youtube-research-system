@@ -9,6 +9,7 @@ scope:
   - scripts/thread_view.py
   - scripts/orchestrate.py
   - .gitignore
+  - coordination/README.md (muc dong bo hai repo)
 ---
 
 # sys-thread-view — Trang doc luong review dang nhom chat, sinh lai moi luot

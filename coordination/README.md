@@ -2,11 +2,17 @@
 
 Nơi các agent nói cho nhau biết ai đang làm gì. Luật đầy đủ ở [`../AGENTS.md`](../AGENTS.md).
 
-**Lớp này chạy ở hai repo.** `veo3-auto-generation` dùng bản chép y hệt: `scripts/thread.py`, `scripts/orchestrate.py`, `scripts/claims.py` giữ nguyên từng byte, chỉ `coordination/RULES.md` bên đó khác (bảng bước của repo đó, và chốt cuối ở nhánh chứ chưa ở PR). Sửa ba file script ở đây thì chép sang:
+**Lớp này chạy ở hai repo.** `veo3-auto-generation` dùng bản chép y hệt: `scripts/thread.py`, `scripts/orchestrate.py`, `scripts/claims.py`, `scripts/thread_view.py` và `coordination/agents.json` giữ nguyên từng byte. Chỉ `coordination/RULES.md` bên đó khác (bảng bước của repo đó, và chốt cuối ở nhánh chứ chưa ở PR).
+
+Đường dẫn repo kia khác nhau theo máy — máy `tu.vu` là `Desktop/veo3-auto-generation`, máy `AnhTu` là `Desktop/claude` — nên đặt biến rồi chép:
 
 ```bash
-cp scripts/thread.py scripts/orchestrate.py scripts/claims.py    /c/Users/tu.vu/Desktop/veo3-auto-generation/scripts/
+VEO3=/c/Users/AnhTu/Desktop/claude
+cp scripts/thread.py scripts/orchestrate.py scripts/claims.py scripts/thread_view.py "$VEO3/scripts/"
+cp coordination/agents.json "$VEO3/coordination/agents.json"
 ```
+
+Chép xong thì chạy `python scripts/orchestrate.py doctor` bên đó để chắc lớp mới nhận đúng CLI.
 
 Sửa luật review ở `AGENTS.md` mục 8 thì phải áp lại tay vào `coordination/RULES.md` bên kia — hai file đó cố ý khác nhau.
 
