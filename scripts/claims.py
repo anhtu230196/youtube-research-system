@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import subprocess
 import sys
 from datetime import date, datetime
 from pathlib import Path
@@ -24,6 +25,19 @@ STALE_DAYS = 7
 
 def repo_root() -> Path:
     return Path(__file__).resolve().parents[1]
+
+
+def default_branch() -> str:
+    """Ten nhanh mac dinh cua repo — main o repo nay, master o repo kia."""
+    try:
+        out = subprocess.run(
+            ["git", "symbolic-ref", "--short", "refs/remotes/origin/HEAD"],
+            cwd=repo_root(), capture_output=True, text=True, timeout=10)
+        if out.returncode == 0 and out.stdout.strip():
+            return out.stdout.strip().split("/")[-1]
+    except (OSError, subprocess.SubprocessError):
+        pass
+    return "main"
 
 
 def claims_dir() -> Path:
@@ -192,7 +206,7 @@ def cmd_new(args) -> int:
         encoding="utf-8",
     )
     print(f"da tao {dest.relative_to(repo_root()).as_posix()}")
-    print("Commit rieng file nay va day len main truoc khi bat dau lam viec nang.")
+    print(f"Commit rieng file nay va day len {default_branch()} truoc khi bat dau lam viec nang.")
     return 0
 
 
