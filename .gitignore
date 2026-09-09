@@ -14,3 +14,7 @@ tmp/
 
 # Khoa working copy khi hai agent cung chay local (AGENTS.md muc 6)
 .agent-lock
+
+# Python
+__pycache__/
+*.pyc
