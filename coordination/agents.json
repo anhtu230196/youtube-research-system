@@ -76,7 +76,7 @@
         "-m",
         "gpt-6-astra",
         "-c",
-        "model_reasoning_effort=high"
+        "model_reasoning_effort=ultra"
       ],
       "write_cmd": [
         "codex",
@@ -87,7 +87,7 @@
         "-m",
         "gpt-6-astra",
         "-c",
-        "model_reasoning_effort=high"
+        "model_reasoning_effort=ultra"
       ],
       "timeout": 1800,
       "verified": true,
