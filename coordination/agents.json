@@ -1,0 +1,29 @@
+{
+  "_doc": "Cach goi CLI cua tung agent o che do headless. {prompt} duoc thay bang noi dung that. 'cmd' dung cho luot review (chi doc), 'write_cmd' dung cho luot tac gia (duoc sua artifact). Xem AGENTS.md muc 8.",
+  "agents": {
+    "claude": {
+      "bin": "claude",
+      "cmd": ["claude", "-p", "{prompt}", "--permission-mode", "plan"],
+      "write_cmd": ["claude", "-p", "{prompt}", "--permission-mode", "acceptEdits"],
+      "timeout": 1200,
+      "verified": true,
+      "note": "Can dang nhap truoc: chay `claude login` trong terminal that."
+    },
+    "gemini": {
+      "bin": "gemini",
+      "cmd": ["gemini", "-p", "{prompt}", "--approval-mode", "plan", "-o", "text"],
+      "write_cmd": ["gemini", "-p", "{prompt}", "--approval-mode", "auto_edit", "-o", "text"],
+      "timeout": 1200,
+      "verified": true,
+      "note": ""
+    },
+    "codex": {
+      "bin": "codex",
+      "cmd": ["codex", "exec", "{prompt}", "--sandbox", "read-only"],
+      "write_cmd": ["codex", "exec", "{prompt}", "--sandbox", "workspace-write"],
+      "timeout": 1200,
+      "verified": false,
+      "note": "CHUA KIEM CHUNG tren may nay — codex chua duoc cai. Cai bang `npm i -g @openai/codex`, roi chay `python scripts/orchestrate.py doctor --probe` va sua lai cac co o day neu sai."
+    }
+  }
+}

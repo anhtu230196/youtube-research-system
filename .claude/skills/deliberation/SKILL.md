@@ -29,7 +29,7 @@ Viết sản phẩm vào đường dẫn `artifact:`, rồi viết `r1-00-propos
 - **Câu hỏi bạn muốn người review trả lời.** Hướng họ vào chỗ đáng soi.
 - **Cái bạn cố ý chưa làm** vì thuộc bước sau.
 
-Rồi đổi `turn` sang người review đầu tiên.
+Kết thúc bằng khối `points` (bên dưới). Đừng tự đổi `turn` trong `THREAD.md` — máy lo.
 
 ## Nếu bạn là người review
 
@@ -52,13 +52,13 @@ Nhãn: `CHAN:` (không đi tiếp bước sau được) · `SUA:` · `HOI:` · `
 
 Cuối file, một mục **"Tôi đã không kiểm cái gì"**. Bắt buộc. Review nửa vời mà trình bày như đã đọc hết là hỏng cả cơ chế — agent sau sẽ tin phần đó đã được kiểm.
 
-Thêm điểm mới vào bảng trong `THREAD.md`, đổi `turn`, cập nhật `updated`.
+Kết thúc bằng khối `points` liệt kê mọi điểm bạn vừa nêu. Đừng tự sửa bảng trong `THREAD.md`.
 
 ## Nếu bạn là tác giả nhận review
 
 Trả lời **từng** điểm đang mở. Không bỏ sót điểm nào.
 
-**Chấp nhận:** sửa artifact, bump `artifact_version`, ghi vào file response đã sửa ở đâu và sửa thế nào. Đổi trạng thái điểm thành `đã sửa ở v<N>`.
+**Chấp nhận:** sửa artifact, ghi vào file response đã sửa ở đâu và sửa thế nào, và cho điểm đó trạng thái `đã sửa ở v<N>` trong khối `points`. `artifact_version` do `thread.py apply` tự bump.
 
 **Phản bác:** chỉ bằng một trong bốn lý do —
 
@@ -69,7 +69,7 @@ Trả lời **từng** điểm đang mở. Không bỏ sót điểm nào.
 | Đã có chỗ khác xử lý | Chỉ ra chỗ đó |
 | Lựa chọn kể chuyện trong vùng cho phép | Nói vì sao đây không phải lỗi sự thật hay cấu trúc |
 
-Đổi trạng thái điểm thành `tác giả phản bác — chờ <reviewer>`.
+Cho điểm đó trạng thái `tác giả phản bác — chờ <reviewer>` trong khối `points`.
 
 **Không được:** im lặng bỏ qua, hoặc sửa lấy lệ cho điểm biến mất mà không thật sự giải quyết vấn đề. Người review sẽ kiểm lại và điểm đó quay lại ở vòng sau, tốn thêm một vòng.
 
@@ -79,23 +79,52 @@ Không đồng ý nhưng cũng không chắc mình đúng: nói thẳng là chư
 
 Ba lựa chọn, không có lựa chọn thứ tư:
 
-1. **Chấp nhận** — đổi điểm thành `chốt: giữ nguyên`, ghi một dòng vì sao bạn đồng ý.
+1. **Chấp nhận** — cho điểm trạng thái `chốt: giữ nguyên`, ghi một dòng vì sao bạn đồng ý.
 2. **Đưa chứng cứ mới** — nguồn khác, hoặc chỉ ra chỗ trong artifact mà phản bác không giải thích được. Chứng cứ mới, không phải cách nói mới.
-3. **Đẩy lên Tú** — đổi điểm thành `đẩy lên Tú`, tóm tắt cả hai lập luận trong hai câu, công bằng với cả hai.
+3. **Đẩy lên Tú** — cho điểm trạng thái `đẩy lên Tú`, tóm tắt cả hai lập luận trong hai câu, công bằng với cả hai.
 
 Lặp lại nguyên văn ý cũ không phải là một lựa chọn. Một điểm đi quá hai lần qua lại thì tự động thành `đẩy lên Tú`.
 
+## Khối `points` — bắt buộc ở cuối mọi file vòng
+
+`THREAD.md` do máy giữ, không phải do bạn sửa tay. Bạn viết nội dung, rồi khối này nói cho máy biết bảng điểm thay đổi thế nào.
+
+````
+```points
+D01 | mở | scripts/01-beat-sheet.md:44 | Gán trạng thái tâm lý không có nguồn
+D02 | tác giả phản bác — chờ gemini | scripts/01-beat-sheet.md:70 | S03 nói khác điều D02 giả định
+```
+````
+
+Trạng thái chép **đúng nguyên văn** một trong: `mở` · `đã sửa ở v<N>` · `tác giả phản bác — chờ <agent>` · `chốt: đã sửa` · `chốt: giữ nguyên` · `đẩy lên Tú`.
+
+Sau khi ghi file vòng:
+
+```bash
+python scripts/thread.py apply <slug> <ten-file-vong>
+```
+
+Lệnh này cập nhật bảng điểm, đổi lượt, bump `artifact_version`, và tự đóng luồng khi hết điểm mở hoặc hết trần vòng. **Đừng sửa `THREAD.md` bằng tay** — quên đổi lượt là lỗi hay gặp nhất.
+
+## Khi chạy dưới orchestrator
+
+`scripts/orchestrate.py` gọi CLI của bạn ở chế độ headless. Lúc đó:
+
+- **Không ghi file vòng lên đĩa.** In toàn bộ nội dung ra stdout; orchestrator ghi hộ.
+- **Không sửa `THREAD.md`.**
+- Lượt review chạy chế độ chỉ đọc — bạn không có quyền ghi, và không cần.
+- Lượt tác giả được sửa artifact, và chỉ artifact.
+- Thiếu khối `points` thì orchestrator dừng cả luồng. Đừng bỏ.
+
 ## Đóng luồng
 
-Đóng được khi mọi điểm đã `chốt:` hoặc `đẩy lên Tú`, và Tú đã trả lời các điểm đẩy lên.
+Bạn không tự đóng luồng. `thread.py apply` chuyển sang `settled` khi lượt review cuối của một vòng không còn điểm mở, và sang `blocked` khi hết 3 vòng mà vẫn còn.
 
-Đặt `status: settled` trong `THREAD.md`, ghi phiên bản artifact cuối. `python scripts/thread.py check` từ chối `settled` khi còn điểm mở.
-
-Hết 3 vòng mà còn điểm mở: `status: blocked`, liệt kê điểm mở, dừng. Không mở vòng 4.
+Việc của bạn chỉ là cho đúng trạng thái từng điểm trong khối `points`. Đừng cố kết thúc sớm bằng cách đánh dấu `chốt:` cho một điểm bạn chưa thật sự giải quyết — `thread.py check` từ chối `settled` khi còn điểm mở, nhưng nó không biết bạn có trung thực hay không.
 
 ## Cái skill này không làm được
 
-Không biến ba agent thành một cuộc họp. Mỗi lượt vẫn cần Tú gọi agent kế tiếp — `thread.py next` chỉ in sẵn câu để dán.
+Không biến ba agent thành một cuộc họp. Ngay cả khi `orchestrate.py` chạy trọn luồng, đó vẫn là ba lượt độc lập nối tiếp nhau, không phải ba bên cùng nói. Không agent nào thấy agent khác đang nghĩ gì — chỉ thấy cái đã viết ra.
 
 Không thay được bước Tú duyệt nội dung bản tiếng Việt. Review chéo kiểm nguồn, chứng cứ và cấu trúc; nó không quyết định câu chuyện có đáng kể hay không.
 

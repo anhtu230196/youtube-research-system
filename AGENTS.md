@@ -207,9 +207,49 @@ Phản bác phải trả lời đúng điểm được nêu. Không im lặng b�
 
 Mục tiêu là **đủ tốt và có căn cứ**, không phải hoàn hảo. Ba agent để tự do sẽ sinh vòng review vô hạn vì vòng nào cũng tìm được thứ để nói. Trần này là cố ý, đừng nới nó vì thấy còn góp ý được.
 
+### Khối `points` — hợp đồng giữa agent và sổ luồng
+
+Mọi file vòng phải kết thúc bằng một khối máy đọc được. Không có khối này thì bảng điểm trong `THREAD.md` không cập nhật được, và `thread.py check` sẽ báo lỗi.
+
+````
+```points
+D01 | mở | scripts/01-beat-sheet.md:44 | Gán trạng thái tâm lý không có nguồn
+D02 | đã sửa ở v2 | scripts/01-beat-sheet.md:70 | Đã đổi thành mô tả hành động
+```
+````
+
+Trạng thái phải chép đúng nguyên văn một trong: `mở` · `đã sửa ở v<N>` · `tác giả phản bác — chờ <agent>` · `chốt: đã sửa` · `chốt: giữ nguyên` · `đẩy lên Tú`.
+
+Agent **không tự sửa `THREAD.md`**. Ghi file vòng xong thì chạy:
+
+```bash
+python scripts/thread.py apply <slug> <ten-file-vong>
+```
+
+Lệnh này cập nhật bảng điểm, đổi lượt, bump `artifact_version`, và tự chuyển luồng sang `settled` hoặc `blocked` theo trần hội tụ. Máy giữ trạng thái, agent chỉ viết nội dung — agent quên đổi lượt là lỗi hay gặp nhất khi để chúng tự quản.
+
 ### Ai chuyển lượt
 
-Không agent nào tự đánh thức agent khác. Tú chuyển lượt. `python scripts/thread.py next <slug>` in ra đúng câu cần dán cho agent kế tiếp, để việc đó chỉ còn là copy-paste.
+Không agent nào tự đánh thức agent khác.
+
+**Thủ công:** `python scripts/thread.py next <slug>` in ra đúng câu cần dán cho agent kế tiếp. Tú dán, agent làm, rồi `thread.py apply`.
+
+**Tự động bằng CLI:** `scripts/orchestrate.py` gọi thẳng CLI của từng agent ở chế độ headless — `claude -p`, `gemini -p`, `codex exec` — nên chạy bằng subscription đã trả, không tính theo token như gọi API. Cấu hình lệnh ở `coordination/agents.json`.
+
+```bash
+python scripts/orchestrate.py doctor --probe   # CLI nao dung duoc, con dang nhap khong
+python scripts/orchestrate.py turn <slug>      # chay dung mot luot roi dung
+python scripts/orchestrate.py run <slug>       # chay den khi hoi tu hoac het tran
+```
+
+Luật an toàn của chế độ tự động:
+
+- **Lượt review chạy chế độ chỉ đọc** (`--approval-mode plan`, `--permission-mode plan`, `--sandbox read-only`). Người review không cần quyền ghi, và không nên có.
+- **Chỉ lượt tác giả được sửa artifact.** Không lượt nào được sửa `THREAD.md`; orchestrator lấy stdout làm file vòng rồi tự cập nhật sổ.
+- Agent không xuất được khối `points` thì orchestrator **giữ lại file vòng và dừng**, không đoán thay. Sửa tay rồi `thread.py apply`.
+- `run` dừng ngay khi luồng chuyển `settled` hoặc `blocked`, và có trần số lượt riêng.
+
+Tự động không có nghĩa là tin. Đọc lại các file vòng trước khi dùng kết quả — nhất là mục "tôi đã không kiểm cái gì" của mỗi người review.
 
 ### Nhãn dùng trong file review
 

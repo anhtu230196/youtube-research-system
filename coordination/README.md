@@ -54,4 +54,13 @@ python scripts/thread.py new <slug> --artifact <path>     --author claude --revi
 
 `THREAD.md` trong mỗi luồng là thứ duy nhất cần đọc để biết làm gì tiếp: đang vòng mấy, tới lượt ai, điểm `D**` nào còn mở.
 
+Chạy tự động bằng CLI của từng agent (subscription, không phải API):
+
+```bash
+python scripts/orchestrate.py doctor --probe
+python scripts/orchestrate.py run <slug>
+```
+
+Cấu hình lệnh CLI ở `agents.json`. Lượt review chạy chế độ chỉ đọc; chỉ lượt tác giả mới được sửa artifact.
+
 Trần hội tụ: tối đa 3 vòng một luồng, một điểm tối đa 2 lần phản bác qua lại. Quá thì đẩy lên Tú. Luật đầy đủ ở [`../AGENTS.md`](../AGENTS.md) mục 8, quy trình một lượt ở [`../.claude/skills/deliberation/SKILL.md`](../.claude/skills/deliberation/SKILL.md).
