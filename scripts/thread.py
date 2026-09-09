@@ -205,22 +205,24 @@ def turn_prompt(d: Path, data: dict):
 
 Ban la TAC GIA buoc nay. {step}
 
-Sau do viet {rel}/{fname}: ban da quyet dinh gi va vi sao, cho nao ban tu thay
+San pham cua luot nay la noi dung file vong {fname}: ban da quyet dinh gi va vi sao, cho nao ban tu thay
 yeu nhat, cau hoi nao ban muon nguoi review tra loi, va cai gi ban co y chua lam
 vi thuoc buoc sau."""
     elif role == "author":
         body = f"""Doc {rel}/THREAD.md, AGENTS.md muc 8 va .claude/skills/deliberation/SKILL.md
 truoc. Doc tat ca file vong truoc trong {rel}/.
 
-Ban la TAC GIA. Tra loi TUNG diem dang mo trong bang diem: chap nhan va sua,
+Ban la TAC GIA. San pham cua luot nay la noi dung file vong {fname}.
+
+Tra loi TUNG diem dang mo trong bang diem: chap nhan va sua,
 hoac phan bac bang mot trong bon ly do o muc 8. Khong im lang bo qua diem nao,
 va khong sua lay le cho diem bien mat.
 
 Sua {artifact} cho cac diem ban chap nhan, roi bao artifact_version moi.
 
-Viet {rel}/{fname} ghi ro tung diem: da sua o dau, hoac phan bac vi ly do gi."""
+Trong file vong ghi ro tung diem: da sua o dau, hoac phan bac vi ly do gi."""
     else:
-        body = f"""Ban REVIEW buoc nay, viet noi dung cua {rel}/{fname}.
+        body = f"""Ban REVIEW buoc nay. San pham cua luot nay la noi dung file vong {fname}.
 
 Doc theo thu tu: {rel}/THREAD.md (cau hoi luong nay phai tra loi + bang diem),
 cac file vong truoc trong {rel}/ neu co, roi {artifact} (ban v{data.get('artifact_version')}).
@@ -410,6 +412,8 @@ def cmd_next(args) -> int:
     print("-" * 68)
     print(t["prompt"])
     print(f"""
+Ghi noi dung do vao {(d / t['file']).relative_to(repo_root()).as_posix()}.
+
 Cuoi file phai co mot khoi nhu sau de may doc duoc, moi diem mot dong:
 
 ```points

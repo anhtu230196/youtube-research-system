@@ -1,5 +1,5 @@
 {
-  "_doc": "Cach goi CLI cua tung agent o che do headless. {prompt} duoc thay bang noi dung that. 'cmd' dung cho luot review (chi doc), 'write_cmd' dung cho luot tac gia (duoc sua artifact). Xem AGENTS.md muc 8.",
+  "_doc": "Cach goi CLI cua tung agent o che do headless. {prompt} duoc thay bang noi dung that. 'cmd' dung cho luot review: phai DOC va TRUY CAP WEB duoc nhung KHONG GHI duoc. 'write_cmd' dung cho luot tac gia. 'output_file_flag' danh cho CLI co stdout lan nhieu: orchestrator them co do kem mot file tam va doc ket qua tu do. Xem AGENTS.md muc 8.",
   "agents": {
     "claude": {
       "bin": "claude",
@@ -7,19 +7,23 @@
         "claude",
         "-p",
         "{prompt}",
+        "--allowedTools",
+        "Read Grep Glob WebFetch WebSearch",
         "--permission-mode",
-        "plan"
+        "dontAsk"
       ],
       "write_cmd": [
         "claude",
         "-p",
         "{prompt}",
+        "--allowedTools",
+        "Read Grep Glob WebFetch WebSearch Write Edit",
         "--permission-mode",
         "acceptEdits"
       ],
       "timeout": 1800,
       "verified": true,
-      "note": "Da kiem chung 2026-09-09: probe OK 3.7s. Neu bao OAuth het han thi chay `claude login` trong terminal that."
+      "note": "Da kiem chung 2026-09-09 bang subprocess: doc OK, WebFetch OK (ca dang cach nhau bang space lan dau phay), Write bi chan that. Khong dung --permission-mode plan: no chan luon WebFetch. Luu y: agent co the bao nham la WebFetch bi chan — da do lai va no chay duoc."
     },
     "gemini": {
       "bin": "gemini",
@@ -43,7 +47,7 @@
       ],
       "timeout": 600,
       "verified": false,
-      "note": "2026-09-09: probe THAT BAI (429 roi 503). Nguyen nhan: ~/.gemini/settings.json dang de auth.selectedType = gemini-api-key va google_accounts.json co active = null, tuc CLI khong dung goi Gemini Pro nao ca. Sua: chay `gemini` roi go /auth, chon dang nhap Google bang tai khoan co Gemini Pro. CLI tu retry rat lau va con chau giu ong dan, nen orchestrator phai giet ca cay tien trinh khi qua han."
+      "note": "2026-09-09: dang 429 (het quota), chua kiem chung duoc quyen web o --approval-mode plan. Kiem lai khi quota hoi."
     },
     "codex": {
       "bin": "codex",
@@ -63,7 +67,8 @@
       ],
       "timeout": 1800,
       "verified": true,
-      "note": "Da kiem chung 2026-09-09: probe OK 12.0s voi `codex exec --sandbox read-only`."
+      "note": "Da kiem chung 2026-09-09: doc OK, web OK, ghi bi chan o --sandbox read-only. stdout lan nhieu (web search:, tokens used) nen lay ket qua qua --output-last-message.",
+      "output_file_flag": "--output-last-message"
     }
   }
 }
