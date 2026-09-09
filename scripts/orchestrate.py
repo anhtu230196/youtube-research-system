@@ -38,13 +38,41 @@ def looks_like_quota(*chunks: str) -> bool:
     blob = " ".join(c or "" for c in chunks).lower()
     return any(m in blob for m in QUOTA_MARKS)
 
+# Luat review duoc nhung thang vao prompt thay vi bat agent doc lai AGENTS.md
+# va SKILL.md moi luot. Lan chay that dau tien mat hon 600s phan lon vi doc
+# lai tai lieu; noi dung can thiet ngan hon nhieu so voi ca hai file do.
 PREAMBLE_READ = """Ban dang chay o che do TU DONG, khong co nguoi doc man hinh cua ban.
 
 Luat cua che do nay:
 - KHONG tao hay sua bat ky file nao. Ban chi doc.
 - KHONG sua THREAD.md. Orchestrator lo viec do.
 - In TOAN BO noi dung file vong ra stdout, khong in gi khac ngoai no.
-- Bat buoc co mot khoi ```points``` o cuoi, moi diem mot dong.
+- Doc vua du de tra loi. Dung doc lai AGENTS.md hay SKILL.md — luat can
+  thiet nam ngay duoi day.
+
+LUAT REVIEW
+
+Duoc neu: loi su that; suy dien trinh bay nhu su that; thoai hoac canh khong
+ai chung kien duoc dung thanh su that; cau hoi mo ra ma khong dong lai; loi
+giai xuat hien truoc khi manh moi duoc dat; trinh tu tiet lo hong; chi tiet
+khong phuc vu cau chuyen hoac lap chuc nang; trung voi chuyen da co; rui ro
+quang cao hoac phap ly.
+
+KHONG duoc neu: "toi se viet khac" — khac gu khong phai loi; doi viet lai
+toan bo khi chi mot doan co van de; neu lai diem da chot ma khong co chung
+cu moi; gop y ve thu thuoc buoc sau.
+
+Moi diem phai co du ba phan:
+  CHO NAO      file:dong
+  VAN DE GI    noi dung sai, kem claim_id / source_id neu co
+  CAN GI DE DONG   tac gia lam gi thi diem nay chot
+
+Thieu phan thu ba thi tac gia khong biet duong thoat, va luong se ping-pong.
+
+Nhan moi diem: CHAN (khong di tiep buoc sau duoc) / SUA / HOI / OK.
+
+Cuoi file bat buoc co mot muc "Toi da khong kiem cai gi". Review nua voi ma
+trinh bay nhu da doc het se lam agent sau tin nham.
 
 """
 
@@ -54,7 +82,22 @@ Luat cua che do nay:
 - Ban DUOC sua file artifact neu luot nay yeu cau sua.
 - KHONG tao file vong tren dia va KHONG sua THREAD.md. Orchestrator lo viec do.
 - In TOAN BO noi dung file vong ra stdout, khong in gi khac ngoai no.
-- Bat buoc co mot khoi ```points``` o cuoi, moi diem mot dong.
+- Doc vua du de tra loi. Dung doc lai AGENTS.md hay SKILL.md.
+
+LUAT PHAN BAC
+
+Tra loi TUNG diem dang mo. Khong im lang bo qua, khong sua lay le cho diem
+bien mat. Voi moi diem, chon mot:
+
+  CHAP NHAN  sua artifact, ghi ro sua o dau va sua the nao
+  PHAN BAC   chi bang mot trong bon ly do sau, kem can cu:
+               - nguon noi khac dieu nguoi review tuong (trich nguon + vi tri)
+               - nam ngoai pham vi buoc nay (noi ro buoc nao se lo)
+               - da co cho khac xu ly (chi ra cho do)
+               - lua chon ke chuyen trong vung cho phep (noi ro vi sao day
+                 khong phai loi su that hay loi cau truc)
+  CHUA CHAC  noi thang la chua chac va de nghi day len Tu. Day la lua chon
+             hop le, khong phai thua.
 
 """
 

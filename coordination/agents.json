@@ -3,25 +3,65 @@
   "agents": {
     "claude": {
       "bin": "claude",
-      "cmd": ["claude", "-p", "{prompt}", "--permission-mode", "plan"],
-      "write_cmd": ["claude", "-p", "{prompt}", "--permission-mode", "acceptEdits"],
-      "timeout": 600,
+      "cmd": [
+        "claude",
+        "-p",
+        "{prompt}",
+        "--permission-mode",
+        "plan"
+      ],
+      "write_cmd": [
+        "claude",
+        "-p",
+        "{prompt}",
+        "--permission-mode",
+        "acceptEdits"
+      ],
+      "timeout": 1800,
       "verified": true,
       "note": "Da kiem chung 2026-09-09: probe OK 3.7s. Neu bao OAuth het han thi chay `claude login` trong terminal that."
     },
     "gemini": {
       "bin": "gemini",
-      "cmd": ["gemini", "-p", "{prompt}", "--approval-mode", "plan", "-o", "text"],
-      "write_cmd": ["gemini", "-p", "{prompt}", "--approval-mode", "auto_edit", "-o", "text"],
+      "cmd": [
+        "gemini",
+        "-p",
+        "{prompt}",
+        "--approval-mode",
+        "plan",
+        "-o",
+        "text"
+      ],
+      "write_cmd": [
+        "gemini",
+        "-p",
+        "{prompt}",
+        "--approval-mode",
+        "auto_edit",
+        "-o",
+        "text"
+      ],
       "timeout": 600,
       "verified": true,
       "note": "2026-09-09: dang bi 429 (het quota). CLI tu retry rat lau va con chau giu ong dan, nen orchestrator phai giet ca cay tien trinh khi qua han."
     },
     "codex": {
       "bin": "codex",
-      "cmd": ["codex", "exec", "{prompt}", "--sandbox", "read-only"],
-      "write_cmd": ["codex", "exec", "{prompt}", "--sandbox", "workspace-write"],
-      "timeout": 600,
+      "cmd": [
+        "codex",
+        "exec",
+        "{prompt}",
+        "--sandbox",
+        "read-only"
+      ],
+      "write_cmd": [
+        "codex",
+        "exec",
+        "{prompt}",
+        "--sandbox",
+        "workspace-write"
+      ],
+      "timeout": 1800,
       "verified": true,
       "note": "Da kiem chung 2026-09-09: probe OK 12.0s voi `codex exec --sandbox read-only`."
     }

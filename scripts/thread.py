@@ -220,20 +220,16 @@ Sua {artifact} cho cac diem ban chap nhan, roi bao artifact_version moi.
 
 Viet {rel}/{fname} ghi ro tung diem: da sua o dau, hoac phan bac vi ly do gi."""
     else:
-        body = f"""Doc {rel}/THREAD.md, AGENTS.md muc 8 va .claude/skills/deliberation/SKILL.md
-truoc. Doc {artifact} (ban v{data.get('artifact_version')}) va cac file vong
-truoc trong {rel}/.
+        body = f"""Ban REVIEW buoc nay, viet noi dung cua {rel}/{fname}.
 
-Ban REVIEW buoc nay. Viet {rel}/{fname}.
+Doc theo thu tu: {rel}/THREAD.md (cau hoi luong nay phai tra loi + bang diem),
+cac file vong truoc trong {rel}/ neu co, roi {artifact} (ban v{data.get('artifact_version')}).
 
-Moi y mot ma D** moi, mot nhan CHAN/SUA/HOI/OK, kem file:dong va claim_id hoac
-source_id neu noi ve noi dung. Moi diem phai co du ba phan: CHO NAO, VAN DE GI,
-CAN GI DE DONG. Chi neu nhung gi muc 8 cho phep neu — khac gu khong phai loi.
+Moi y mot ma D** moi. Neu tac gia da phan bac mot diem cua ban o vong truoc:
+chap nhan, dua chung cu moi, hoac day len Tu — khong lap lai y cu.
 
-Neu tac gia da phan bac mot diem cua ban o vong truoc: chap nhan, dua chung cu
-moi, hoac day len Tu; khong lap lai y cu.
-
-Ghi ro ban da KHONG kiem cai gi."""
+Luat review va dinh dang diem da o phan dau prompt nay. Tham chieu day du:
+AGENTS.md muc 8, .claude/skills/deliberation/SKILL.md — chi mo khi can tra."""
 
     return {"turn": turn, "role": role, "round": rnd, "kind": kind,
             "file": fname, "path": d / fname, "artifact": artifact,

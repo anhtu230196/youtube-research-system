@@ -8,8 +8,8 @@ reviewers:
   - claude
   - gemini
 round: 1
-turn: codex
-turn_role: author
+turn: claude
+turn_role: reviewer
 status: open
 opened: 2026-09-09
 updated: 2026-09-09
@@ -30,7 +30,8 @@ Moi nut that cua kich ban co nguon truc tiep do khong? Cac ma C01-C26 va S01-S07
 
 ## Nhật ký vòng
 
-- r1 · codex (tác giả) · **đang chờ**
+- r1 · codex (tác giả) · **coi như đã nộp**: kịch bản đã bàn giao qua PR #1 (commit d329477), không cần lượt đề xuất riêng
+- r1 · claude (review) · **đang chờ**
 
 ## Ngoài lượt
 
