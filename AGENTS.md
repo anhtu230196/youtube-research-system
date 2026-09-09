@@ -3,7 +3,7 @@
 Repo này được nhiều agent cùng chỉnh sửa:
 
 - **Codex (ChatGPT)** — chạy cloud qua pull request, và có thể chạy CLI ngay trên thư mục local này.
-- **Claude Code** — chạy local, push nhánh và mở PR.
+- **Claude Code** — chạy local, commit thẳng lên `main` (mục 3).
 - **Antigravity (Gemini)** — dự kiến bổ sung sau, dùng chung luật này.
 
 Mọi agent đọc file này trước khi làm bất cứ việc gì. `CLAUDE.md` và `GEMINI.md` ở thư mục gốc chỉ là con trỏ về đây — không viết luật riêng trong hai file đó.
@@ -34,15 +34,16 @@ Bảng này nói ai **cầm** bước nào. Nó không cho ai quyền bỏ qua r
 
 Vai là mặc định, không phải hàng rào. Người dùng giao khác thì làm theo người dùng — nhưng vẫn phải claim theo mục 4.
 
-## 3. Nhánh, commit, pull request
+## 3. Nhánh và commit
 
-- Nhánh đặt tên `codex/<slug>`, `claude/<slug>`, `gemini/<slug>`. Một nhánh một việc.
-- Không commit thẳng lên `main`, trừ file claim (mục 4).
-- Rebase lên `origin/main` trước khi mở PR. Không rebase, không force-push, không sửa nhánh của agent khác.
+**Tú quyết ngày 2026-09-09: commit thẳng lên `main`, không mở pull request.** Chỉ dẫn này ghi đè phần PR ở bản trước của file. Đổi lại thì sửa mục này và mục 8.
+
+- Commit thẳng lên `main`. Fetch và rebase lên `origin/main` trước khi đẩy; không force-push `main`.
 - Commit message thêm trailer `Agent: codex` / `Agent: claude` / `Agent: gemini` để tra lại được ai làm gì.
-- Thân PR nêu rõ: mã `NET-xxxx` đụng tới, có sửa `registry.json` hay không, đang giữ claim nào.
-- PR phải xanh CI `agent-checks` trước khi merge.
-- PR nhỏ và merge sớm. Nhánh sống lâu là nguyên nhân chính gây lệch trạng thái ở repo nhiều agent.
+- Message nêu rõ: mã `NET-xxxx` đụng tới, có sửa `registry.json` hay không, đang giữ claim nào — trước đây những thứ này nằm ở thân PR, giờ không có chỗ nào khác để ghi.
+- **Chạy ba lệnh kiểm ở mục 10 trước khi đẩy.** CI `agent-checks` vẫn chạy trên mọi push lên `main`, nhưng giờ nó bắt lỗi *sau khi* lỗi đã vào `main` — không còn cổng chặn trước.
+- Commit nhỏ và đẩy sớm. Giữ việc lâu trong working copy là nguyên nhân chính gây lệch trạng thái ở repo nhiều agent.
+- Vẫn dùng nhánh `codex/<slug>`, `claude/<slug>`, `gemini/<slug>` khi việc còn dở dang qua nhiều phiên, hoặc khi hai agent chạy song song (mục 6). Nhánh là chỗ làm việc, không còn là cổng duyệt.
 
 ## 4. Claim — chống hai agent làm trùng
 
@@ -276,9 +277,13 @@ Tự động không có nghĩa là tin. Đọc lại các file vòng trước kh
 
 Mỗi ý kèm `file:dòng`, và kèm `claim_id` hoặc `source_id` khi nói về nội dung. Nhận xét không có dẫn chiếu cụ thể thì tác giả không sửa được.
 
-### Chốt cuối vẫn ở pull request
+### Chốt cuối
 
-Luồng review lo chất lượng từng bước. Pull request là cổng cuối trước khi vào `main`:
+**Không còn cổng pull request** (mục 3). Luồng review nhiều vòng ở trên là lớp duyệt duy nhất giữa agent với nhau, nên nó phải chạy **trước khi** commit vào `main` chứ không phải song song. Bước nào bỏ luồng thì commit đó nói rõ vì sao.
+
+Người quyết cuối là Tú, sau khi code đã vào `main`. Đây là đánh đổi có chủ đích: đi nhanh hơn, và trả giá bằng việc lỗi có thể vào `main` rồi mới bị phát hiện. Sửa thì sửa tiếp bằng commit mới, không viết lại lịch sử `main`.
+
+Khi nào có PR mở ra thật (Tú tự mở, hoặc Codex cloud), review nó bằng các lệnh này:
 
 ```bash
 gh pr view <n> --json title,body,files
@@ -287,7 +292,6 @@ gh pr review <n> --comment --body-file coordination/reviews/<n>-<agent>.md
 gh pr comment <n> --body "CHAN: ..."
 ```
 
-- PR phải dẫn ra luồng review tương ứng, hoặc nói rõ vì sao bước này không cần luồng.
 - Agent viết ra một thứ không duyệt thứ đó. **Không agent nào merge PR của chính mình.**
 - Review dài — đối chiếu nguồn từng claim — viết `coordination/reviews/<PR>-<agent>.md`, commit lên nhánh của PR, rồi comment ngắn trỏ tới file.
 - Không `--approve` hay `--request-changes` trừ khi Tú yêu cầu; `--comment` giữ quyền quyết định ở người.
@@ -312,7 +316,7 @@ python scripts/claims.py check
 python scripts/thread.py check
 ```
 
-Ba lệnh này chạy trong CI (`.github/workflows/agent-checks.yml`) trên mọi PR và mọi push lên `main`. Chạy tại máy trước khi mở PR.
+Ba lệnh này chạy trong CI (`.github/workflows/agent-checks.yml`) trên mọi PR và mọi push lên `main`. **Chạy tại máy trước khi đẩy** — từ khi bỏ cổng PR, CI chỉ còn báo lỗi sau khi lỗi đã nằm trên `main`.
 
 CI chỉ bắt lệch máy móc: mã trùng, thư mục tập không có trong sổ, `next_case_number` sai, status lạ, sửa sổ mà không lưu snapshot, claim chồng nhau, luồng review sai lượt hoặc vượt trần vòng. Nó không bắt được nguồn sai, kể sai hay suy diễn không có chứng cứ — phần đó vẫn cần agent review đọc thật.
 
@@ -322,4 +326,4 @@ CI chỉ bắt lệch máy móc: mã trùng, thư mục tập không có trong s
 - Không ghi `published` khi chưa có xác nhận của người dùng.
 - Không xóa lịch sử trong `registry.json` hay `history/` để dùng lại mã.
 - Không force-push `main`.
-- Không sửa file này để nới luật cho riêng mình. Đổi luật thì mở PR và nói rõ lý do.
+- Không sửa file này để nới luật cho riêng mình. Đổi luật thì phải do Tú quyết, và commit đổi luật nói rõ lý do.
