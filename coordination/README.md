@@ -5,6 +5,7 @@ Nơi các agent nói cho nhau biết ai đang làm gì. Luật đầy đủ ở 
 | Thư mục | Dùng để |
 | --- | --- |
 | `claims/` | Một file cho một việc đang giữ. Chống hai agent làm trùng. |
+| `threads/` | Luồng review nhiều vòng trên một sản phẩm trung gian. Nơi ba agent thật sự tranh luận. |
 | `reviews/` | Báo cáo review chéo dài cho một PR, khi comment không đủ chỗ. |
 | `handoffs/` | Ghi chú bàn giao khi việc chuyển từ agent này sang agent khác. |
 
@@ -40,3 +41,17 @@ Claim phải có mặt trên `main` trước khi làm việc nặng, nếu khôn
 Dùng khi review dài — đối chiếu nguồn từng claim, kiểm tra danh mục tải. Nhận xét ngắn thì viết thẳng comment trên PR, đừng tạo file.
 
 Nhãn dùng trong cả comment lẫn file: `CHAN:` (chặn merge), `SUA:`, `HOI:`, `OK:`. Luật đầy đủ ở [`../AGENTS.md`](../AGENTS.md) mục 8.
+
+## threads/
+
+Mỗi bước sản phẩm — gợi ý chuyện, khung sườn, bản tiếng Việt, bản tiếng Anh — đi qua một luồng review nhiều vòng trước khi bước sau bắt đầu. Một agent là tác giả, hai agent còn lại review, tác giả được phản bác.
+
+```bash
+python scripts/thread.py status                 # luong nao dang mo, toi luot ai
+python scripts/thread.py next <slug>            # in cau can dan cho agent ke tiep
+python scripts/thread.py new <slug> --artifact <path>     --author claude --reviewers gemini,codex --question "..."
+```
+
+`THREAD.md` trong mỗi luồng là thứ duy nhất cần đọc để biết làm gì tiếp: đang vòng mấy, tới lượt ai, điểm `D**` nào còn mở.
+
+Trần hội tụ: tối đa 3 vòng một luồng, một điểm tối đa 2 lần phản bác qua lại. Quá thì đẩy lên Tú. Luật đầy đủ ở [`../AGENTS.md`](../AGENTS.md) mục 8, quy trình một lượt ở [`../.claude/skills/deliberation/SKILL.md`](../.claude/skills/deliberation/SKILL.md).

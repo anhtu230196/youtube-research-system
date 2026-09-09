@@ -15,6 +15,7 @@ Mọi agent đọc file này trước khi làm bất cứ việc gì. `CLAUDE.md
 | Bất kỳ việc gì trong repo | `AGENTS.md` (file này) |
 | Việc của kênh YouTube | `t-i/outputs/YouTube-Research-System/AGENTS.md`, `README.md`, `registry.json` |
 | Gợi ý góc kể, hook, dàn ý, kịch bản | thêm `t-i/outputs/YouTube-Research-System/STORYTELLING.md` |
+| Nhận một lượt trong luồng review | thêm `.claude/skills/deliberation/SKILL.md` |
 | Sửa `registry.json` | thêm `.claude/skills/registry-safe-update/SKILL.md` |
 
 Luật nghiệp vụ của kênh nằm trong `t-i/outputs/YouTube-Research-System/AGENTS.md`. File này chỉ nói **nhiều agent chia việc và tránh giẫm chân nhau thế nào**. Mâu thuẫn thì: luật nghiệp vụ quyết định nội dung, file này quyết định quy trình. Chỉ dẫn mới nhất của người dùng ưu tiên hơn cả hai.
@@ -24,10 +25,12 @@ Luật nghiệp vụ của kênh nằm trong `t-i/outputs/YouTube-Research-Syste
 | Agent | Việc chính | Không nhận mặc định |
 | --- | --- | --- |
 | **Codex** | Nghiên cứu, tải nguồn, dựng timeline và claim ledger, viết bản tiếng Việt đầy đủ để duyệt | Tự review chính bản mình vừa viết |
-| **Claude Code** | Xây skill, script, CI, cấu trúc repo; review đối chiếu nguồn bản tiếng Việt; viết bản tiếng Anh thu âm sau khi người dùng đã duyệt | Viết bản tiếng Việt gốc của tập Codex đang giữ |
+| **Claude Code** | Khung sườn / beat sheet; skill, script, CI, cấu trúc repo; review đối chiếu nguồn bản tiếng Việt; viết bản tiếng Anh thu âm sau khi người dùng đã duyệt | Viết bản tiếng Việt gốc của tập Codex đang giữ |
 | **Gemini / Antigravity** | Kiểm chứng chéo nguồn, kế hoạch hình ảnh theo cảnh, đối chiếu bản Anh với bản Việt đã duyệt | Sửa `registry.json` cho tới khi được giao rõ |
 
 Nguyên tắc đứng sau bảng này: **người viết không phải là người review.** Một tập đi qua ít nhất hai agent trước khi bàn giao.
+
+Bảng này nói ai **cầm** bước nào. Nó không cho ai quyền bỏ qua review: mỗi bước vẫn đi qua một luồng review nhiều vòng với hai agent còn lại (mục 8), và vai tác giả xoay theo bước chứ không cố định theo agent.
 
 Vai là mặc định, không phải hàng rào. Người dùng giao khác thì làm theo người dùng — nhưng vẫn phải claim theo mục 4.
 
@@ -96,13 +99,132 @@ Codex CLI và Claude Code có thể cùng trỏ vào `C:\Users\tu.vu\Documents\C
 - Thêm hoặc sửa skill = một PR riêng, có claim `sys-skill-<ten>`.
 - Skill mô tả quy trình đã chạy được thật, không phải ý định. Chưa chạy thử thì ghi rõ phần nào chưa kiểm chứng.
 
-## 8. Nói chuyện và review chéo
+## 8. Review theo từng bước
 
-Ba agent **không có kênh nói chuyện trực tiếp**. Không agent nào gọi được agent khác, không agent nào chờ được agent khác trả lời trong cùng một phiên. Mọi trao đổi đi qua repo và GitHub, và người điều phối là Tú. Đừng thiết kế hay hứa hẹn như thể có kênh thời gian thực.
+Ba agent **không có kênh nói chuyện trực tiếp**. Không agent nào gọi được agent khác, không agent nào chờ được agent khác trả lời trong cùng một phiên. Cái chung duy nhất là repo, và người chuyển lượt là Tú. Đừng thiết kế hay hứa hẹn như thể có kênh thời gian thực.
 
-Ba mặt phẳng trao đổi, theo thứ tự ưu tiên:
+Nhưng "không nói chuyện thời gian thực" không có nghĩa là chỉ review một lần ở cuối. Review ở mức pull request là quá muộn: một khung sườn sai từ đầu thì cả bản viết dựng trên nền đó cũng sai, và lúc phát hiện thì sửa đã đắt.
 
-**a) Pull request — kênh chính.** PR là nơi hai agent thật sự tranh luận, vì comment gắn thẳng vào từng dòng diff và lưu lại vĩnh viễn.
+**Mỗi sản phẩm trung gian đi qua một luồng review nhiều vòng trước khi bước sau bắt đầu.**
+
+### Nguyên tắc
+
+Ba agent là một nhóm làm việc, không phải ba dây chuyền song song. Với mỗi bước:
+
+- Một agent là **tác giả** — người viết ra sản phẩm bước đó.
+- Hai agent còn lại là **người review** — đọc và nêu điểm chưa hợp lý, có dẫn chiếu cụ thể.
+- Tác giả **được phản bác**. Yêu cầu sửa không phải mệnh lệnh. Nhưng phản bác phải thuộc loại lý do được chấp nhận ở dưới, không phải "tôi thích viết khác".
+- Người review phải trả lời phản bác: chấp nhận, hoặc đưa chứng cứ mới, hoặc đẩy lên Tú. Không lặp lại nguyên văn ý cũ.
+
+Vai tác giả xoay theo bước, không cố định theo agent. Mục 2 chỉ nói mặc định ai **cầm** bước nào; nó không cho ai quyền bỏ qua review.
+
+### Các bước có luồng review
+
+| # | Sản phẩm bước | Tác giả mặc định | Người review |
+| --- | --- | --- | --- |
+| 1 | Danh sách gợi ý chuyện mới | Codex | Claude (chống trùng `registry.json`), Gemini |
+| 2 | Câu hỏi trung tâm và góc kể | Codex | Claude, Gemini |
+| 3 | Timeline + claim ledger sau nghiên cứu | Codex | Claude (truy nguồn ngược), Gemini (kiểm chứng chéo) |
+| 4 | **Khung sườn / beat sheet** | Claude | Codex, Gemini |
+| 5 | Bản tiếng Việt đầy đủ | Codex | Claude (đối chiếu nguồn), Gemini — rồi **Tú duyệt nội dung** |
+| 6 | Bản tiếng Anh thu âm | Claude | Codex, Gemini (đối chiếu bản Việt đã duyệt) |
+| 7 | Skill, script, CI, cấu trúc repo | Claude | Codex |
+
+Bước 5 có hai lớp: agent review nguồn và tính nhất quán, **Tú duyệt nội dung**. Agent không thay được lớp thứ hai.
+
+### Cấu trúc một luồng
+
+```
+coordination/threads/<slug>/
+  THREAD.md                    trạng thái: vòng mấy, tới lượt ai, điểm nào còn mở
+  r1-00-proposal-claude.md     tác giả nộp bản v1
+  r1-01-review-gemini.md
+  r1-02-review-codex.md
+  r2-00-response-claude.md     nhận điểm nào, phản bác điểm nào, ra v2
+  r2-01-review-gemini.md
+  ...
+```
+
+`THREAD.md` là thứ **duy nhất** cần đọc để biết phải làm gì tiếp. Sản phẩm thật (khung sườn, kịch bản) nằm ở đường dẫn `artifact:` trong `THREAD.md`, không nằm trong luồng.
+
+```bash
+python scripts/thread.py status          # tất cả luồng đang mở
+python scripts/thread.py next <slug>     # in ra đúng câu cần dán cho agent tới lượt
+python scripts/thread.py check           # CI dùng
+```
+
+### Luật lượt
+
+Một lượt một agent. `THREAD.md` ghi `turn:`. **Không viết khi không tới lượt** — nếu thấy có vấn đề gấp thì ghi vào `THREAD.md` mục "ngoài lượt" một dòng, không viết file vòng.
+
+Tác giả **không sửa artifact giữa một vòng review**. Bản đang review là bản đóng băng. Sửa chỉ diễn ra ở lượt response của tác giả, kèm bump `artifact_version`.
+
+### Điểm tranh luận
+
+Mỗi điểm có mã `D01`, `D02`… do người nêu đặt, và sống qua các vòng cho tới khi chốt. Bảng điểm nằm trong `THREAD.md`.
+
+| Trạng thái | Nghĩa |
+| --- | --- |
+| `mở` | Vừa nêu, tác giả chưa trả lời |
+| `đã sửa ở v<N>` | Tác giả chấp nhận và đã sửa |
+| `tác giả phản bác — chờ <reviewer>` | Chờ người nêu trả lời phản bác |
+| `chốt: đã sửa` / `chốt: giữ nguyên` | Hai bên đồng ý, đóng |
+| `đẩy lên Tú` | Không hội tụ, chờ người quyết |
+
+### Người review được nêu cái gì
+
+Được:
+
+- Nút thắt không có chứng cứ đỡ; suy diễn trình bày như sự thật; thoại hoặc cảnh không ai chứng kiến được dựng thành sự thật.
+- Câu hỏi mở ra mà không bao giờ đóng lại; hoặc lời giải xuất hiện mà manh mối chưa được đặt trước.
+- Trình tự tiết lộ hỏng: người nghe biết trước điều lẽ ra phải khám phá sau.
+- Chi tiết không phục vụ câu chuyện, hoặc lặp chức năng với một chi tiết khác.
+- Trùng chuyện đã có trong `registry.json`.
+- Rủi ro quảng cáo, rủi ro pháp lý, vi phạm luật trong `AGENTS.md` hoặc AGENTS.md nghiệp vụ.
+
+Không được:
+
+- "Tôi sẽ viết khác." Khác gu không phải lỗi.
+- Đòi viết lại toàn bộ khi chỉ một đoạn có vấn đề.
+- Nêu lại một điểm đã chốt ở vòng trước mà không có chứng cứ mới.
+- Góp ý về thứ thuộc bước sau — khung sườn không bị chê vì chưa có câu văn hay.
+
+### Tác giả được phản bác bằng lý do gì
+
+- **Nguồn nói khác điều người review tưởng** — dẫn ra nguồn và vị trí.
+- **Ngoài phạm vi bước này** — để bước sau xử lý, nói rõ bước nào.
+- **Đã có chỗ khác xử lý** — chỉ ra chỗ đó.
+- **Đây là lựa chọn kể chuyện trong vùng cho phép**, không phải lỗi sự thật hay lỗi cấu trúc.
+
+Phản bác phải trả lời đúng điểm được nêu. Không im lặng bỏ qua, và cũng không sửa lấy lệ cho điểm biến mất.
+
+### Hội tụ
+
+- **Tối đa 3 vòng một luồng.**
+- **Một điểm tối đa 2 lần phản bác qua lại.** Lần thứ ba tự động chuyển `đẩy lên Tú`.
+- Hết vòng mà còn điểm mở: `THREAD.md` chuyển `status: blocked`, liệt kê điểm mở, Tú quyết.
+- Không mở luồng mới cho một điểm đã chốt.
+
+Mục tiêu là **đủ tốt và có căn cứ**, không phải hoàn hảo. Ba agent để tự do sẽ sinh vòng review vô hạn vì vòng nào cũng tìm được thứ để nói. Trần này là cố ý, đừng nới nó vì thấy còn góp ý được.
+
+### Ai chuyển lượt
+
+Không agent nào tự đánh thức agent khác. Tú chuyển lượt. `python scripts/thread.py next <slug>` in ra đúng câu cần dán cho agent kế tiếp, để việc đó chỉ còn là copy-paste.
+
+### Nhãn dùng trong file review
+
+| Nhãn | Nghĩa |
+| --- | --- |
+| `CHAN:` | Không đi tiếp bước sau được cho tới khi xử lý |
+| `SUA:` | Nên sửa, không chặn |
+| `HOI:` | Chưa rõ, cần tác giả trả lời |
+| `OK:` | Đã kiểm và đạt — ghi rõ kiểm bằng cách nào |
+
+Mỗi ý kèm `file:dòng`, và kèm `claim_id` hoặc `source_id` khi nói về nội dung. Nhận xét không có dẫn chiếu cụ thể thì tác giả không sửa được.
+
+### Chốt cuối vẫn ở pull request
+
+Luồng review lo chất lượng từng bước. Pull request là cổng cuối trước khi vào `main`:
 
 ```bash
 gh pr view <n> --json title,body,files
@@ -111,51 +233,16 @@ gh pr review <n> --comment --body-file coordination/reviews/<n>-<agent>.md
 gh pr comment <n> --body "CHAN: ..."
 ```
 
-Codex cloud đọc được PR khi Tú dán link. Claude Code và Antigravity dùng `gh`.
+- PR phải dẫn ra luồng review tương ứng, hoặc nói rõ vì sao bước này không cần luồng.
+- Agent viết ra một thứ không duyệt thứ đó. **Không agent nào merge PR của chính mình.**
+- Review dài — đối chiếu nguồn từng claim — viết `coordination/reviews/<PR>-<agent>.md`, commit lên nhánh của PR, rồi comment ngắn trỏ tới file.
+- Không `--approve` hay `--request-changes` trừ khi Tú yêu cầu; `--comment` giữ quyền quyết định ở người.
 
-**b) `coordination/reviews/<PR>-<agent>.md` — báo cáo review dài.** Đối chiếu nguồn từng claim không nhét vừa một comment. Viết thành file theo `coordination/reviews/_TEMPLATE.md`, commit lên chính nhánh của PR, rồi để một comment ngắn trỏ tới file. Agent nào cũng đọc được file trong repo, kể cả khi không lấy được comment qua API.
+### Điều một agent không được làm
 
-**c) `coordination/handoffs/` — chuyển việc qua tay** (mục 9).
+Không sửa thẳng vào nhánh hay artifact của agent khác để "sửa giúp" — viết vào file review. Nếu Tú yêu cầu sửa hộ thì mở nhánh mới và nói rõ.
 
-### Ai review ai
-
-| Sản phẩm | Người viết | Người review |
-| --- | --- | --- |
-| Danh sách gợi ý chuyện mới | Codex | Claude — chống trùng với `registry.json` |
-| Hồ sơ nghiên cứu, claim ledger | Codex | Claude — truy nguồn ngược, bắt suy diễn |
-| Bản tiếng Việt để duyệt | Codex | Claude đối chiếu nguồn → **Tú duyệt nội dung** |
-| Bản tiếng Anh thu âm | Claude | Codex hoặc Gemini — đối chiếu với bản Việt đã duyệt |
-| Skill, script, CI, cấu trúc repo | Claude | Codex |
-
-Hai luật cứng:
-
-- **Agent viết ra một thứ không phải là agent duyệt thứ đó.**
-- **Không agent nào tự merge PR của chính mình.** Cần ít nhất một review của agent khác, và Tú bấm merge.
-
-Duyệt nội dung bản tiếng Việt vẫn là việc của Tú. Review chéo giữa agent chỉ kiểm nguồn, kiểm nhất quán, kiểm luật — không thay được bước duyệt đó.
-
-### Cách viết comment review
-
-Mỗi ý mở đầu bằng một nhãn để agent kia phân loại được mà không phải đoán:
-
-- `CHAN:` — không merge được cho tới khi sửa. Sai sự thật, gán sai nguồn, suy diễn không có chứng cứ, lệch trạng thái registry, vi phạm luật trong AGENTS.md.
-- `SUA:` — nên sửa, không chặn merge.
-- `HOI:` — chưa rõ, cần người viết trả lời trước khi kết luận.
-- `OK:` — xác nhận một phần đã kiểm tra và đạt. Ghi rõ đã kiểm cái gì, đừng chỉ nói "ổn".
-
-Kèm `file:dòng`, và với việc kênh thì kèm `claim_id` hoặc `source_id` đang nói tới. Review không có dẫn chiếu cụ thể thì người viết không sửa được.
-
-### Trả lời review
-
-Agent nhận review phải trả lời **từng** mục `CHAN:` và `HOI:` — đã sửa ở commit nào, hoặc không sửa vì lý do gì. Không im lặng bỏ qua.
-
-Hai agent bất đồng và không giải quyết được: dừng lại, nêu cả hai lập luận trong một comment, để Tú quyết. Không agent nào tự phá thế bế tắc bằng cách merge.
-
-### Điều một agent review không được làm
-
-Không sửa thẳng vào nhánh của agent khác để "sửa giúp" — viết comment. Nếu Tú yêu cầu sửa hộ thì mở nhánh mới dựa trên nhánh đó và nói rõ trong PR.
-
-Không dùng review để viết lại theo giọng của mình. Nhận xét cái sai và cái thiếu chứng cứ, không nhận xét cái khác gu.
+Không viết lại theo giọng của mình. Nhận xét cái sai và cái thiếu chứng cứ, không nhận xét cái khác gu.
 
 ## 9. Bàn giao giữa hai agent
 
@@ -168,11 +255,12 @@ Agent nhận việc đọc handoff trước, không đoán từ diff. Diff cho b
 ```bash
 python scripts/registry.py check
 python scripts/claims.py check
+python scripts/thread.py check
 ```
 
-Hai lệnh này chạy trong CI (`.github/workflows/agent-checks.yml`) trên mọi PR và mọi push lên `main`. Chạy tại máy trước khi mở PR.
+Ba lệnh này chạy trong CI (`.github/workflows/agent-checks.yml`) trên mọi PR và mọi push lên `main`. Chạy tại máy trước khi mở PR.
 
-CI chỉ bắt lệch máy móc: mã trùng, thư mục tập không có trong sổ, `next_case_number` sai, status lạ, sửa sổ mà không lưu snapshot, claim chồng nhau. Nó không bắt được nguồn sai, kể sai hay suy diễn không có chứng cứ — phần đó vẫn cần agent review đọc thật.
+CI chỉ bắt lệch máy móc: mã trùng, thư mục tập không có trong sổ, `next_case_number` sai, status lạ, sửa sổ mà không lưu snapshot, claim chồng nhau, luồng review sai lượt hoặc vượt trần vòng. Nó không bắt được nguồn sai, kể sai hay suy diễn không có chứng cứ — phần đó vẫn cần agent review đọc thật.
 
 ## 11. Không agent nào tự làm
 

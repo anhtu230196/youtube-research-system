@@ -7,6 +7,7 @@ Các file `SKILL.md` trong thư mục này là **quy trình dùng chung cho cả
 | Skill | Dùng khi |
 | --- | --- |
 | `registry-safe-update/` | Sửa `registry.json`: cấp mã mới, đổi trạng thái, tạo thư mục tập |
+| `deliberation/` | Nhận một lượt trong luồng review nhiều vòng: viết đề xuất, review, phản bác, đóng luồng |
 | `cross-review/` | Review chéo một PR của agent khác, hoặc trả lời review về bài mình |
 
 ## Viết skill mới

@@ -23,5 +23,8 @@ jobs:
       - name: Kiem tra claim
         run: python scripts/claims.py check
 
+      - name: Kiem tra luong review
+        run: python scripts/thread.py check
+
       - name: Kiem tra registry
         run: python scripts/registry.py check --diff-base origin/${{ github.base_ref || 'main' }}
