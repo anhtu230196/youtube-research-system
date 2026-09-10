@@ -1,0 +1,333 @@
+# Những món đồ chưa kịp mang đi
+
+Bản thử GPT-6 Astra · NET-0006 · 11 tháng 9 năm 2026
+
+Bản tiếng Việt đầy đủ để Tú đánh giá khả năng viết từ beat sheet v2. Các tiêu đề B01–B14 và ghi chú nguồn không thuộc lời kể. Đây là bản thử riêng, chưa thay thế kịch bản của tập đang review.
+
+<!-- NARRATION_START -->
+
+## B01 — Chồng đồ bên cửa
+
+Những thiết bị âm thanh đã được lấy ra khỏi tủ trong phòng khách, gom thành một chồng cạnh cửa dẫn vào gara.
+
+Ai đó đã đưa chúng gần đến lối ra. Nhưng chúng vẫn nằm trong nhà.
+
+Cách đó không xa, một ngăn kéo bị rút ra, đồ bên trong đổ xuống sàn. Nhìn vào hai chi tiết ấy, người ta có thể nghĩ đến một vụ trộm bị gián đoạn: có người đang gom đồ thì một chuyện bất ngờ buộc họ phải bỏ chạy.
+
+Chỉ có điều, nhiều căn phòng khác vẫn nguyên vẹn. Những món đồ giá trị khác, kể cả thiết bị âm thanh, không bị đụng tới. Cũng không có dấu hiệu cửa bị cạy để vào nhà.
+
+Và người phụ nữ sống ở đây đã bị giết.
+
+Vì sao người đột nhập lại bỏ những món đồ đã gom sẵn ngay cạnh lối ra? Điều gì đã xảy ra trong căn nhà này mà một người mất mạng, còn chồng đồ vẫn nằm đó?
+
+<!-- C03; S01 tr.3–7, chú thích 10. Câu hỏi và cách hiểu ban đầu là dẫn dắt, chưa kết luận động cơ. -->
+
+## B02 — Những cuộc gọi không có người nghe
+
+Người phụ nữ ấy là Sherri Rasmussen, hai mươi chín tuổi, làm điều dưỡng tại một bệnh viện ở Glendale, California.
+
+Tháng Mười Một năm 1985, Sherri kết hôn với John Ruetten. Hai người sống trong một căn hộ ở Van Nuys, thuộc Los Angeles. Đến ngày xảy ra vụ án, họ mới cưới được khoảng ba tháng.
+
+Sáng ngày 24 tháng Hai năm 1986, John rời nhà lúc bảy giờ hai mươi để đi làm. Sherri báo nghỉ bệnh và ở nhà.
+
+Từ khoảng mười giờ sáng, John gọi về. Sherri không nghe máy. Người nhà của cô cũng gọi nhiều lần trong ngày mà không liên lạc được.
+
+Những cuộc gọi ấy cho chúng ta biết từ lúc nào người thân bắt đầu không tìm được Sherri. Chúng không cho biết chính xác chuyện gì đã xảy ra, hay cô chết vào giờ nào.
+
+Khoảng sáu giờ tối, John về đến nhà. Cửa gara đang mở. Cánh cửa từ gara vào căn hộ cũng hé.
+
+Bên trong, anh tìm thấy Sherri nằm trên sàn phòng khách. Cô đã chết.
+
+Buổi sáng, John rời căn nhà có người vợ mới cưới ở lại. Gần mười một tiếng sau, anh trở về một hiện trường án mạng. Khoảng thời gian ở giữa chỉ còn những dấu vết để người điều tra lần theo.
+
+<!-- C01 C02; S01 tr.3–4,11; tuổi 29 đối chiếu S04. Địa danh, nghề, nghỉ bệnh, cửa hé được xác nhận trực tiếp trong S01, phần Evidence at Trial. -->
+
+## B03 — Một cách giải thích, một mẫu vật
+
+Khám nghiệm xác định Sherri tử vong do bị bắn. Hiện trường và những dấu vết trên người cô cho thấy đã có một cuộc vật lộn.
+
+Các điều tra viên ban đầu hình dung sự việc theo hướng này: một hoặc hai kẻ trộm đi vào qua một cánh cửa đang mở, bất ngờ gặp Sherri ở nhà, rồi nổ súng trong lúc giằng co.
+
+Chồng thiết bị âm thanh và ngăn kéo bị đổ phù hợp với một phần cách giải thích đó. Chúng cho thấy có người đã di chuyển đồ đạc, như thể đang tìm thứ để lấy đi.
+
+Nhưng những căn phòng còn nguyên vẹn cũng là một phần của hiện trường. Kẻ đột nhập đã bỏ qua nhiều đồ giá trị khác. Việc không có dấu cạy cửa cũng chưa cho biết người đó vào bằng cách nào. Một cánh cửa mở và một người được cho vào nhà đều là những khả năng cần chứng cứ để phân biệt.
+
+Lúc ấy, điều tra vẫn tập trung vào hướng trộm đột nhập.
+
+Trong khi đó, chuyên viên pháp y Lloyd Mahaney thu một loại dấu vết khác.
+
+Ở mặt trong cẳng tay trái của Sherri có một vết nghi do người cắn. Mahaney làm ẩm vùng đó bằng nước cất, rồi dùng tăm bông lấy mẫu. Hai que mẫu được cho vào một ống, ống đặt trong phong bì niêm phong và đưa vào tủ đông của kho vật chứng thuộc cơ quan giám định tử thi.
+
+Việc này giữ lại vật chất bám trên vết thương. Chưa có cái tên nào xuất hiện từ hai que bông ấy. Chúng được cất đi cùng những vật chứng khác, trong lúc cảnh sát tiếp tục tìm những kẻ trộm mà họ cho là đã gây án.
+
+<!-- C03 C04 C06; S01 tr.3–7, chú thích 7–11. Giả thuyết trộm quy điều tra viên; không khẳng định chưa có công nghệ DNA trên toàn thế giới năm 1986. -->
+
+## B04 — Một hướng khác
+
+Có một tài sản thực sự đã biến mất khỏi căn nhà: chiếc BMW của Sherri.
+
+Ngày 7 tháng Ba, chiếc xe được tìm thấy cách nhà khoảng bốn cây số. Chìa khóa vẫn cắm trong ổ. Xe không bị tháo phụ tùng hay hư hại.
+
+Chiếc xe đã được mang đi, nhưng rồi bị bỏ lại nguyên vẹn. Còn những thiết bị âm thanh mà ai đó cất công gom đến cửa thì chưa bao giờ ra khỏi căn nhà.
+
+Cảnh sát vẫn theo đuổi hướng trộm. Khoảng sáu tuần sau cái chết của Sherri, trong khu vực lại xảy ra một vụ đột nhập trong đó kẻ trộm có súng và cũng gom thiết bị âm thanh. Hai vụ có những nét giống nhau, nhưng bản thân sự giống nhau chưa xác định được ai đã giết Sherri.
+
+Gia đình Sherri muốn cảnh sát nhìn vào một mối liên hệ cụ thể hơn.
+
+Theo chứng cứ được trình bày về sau trong hồ sơ tố tụng, chỉ trong những ngày hoặc tuần đầu, John đã nhắc tới người phụ nữ từng có quan hệ với mình. Cha mẹ Sherri cũng đề nghị điều tra người đó.
+
+Đó là một người có tên, có quan hệ với gia đình, và đã được nhắc đến từ rất sớm. Tuy nhiên, hướng ấy không đưa đến việc xác định thủ phạm lúc bấy giờ. Cuộc điều tra vẫn bị chi phối bởi câu chuyện về những kẻ trộm xa lạ.
+
+Vụ án không có người bị bắt.
+
+Nhiều năm trôi qua. Những que mẫu lấy trên cẳng tay Sherri vẫn nằm trong kho vật chứng.
+
+<!-- C04 C05 C06 C07; S01 tr.3 chú thích 3, tr.16–19,71–74. 2,5 mile ≈ 4 km. Không gán tác động của vụ trộm tháng Tư cho quyết định điều tra ban đầu khi S01 chỉ xác nhận việc bào chữa viện dẫn về sau. Lời báo của gia đình được quy nguồn tố tụng, chưa nêu tên/nghề người phụ nữ. -->
+
+## B05 — Người thứ hai trong mẫu
+
+Đến tháng Chín năm 2003, đơn vị chuyên điều tra các vụ án chưa được giải quyết của LAPD yêu cầu xét nghiệm DNA trong hồ sơ Sherri.
+
+Yêu cầu xét nghiệm, tìm lại vật chứng và có được kết quả là ba việc khác nhau. Cuối năm 2004, cơ quan giám định tử thi được đề nghị tìm lại mẫu thu ở vết cắn. Khi vật chứng được tìm thấy, phong bì bên ngoài đã rách. Chiếc ống bên trong trông vẫn nguyên vẹn, với hai que mẫu còn ở đó.
+
+Năm 2005, chuyên viên Jennifer Francis xét nghiệm vật chất trên một que bông.
+
+Câu hỏi lúc này rất cụ thể: nếu người tấn công đã để lại tế bào khi cắn Sherri, có thể tách dấu vết của người đó ra khỏi dấu vết của chính Sherri hay không?
+
+Francis tìm được hai hồ sơ DNA. Một hồ sơ phụ phù hợp với Sherri, dù lượng vật chất chưa đủ để đối chiếu hoàn toàn. Hồ sơ chiếm ưu thế thuộc về một người khác.
+
+Một phụ nữ.
+
+Như vậy, mẫu lấy ngay trên vết nghi do người cắn không chỉ mang dấu vết của nạn nhân. Trong đó còn có DNA của một phụ nữ khác. Cách giải thích về một hoặc hai người đàn ông vào trộm không giải thích được phát hiện này.
+
+Nhưng một kết quả xét nghiệm chưa thể tự cung cấp tên người.
+
+Các điều tra viên đưa hồ sơ DNA vào cơ sở dữ liệu quốc gia để tìm đối chiếu. Không có kết quả phù hợp. Những lần đối chiếu sau đó cũng chưa dẫn tới người cần tìm.
+
+Mẫu vật đã mở được một cánh cửa mà cuộc điều tra năm 1986 chưa mở được. Tuy nhiên, sau cánh cửa ấy, họ vẫn chưa biết phải tìm ai.
+
+Muốn đi tiếp, cảnh sát cần có mẫu DNA của một người cụ thể để so sánh.
+
+<!-- C04 C08 C09 C19; S01 tr.6–8, chú thích 11–13; tr.18. Chỉ nói hồ sơ nữ chiếm ưu thế trên mẫu dấu cắn, không khẳng định mọi DNA hiện trường là nữ hoặc loại trừ mọi khả năng có người nam. -->
+
+## B06 — Cái tên trong hồ sơ cũ
+
+Tháng Hai năm 2009, vụ án được giao cho một điều tra viên mới.
+
+Lần này, việc tìm kiếm tập trung vào những phụ nữ có liên hệ với Sherri và có thể có lý do làm hại cô. Trong số đó có người từng qua lại với John Ruetten từ thời đại học. Cũng chính người ấy đã được gia đình Sherri đề nghị điều tra hơn hai mươi năm trước.
+
+Tên cô là Stephanie Lazarus.
+
+Vào thời điểm Sherri bị giết, Lazarus là một cảnh sát của LAPD. Đến năm 2009, cô đã trở thành một thám tử kỳ cựu của chính cơ quan đang điều tra vụ án, làm việc với các vụ trộm tác phẩm nghệ thuật.
+
+Các điều tra viên đang xem xét khả năng đồng nghiệp của mình có liên quan đến một vụ giết người chưa được giải quyết từ năm 1986.
+
+Mối quan hệ cũ khiến Lazarus trở thành một hướng cần kiểm tra. Để biết hướng đó có cơ sở hay không, họ cần thứ mà hồ sơ lúc ấy còn thiếu: DNA của cô.
+
+Và họ muốn lấy được mẫu trước khi Lazarus biết mình đang bị điều tra.
+
+<!-- C07 C10 C12; S01 tr.7,9–13,18,30,42–43. Nhân thân/nghề được truy ngược nguyên văn S01; không gán việc nhận hồ sơ tháng Hai cho hai người hỏi cung. -->
+
+## B07 — Chiếc cốc
+
+Không cần đến một cuộc gặp chính thức hay một yêu cầu ký giấy đồng ý lấy mẫu.
+
+Cảnh sát thu lại chiếc cốc uống nước cùng ống hút mà Lazarus đã sử dụng rồi vứt đi.
+
+Họ cần kiểm tra liệu những tế bào còn trên đó có cùng nguồn với hồ sơ DNA chính ở vết cắn hay không. Một bên là đồ vật vừa rời tay Lazarus. Bên kia là mẫu thu trên người Sherri hơn hai mươi năm trước.
+
+Lượng vật chất trên cốc và ống hút chỉ cho phép đọc được một phần hồ sơ. Tại mười một vị trí đọc được, kết quả trùng với hồ sơ ở vết cắn.
+
+Cả mười một vị trí ấy đều khớp.
+
+Đây là lần đầu tiên dấu vết sinh học trên người Sherri nối được với một người có tên: Stephanie Lazarus.
+
+Việc tiếp theo là bắt giữ và lấy mẫu trực tiếp từ Lazarus. Phần chứng minh trước tòa vẫn còn phía sau, với những lần xét nghiệm đầy đủ hơn và câu hỏi về cách bảo quản vật chứng.
+
+Trước mắt, một mối quan hệ mà gia đình Sherri đã nhắc đến từ năm 1986 giờ có thêm bằng chứng DNA. Để hiểu vì sao công tố về sau cho rằng mối quan hệ ấy dẫn đến án mạng, cần trở lại thời gian trước cuộc hôn nhân của Sherri.
+
+<!-- C11; S01 tr.7–8 chú thích 13 và phần search warrants. Không dùng địa điểm Costco vì không có trong S01. 11 là số vị trí đọc được, không phải 11/13 hay xác suất phạm tội. -->
+
+## B08 — Trước đám cưới
+
+John và Lazarus quen nhau ở đại học, rồi tiếp tục gặp gỡ sau khi tốt nghiệp. Theo lời khai của John, hai người có quan hệ thân mật, nhưng anh không xem Lazarus là bạn gái của mình.
+
+Những lời khai được đưa ra tại tòa cho thấy Lazarus nhìn mối quan hệ đó khác anh.
+
+John gặp Sherri vào năm 1984. Tháng Năm năm sau, họ đính hôn.
+
+Khi biết tin, Lazarus gọi cho John. Theo lời khai của anh, cô khóc và đề nghị anh đến gặp. Khi anh tới, cô nói mình yêu anh. John thừa nhận hai người đã có quan hệ thân mật trong lần gặp ấy, dù anh đã đính hôn với Sherri.
+
+John vẫn tiếp tục mối quan hệ với Sherri. Hai người dọn về sống cùng nhau.
+
+Sau đó, Lazarus đến bệnh viện nơi Sherri làm việc và có một cuộc đối đầu với cô. Người từng ở cùng nhà với Lazarus cũng khai rằng Lazarus đã kể cho mình về lần đến bệnh viện ấy.
+
+Ta không có lời thoại đầy đủ của cuộc gặp để dựng lại cảnh hai người phụ nữ đã nói gì với nhau. Điều hồ sơ cho biết là mối liên hệ giữa họ đã vượt ra ngoài chuyện cùng quen John. Lazarus đã tìm đến nơi Sherri làm việc.
+
+Tháng Mười Một năm 1985, John và Sherri kết hôn.
+
+Công tố về sau dùng những lời khai này để lập luận rằng Lazarus có động cơ ghen tuông khi John chọn kết hôn với Sherri. Đó là cách công tố giải thích động cơ từ các mối quan hệ và hành động được thuật lại.
+
+Những lời khai ấy tự chúng chưa chứng minh ai đã có mặt trong căn nhà ngày 24 tháng Hai. Phần nối Lazarus với hiện trường là vật chứng đang được xét nghiệm.
+
+Và vào tháng Sáu năm 2009, cảnh sát đã chuẩn bị để hỏi trực tiếp Lazarus về cả John lẫn Sherri.
+
+<!-- C12; S01 tr.10–12. Phân biệt lời khai John, lời khai người ở cùng nhà, và lập luận động cơ của công tố. Không dựng lời đe dọa hoặc nội tâm. -->
+
+## B09 — Một cuộc nhờ hỗ trợ
+
+Ngày 5 tháng Sáu năm 2009, hai thám tử Gregory Stearns và Dan Jaramillo tiếp cận Lazarus với lý do cần cô hỗ trợ một vụ liên quan đến trộm tác phẩm nghệ thuật.
+
+Đó là lĩnh vực Lazarus đang làm. Cuộc gặp được giới thiệu như một việc cần đến chuyên môn của cô.
+
+Nhưng khi vào phòng phỏng vấn, câu chuyện chuyển hướng.
+
+Họ hỏi về John Ruetten.
+
+Theo bản ghi cuộc phỏng vấn được dẫn trong phán quyết, Lazarus nói John là người mình quen ở trường, rồi thừa nhận hai người từng hẹn hò. Khi bị hỏi về thời gian và cách mối quan hệ kết thúc, cô đưa ra những câu trả lời không xác định rõ.
+
+Tiếp đó là Sherri.
+
+Lazarus ban đầu nói không chắc đã từng gặp cô hay chưa. Khi cuộc hỏi chuyện tiếp tục, Lazarus đề cập khả năng mình đã gặp Sherri tại bệnh viện, có thể đã nói chuyện với cô một hoặc hai lần.
+
+Hai thám tử hỏi về căn nhà của John và Sherri. Lazarus có biết họ sống ở đâu không? Đã từng đến đó chưa? Có xảy ra xô xát với Sherri không?
+
+Trong những câu trả lời được ghi lại, Lazarus nhiều lần nói không nhớ hoặc không chắc. Cô phản đối việc mình bị nghi là người gây án.
+
+Lúc được đề nghị cung cấp mẫu DNA, Lazarus chưa trả lời dứt khoát. Cô nói cần trao đổi với luật sư, rồi rời phòng.
+
+Lazarus bị bắt sau khi bước ra ngoài. Sau vụ bắt giữ, mẫu tế bào bên trong miệng cô được thu để xét nghiệm trực tiếp.
+
+Cuộc phỏng vấn kết thúc mà không có lời thú tội. Cảnh sát phải tiếp tục chứng minh vụ án bằng những gì họ thu được và kiểm tra được.
+
+Hơn hai mươi ba năm sau cái chết của Sherri, người từng được gia đình đề nghị điều tra đã bị bắt. Nhưng khi vụ án ra tòa, chính khoảng thời gian dài ấy cũng trở thành một vấn đề: vật chứng đã đi qua những đâu, được giữ thế nào, và còn đáng tin đến mức nào?
+
+<!-- C16 C17; S01 tr.8,13–14,42–43. Các câu hỏi được diễn đạt gián tiếp, không là trích thoại. Nguồn ghi câu trả lời “Maybe” và cần hỏi luật sư; không khẳng định từ chối dứt khoát hay có lệnh cưỡng chế thu mẫu miệng. Không suy tội từ cử chỉ/im lặng/yêu cầu luật sư. Chưa tiết lộ kết quả 13 loci. -->
+
+## B10 — Khi vật chứng bị chất vấn
+
+Mẫu lấy trực tiếp từ miệng Lazarus cho phép phòng xét nghiệm xác định hồ sơ DNA đầy đủ hơn mẫu thu từ chiếc cốc.
+
+Jennifer Francis đem kết quả này so với hồ sơ từ vết cắn mà bà đã lập năm 2005. Tại mười ba vị trí có thể đối chiếu giữa hai hồ sơ, tất cả đều khớp.
+
+Tuy nhiên, bên bào chữa có một điểm để chất vấn ngay từ đầu: khi được tìm lại sau nhiều năm, phong bì đựng mẫu đã rách.
+
+Chiếc ống bên trong trông vẫn nguyên vẹn. Nhưng tình trạng đó không tự trả lời mọi câu hỏi về quá trình lưu giữ. Nếu dùng một mẫu vật cũ để buộc tội một người, việc kiểm tra độ tin cậy của mẫu là phần thiết yếu của vụ án.
+
+Vẫn còn que mẫu thứ hai, được lấy cùng lần trên cẳng tay Sherri năm 1986.
+
+Năm 2010, que mẫu ấy được chuyển đến SERI, một phòng thí nghiệm pháp y độc lập. Người thực hiện xét nghiệm là Thomas Fedor. Khi ông kiểm tra mẫu, có đại diện phía bào chữa cùng có mặt.
+
+Fedor trước hết tìm thấy amylase của nước bọt. Chi tiết này củng cố việc vật chất được lấy trên vết thương thực sự có nước bọt, thay vì chỉ dựa vào hình dạng bên ngoài của dấu vết.
+
+Sau đó, ông xét nghiệm DNA.
+
+Một lần nữa, mẫu cho ra hai hồ sơ: hồ sơ phụ phù hợp với Sherri và hồ sơ chính của người còn lại. Khi đem hồ sơ chính so với mẫu trực tiếp của Lazarus, kết quả khớp tại toàn bộ mười lăm vị trí được xét nghiệm.
+
+Mười một, mười ba rồi mười lăm vị trí là các mức đối chiếu ở những lần xét nghiệm khác nhau. Chúng không phải số người, cũng không phải phần trăm khả năng có tội. Ở lần cuối này, một phòng thí nghiệm độc lập đã kiểm tra que mẫu còn lại, với đại diện bào chữa hiện diện, và vẫn thu được mối khớp với Lazarus.
+
+Kết quả đó làm bằng chứng DNA mạnh hơn. Tòa phúc thẩm cũng nhận xét bên bào chữa không đưa ra chứng cứ thuyết phục cho việc mẫu bị can thiệp. Tuy nhiên, các xét nghiệm ấy không tự xác định được chủ nhân của mọi dấu vết khác trong vụ án.
+
+Bên bào chữa chỉ ra nhiều dấu vân tay có thể nhận dạng nhưng không thuộc Sherri, John hay Lazarus, trong đó có dấu trên những thiết bị âm thanh. Một số mẫu DNA khác cũng có người đóng góp chưa xác định được và không phù hợp với Lazarus.
+
+Các chuyên gia giải thích rằng vật chất di truyền có thể được lưu lại qua tiếp xúc thông thường. Tuy vậy, lời giải thích về khả năng tiếp xúc không đồng nghĩa từng dấu vết lạ đã được truy ra. Những khoảng trống ấy vẫn tồn tại bên cạnh kết quả DNA ở vết cắn.
+
+Vũ khí là một phần tranh luận khác.
+
+Hồ sơ mua súng cho thấy Lazarus từng có một khẩu Smith & Wesson Model 49 làm súng dự phòng. Ngày 9 tháng Ba năm 1986, chưa đầy hai tuần sau cái chết của Sherri, cô báo khẩu súng bị lấy trộm khỏi xe.
+
+Khẩu súng không được thu hồi để đối chiếu trực tiếp với đạn trong vụ án.
+
+Chuyên gia phía công tố cho rằng đặc điểm đạn và dấu vết bắn phù hợp với một loại súng như khẩu Lazarus sở hữu. Chuyên gia bào chữa phản bác cả khả năng xác định loại đạn lẫn cách suy ra đặc điểm khẩu súng từ các dấu vết ấy. Bà cũng nêu rằng Model 49 được sản xuất với số lượng rất lớn.
+
+Vì thế, hồ sơ mất súng là một chi tiết công tố đưa vào chuỗi chứng cứ. Nó không phải kết quả giám định chứng minh chắc chắn khẩu súng đó đã bắn Sherri.
+
+Sau khi Lazarus bị bắt, cuộc khám xét nhà cô còn thu được nhật ký, sổ ghi chép và những tài liệu liên quan đến John. Đây là những thứ cảnh sát có thêm sau vụ bắt giữ, chứ không phải tài liệu đã dẫn họ đến chiếc cốc.
+
+Trong nhật ký, Lazarus viết về việc khó tập trung sau khi biết John sắp cưới. Một lá thư gửi mẹ John vào tháng Tám năm 1985 nói về tình cảm cô dành cho anh và sự khó hiểu của cô trước lựa chọn của anh.
+
+Những ghi chép đó bổ sung cho lập luận động cơ của công tố. Còn mẫu sinh học là bằng chứng nối cô với dấu vết trên người Sherri. Tại tòa, công tố đưa cả hai phần ra để bồi thẩm đoàn đánh giá, cùng các chứng cứ khác và phản biện của bên bào chữa.
+
+Bên bào chữa còn muốn đưa vào phiên tòa vụ đột nhập xảy ra sáu tuần sau cái chết của Sherri. Tòa không chấp nhận: giữa hai vụ có những khác biệt đáng kể, và không có chứng cứ nối những kẻ trộm của vụ sau với cái chết của Sherri. Hướng đó đã được đề nghị, nhưng chưa có căn cứ để xác định họ là thủ phạm của vụ án này.
+
+Vẫn còn hình ảnh ở đầu câu chuyện: chồng thiết bị âm thanh nằm cạnh cửa, bên một khu vực đã xảy ra vật lộn, nhưng bản thân chồng đồ lại không bị xáo trộn.
+
+<!-- C06 C13 C14 C15 C17 C18 C19; S01 tr.4–15, chú thích 9,11,13–19,25; tr.70 về không có chứng cứ can thiệp, tr.71–74 về chứng cứ vụ trộm khác bị loại. S01 tr.7–9: 13 vị trí là giao giữa hai hồ sơ, SERI đối chiếu 15; không đưa xác suất trùng ngẫu nhiên thành xác suất vô tội. -->
+
+## B11 — Vì sao chồng đồ còn nguyên?
+
+Tại phiên tòa, chuyên gia phân tích hiện trường Mark Safarik, được phía công tố mời, đưa ra một cách giải thích cho chồng đồ ấy.
+
+Theo lời khai của ông, hiện trường đã được dàn dựng để trông giống một vụ trộm.
+
+Điểm ông chú ý là vị trí và tình trạng của các thiết bị âm thanh. Chúng được xếp gần nơi có dấu hiệu vật lộn, nhưng vẫn nằm nguyên thành chồng. Safarik cho rằng điều này gợi ý chúng đã được đặt ở đó sau cuộc vật lộn.
+
+Theo cách đọc của ông, việc đồ được gom đến cửa không có nghĩa kẻ gây án đã định mang chúng đi rồi bị ngăn lại. Việc xếp đồ có thể nhằm tạo ra hình ảnh của một vụ trộm.
+
+Ông đặt nhận định ấy cạnh những chi tiết khác: ít tài sản bị lấy, phần lớn căn nhà không bị lục soát, và chiếc BMW bị bỏ lại mà đồ giá trị trên xe không bị lấy đi.
+
+Đó là diễn giải chuyên gia đưa ra trước tòa. Không có bản ghi nào cho phép chúng ta nhìn thấy chính xác người gây án đã di chuyển từng món đồ lúc nào.
+
+Nhưng những vật chứng được tìm thấy vẫn ở đó: chồng thiết bị không được mang đi, nhiều đồ giá trị không bị đụng đến, chiếc xe còn nguyên. Cách giải thích ban đầu đã gom chúng vào câu chuyện về một vụ trộm bị gián đoạn. Safarik cho rằng chính những chi tiết ấy cho thấy người điều tra đã được hướng tới một câu chuyện như vậy.
+
+<!-- C03 C05 C20; S01 tr.6–7 chú thích 10. Quy nguồn xuyên suốt; “sau cuộc vật lộn” bám “after the fact”, không dựng trình tự sau cái chết như camera. -->
+
+## B12 — Bản án
+
+Năm 2012, bồi thẩm đoàn kết luận Stephanie Lazarus phạm tội giết người cấp độ một và có sử dụng súng trong hành vi phạm tội. Tổng mức án là hai mươi bảy năm đến chung thân.
+
+Khi ấy, Sherri đã chết được khoảng hai mươi sáu năm.
+
+Năm 2015, tòa phúc thẩm California giữ nguyên bản án. Năm 2023, tòa phúc thẩm liên bang tiếp tục giữ nguyên quyết định bác yêu cầu cứu xét của Lazarus.
+
+Trong quá trình đó, quãng thời gian dài trước khi bị truy tố cũng được Lazarus dùng để phản đối vụ án. Cô lập luận rằng sự chậm trễ đã gây bất lợi cho việc bào chữa: ký ức nhân chứng phai đi và có chứng cứ không còn.
+
+Ở lần xem xét năm 2023, Lazarus còn cáo buộc LAPD từng cố ý che giấu vai trò của cô để bảo vệ cô và cơ quan. Tòa phân tích rằng ngay cả khi giả định cáo buộc ấy đúng, lập luận pháp lý được đưa ra vẫn chưa đủ để cho cô được cứu xét.
+
+Đó không phải phán quyết xác nhận đã tồn tại một âm mưu bao che.
+
+Điều hồ sơ cho phép nói rõ là người thân của Sherri đã đưa ra một hướng điều tra từ rất sớm. Cái tên họ nhắc đến về sau trở thành người bị kết án. Sự chậm trễ giữa hai thời điểm ấy là phần không thể bỏ qua khi kể lại vụ án, nhưng nó cũng không cho phép tự lấp mọi chỗ trống bằng một kết luận về cả cơ quan cảnh sát.
+
+Bản án được giữ nguyên. Còn câu hỏi Lazarus có được ra tù trong tương lai hay không thuộc một thủ tục khác.
+
+<!-- C07 C21 C22; S01 tr.15–20 và Disposition; S03 tr.1–5. -->
+
+## B13 — Mốc thủ tục còn ở phía trước
+
+Ngày 2 tháng Mười năm 2024, quyết định chấp thuận tha tù có điều kiện trước đó của Lazarus bị rút lại.
+
+Tháng Hai năm 2025, Lazarus lại bị từ chối.
+
+Tại thời điểm kiểm tra cho bản kể này, ngày 11 tháng Chín năm 2026, lịch chính thức ghi phiên xét tiếp theo vào ngày 9 tháng Mười năm 2026.
+
+Đó là lịch điều trần, có thể thay đổi. Nó không phải quyết định cho Lazarus ra tù.
+
+<!-- C23 C24 C25; S04 AP 02/10/2024; S05 CBS 12/02/2025, chỉ dùng một câu ngắn về kết quả; S07 October 2026 Hearing Calendar, WE4479, 10/09/2026 08:30 AM, kiểm lại 11/09/2026. -->
+
+## B14 — Thứ được giữ lại
+
+Nhìn lại vụ án, điều khiến tôi nghĩ mãi là hai que bông được cất vào tủ đông năm 1986.
+
+Ngày chúng được thu, chưa ai đọc được tên một người từ đó. Nhiều năm sau, ngay cả khi xét nghiệm đã tìm ra hồ sơ của một phụ nữ, cái tên vẫn chưa xuất hiện. Vụ án chỉ đi tiếp khi người điều tra tìm đến những phụ nữ cụ thể, lấy mẫu đối chiếu, rồi kiểm tra lại kết quả trước các chất vấn tại tòa.
+
+Giữ được vật chứng đã cho những người đến sau cơ hội ấy. Những lời gia đình Sherri đưa ra từ đầu cho thấy một hướng tìm kiếm cũng đã từng ở rất gần.
+
+Cuối cùng, người được xác định và kết án là Stephanie Lazarus.
+
+Còn Sherri Rasmussen là một người điều dưỡng hai mươi chín tuổi, mới bắt đầu cuộc sống hôn nhân được ba tháng. Đằng sau hai mươi ba năm chờ một vụ bắt giữ là cuộc đời cô đã dừng lại trong ngày chồng đi làm và những cuộc gọi về nhà không có người nghe.
+
+Nếu bạn muốn nghe thêm những câu chuyện được lần theo từ chứng cứ, hãy đăng ký kênh.
+
+<!-- C01 C02 C04 C07 C09 C11 C18 C21 C26; S01 và S03. Đoạn mở bằng “điều khiến tôi nghĩ” là suy ngẫm biên tập, không phải kết luận tư pháp. -->
+
+<!-- NARRATION_END -->
+
+## Nguồn đối chiếu
+
+- S01 — [People v. Lazarus, California Court of Appeal, 13/07/2015](https://law.justia.com/cases/california/court-of-appeal/2015/b241172.html). Dùng nguyên văn phán quyết, phần Factual and Procedural Background và Discussion; không dùng phần tóm tắt biên tập của Justia. Đây là nguồn chính cho B01–B12 và B14. Số trang trong ghi chú là số trang phán quyết.
+- S03 — [Lazarus v. Core, Ninth Circuit, 05/09/2023](https://cdn.ca9.uscourts.gov/datastore/memoranda/2023/09/05/21-55483.pdf), tr.1–5. Kết án 2012 và kết quả cứu xét; giới hạn của lập luận về cover-up ở B12.
+- S04 — [AP: Quyết định parole bị rút, 02/10/2024](https://apnews.com/article/fee7812abf96bcbe35129b5dff4b7c70). B13; kết quả được đọc qua bản bài AP do công cụ tìm kiếm trả về, mở URL trực tiếp gặp lỗi. Tuổi nạn nhân được đối chiếu tại đây.
+- S05 — [CBS: Kết quả parole, 12/02/2025](https://www.cbsnews.com/losangeles/news/stephanie-lazarus-former-lapd-detective-who-shot-ex-lovers-new-wife-has-parole-denied-again/). Chỉ sử dụng thông tin từ chối ở B13.
+- S07 — [California Board of Parole Hearings: Lịch tháng Mười năm 2026](https://www.cdcr.ca.gov/bph/2026/04/08/october-2026-hearing-calendar/), dòng LAZARUS / WE4479; kiểm trực tiếp ngày 11/09/2026.
+
+Đầu vào và các giới hạn kiểm tra được ghi riêng trong quality-review.md cùng thư mục. Chưa chuẩn bị bản tiếng Anh hay thử audio.

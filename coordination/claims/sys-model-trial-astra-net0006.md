@@ -2,7 +2,7 @@
 id: sys-model-trial-astra-net0006
 agent: codex
 branch: codex/model-trial-astra-net0006
-status: active
+status: done
 opened: 2026-09-11
 updated: 2026-09-11
 scope:
@@ -18,3 +18,5 @@ Tú yêu cầu ngày 2026-09-11: thử từng model viết/biên tập từ cùn
 Tác giả prose: Astra trong task hiện tại. Có thể dùng kiểm tra nguồn/QA độc lập; ghi rõ trong quality-review.md. Bản thử giữ nhãn chờ Tú đánh giá, không coi là sản phẩm đã qua review sản xuất.
 
 Claim được commit riêng trên main theo quy định repo; tên nhánh trên là định danh phần việc, bản thử tách theo thư mục.
+
+Hoàn tất 11/09/2026: bản tiếng Việt 14 nhịp, bản đọc sạch và quality-review.md ở đúng scope. Đã kiểm nguồn và nhận một lượt QA factual độc lập từ subagent cùng model. Phần viết thử đã xong; đánh giá của Tú và review sản xuất là các bước sau, không được ghi là đã duyệt. Không sửa registry hoặc artifact hiện hữu.
