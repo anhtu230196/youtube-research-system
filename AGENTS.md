@@ -257,9 +257,19 @@ Luật an toàn của chế độ tự động:
   | --- | --- |
   | Codex | `--sandbox read-only` — cờ này chặn thật |
   | Claude | `--allowedTools` không có Write/Edit. Không dùng `--permission-mode plan`: nó chặn luôn WebFetch |
-  | Gemini (`agy`) | `permissions.deny` trong `~/.gemini/antigravity-cli/settings.json`. **`--mode plan` không chặn ghi** — đo lại ngày 2026-09-09 thì nó vẫn tạo được file |
+  | Gemini (`agy`) | `permissions.deny` trong `~/.gemini/antigravity-cli/settings.json` — chặn thật, lỗi trả về nguyên văn `Matches user-configured deny rule`. **`--mode plan` và `--dangerously-skip-permissions` đều không phải hàng rào**, và cũng không mở được khóa đó |
 
   Thêm một agent mới thì phải đo thật xem nó có ghi được không, đừng tin tên cờ.
+- **Cả ba ghế đều làm tác giả được.** Codex ghi bằng `--sandbox workspace-write`, Claude bằng `--allowedTools` có Write/Edit. Gemini không có cờ nào lấy được quyền ghi, nên `orchestrate.py` gỡ tạm `write_file(*)` khỏi `permissions.deny` đúng trong lượt tác giả rồi trả lại trong `finally` (khai báo ở khoá `write_unlock` của `coordination/agents.json`). `command(*)` vẫn nằm trong deny cả ở lượt tác giả: Gemini được ghi file, không được chạy shell. Bị giết cứng giữa chừng thì bản khoá nằm ở `settings.json.orchestrate-bak`, và lần chạy sau tự khôi phục trước khi gọi CLI. Bảng bước ở trên không giao ghế tác giả cho Gemini, nhưng Tú giao tay thì nó chạy được.
+- ⚠️ **Bẫy `--add-dir`:** thiếu cờ này thì `agy` ghi vào thư mục scratch của nó (`~/.gemini/antigravity-cli/scratch/`) chứ **không báo lỗi** — nhìn từ ngoài giống hệt bị chặn ghi. Rất có thể đây là thứ làm phép đo ngày 2026-09-09 kết luận nhầm về `--mode plan`. `write_cmd` của Gemini đã có `--add-dir {repo}`; `{repo}` được thay bằng đường dẫn gốc repo lúc chạy.
+- **Hợp đồng đầu ra tách theo vai.** Dòng "KHÔNG tạo file" chỉ đúng cho lượt review; ở lượt tác giả nó mâu thuẫn với chính việc phải làm — đo lại 2026-09-10 thì Gemini đọc xong bỏ hẳn việc ghi artifact và chỉ báo cáo là mình bị chặn.
+- **Đổi model cho một lần chạy** bằng biến môi trường `AGENT_MODEL_<TÊN>`, không phải sửa `agents.json`:
+
+  ```bash
+  AGENT_MODEL_GEMINI=gemini-3.8-flash-high python scripts/orchestrate.py run <slug>
+  ```
+
+  Mặc định: Claude `opus --effort max`, Codex `gpt-6-astra` effort `ultra`, Gemini `gemini-3.1-pro-high`. `python scripts/orchestrate.py doctor` in ra model đang có hiệu lực.
 - **Chỉ lượt tác giả được sửa artifact.** Không lượt nào được sửa `THREAD.md`; orchestrator lấy stdout làm file vòng rồi tự cập nhật sổ.
 - Agent không xuất được khối `points` thì orchestrator **giữ lại file vòng và dừng**, không đoán thay. Sửa tay rồi `thread.py apply`.
 - `run` dừng ngay khi luồng chuyển `settled` hoặc `blocked`, và có trần số lượt riêng.
