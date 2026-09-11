@@ -2,7 +2,7 @@
 id: sys-model-trial-luna-net0006
 agent: codex
 branch: codex/model-trial-luna-net0006
-status: active
+status: done
 opened: 2026-09-11
 updated: 2026-09-11
 scope:
@@ -18,3 +18,5 @@ Tú yêu cầu ngày 2026-09-11: thử GPT-5.6 Luna viết kịch bản từ cù
 Tác giả prose: GPT-5.6 Luna trong task hiện tại. Đầu ra đặt riêng tại `coordination/drafts/model-trials/NET-0006/luna/`, giữ trạng thái chờ Tú đánh giá. Bản thử không được coi là kịch bản đã qua review sản xuất.
 
 Claim này được commit và đẩy lên main trước khi viết nặng theo AGENTS.md.
+
+Hoàn tất 11/09/2026: GPT-5.6 Luna đã tạo bản kịch bản tiếng Việt 14 nhịp, bản lời đọc sạch và quality review trong đúng scope. Bản thử đã được kiểm tra độc lập, sửa các lỗi về John Ruetten, attribution của burglary 11/04, wording phỏng vấn DNA, chức danh LAPD và diễn giải staging. Bản thử vẫn chờ Tú so sánh/đánh giá và không thay thế review sản xuất.
