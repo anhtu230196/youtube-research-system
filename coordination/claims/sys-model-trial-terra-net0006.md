@@ -2,7 +2,7 @@
 id: sys-model-trial-terra-net0006
 agent: codex
 branch: codex/model-trial-terra-net0006
-status: active
+status: done
 opened: 2026-09-11
 updated: 2026-09-11
 scope:
@@ -18,3 +18,5 @@ Tú yêu cầu ngày 2026-09-11: thử GPT-5.6 Terra viết kịch bản từ c�
 Tác giả prose: GPT-5.6 Terra trong task hiện tại. Đầu ra đặt riêng tại `coordination/drafts/model-trials/NET-0006/terra/`, giữ trạng thái chờ Tú đánh giá. Bản thử không được coi là kịch bản đã qua review sản xuất.
 
 Claim này được commit và đẩy lên main trước khi viết nặng theo AGENTS.md.
+
+Hoàn tất 11/09/2026: GPT-5.6 Terra đã tạo bản kịch bản tiếng Việt 14 nhịp, bản lời đọc sạch và kiểm tra chất lượng độc lập trong đúng scope. B03 và B11 đã được chỉnh theo QA nguồn để không gán sai vai trò của vụ burglary 11/04 hoặc khẳng định trình tự dàn dựng. Bản thử vẫn chờ Tú so sánh/đánh giá và không thay thế review sản xuất.
