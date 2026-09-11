@@ -2,7 +2,7 @@
 id: sys-model-trial-claude-net0006
 agent: claude
 branch: claude/model-trial-claude-net0006
-status: active
+status: done
 opened: 2026-09-11
 updated: 2026-09-11
 scope:
@@ -26,3 +26,10 @@ Thiết kế phép thử:
 **Không đụng tới:** `registry.json`, thư mục `episodes/`, claim `NET-0006`, claim `sys-model-trial-sol-net0006` của Codex (thư mục `sol/` đang có bản thử chưa commit), hai luồng review đang mở.
 
 **Ghi chú:** Người viết bản Opus và người viết bản so sánh là cùng một model. Xung đột đó được nêu rõ trong bản so sánh: kết luận "hay nhất" thuộc Tú, không thuộc agent chấm.
+
+Hoàn tất 11/09/2026: ba bản tiếng Việt (opus/ sonnet/ haiku/), ba bản đọc sạch, ba file ghi chú,
+bộ kiểm `check.py`, bộ tráo nhãn `blind.py` và bản so sánh `_claude-trial/so-sanh.md`. Lượt Opus bị
+ngắt giữa đường vì hết hạn mức rồi chạy lại — chỗ lệch điều kiện đó ghi trong bản so sánh.
+
+Phần viết thử đã xong. Đánh giá của Tú và review sản xuất là các bước sau, **không** được ghi là đã
+duyệt. Registry không thay đổi. Không sửa artifact của claim NET-0006 hay claim sol của Codex.
