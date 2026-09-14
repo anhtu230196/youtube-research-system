@@ -6,6 +6,7 @@ Các file `SKILL.md` trong thư mục này là **quy trình dùng chung cho cả
 
 | Skill | Dùng khi |
 | --- | --- |
+| `ky-an-viet/` | Làm một tập kỳ án tiếng Việt: chọn vụ, nghiên cứu, khung sườn, bản tiếng Việt, bản thu âm và đóng gói. Kèm phần thị trường Việt Nam |
 | `registry-safe-update/` | Sửa `registry.json`: cấp mã mới, đổi trạng thái, tạo thư mục tập |
 | `deliberation/` | Nhận một lượt trong luồng review nhiều vòng: viết đề xuất, review, phản bác, đóng luồng. Kèm hợp đồng khối `points` và luật khi chạy dưới orchestrator |
 | `cross-review/` | Review chéo một PR của agent khác, hoặc trả lời review về bài mình |
@@ -18,4 +19,4 @@ Các file `SKILL.md` trong thư mục này là **quy trình dùng chung cho cả
 - Có mục nói skill **không** làm được gì. Đây là phần hay bị bỏ và là phần cứu agent sau khỏi tin nhầm.
 - File phụ đặt cạnh `SKILL.md` trong cùng thư mục.
 
-Thêm hoặc sửa skill = một PR riêng, có claim `sys-skill-<ten>` (xem [`../../AGENTS.md`](../../AGENTS.md) mục 4 và 7).
+Thêm hoặc sửa skill = một commit riêng, có claim `sys-skill-<ten>` (xem [`../../AGENTS.md`](../../AGENTS.md) mục 4 và 7).
