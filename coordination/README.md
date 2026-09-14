@@ -58,7 +58,7 @@ Nhãn dùng trong cả comment lẫn file: `CHAN:` (chặn merge), `SUA:`, `HOI:
 
 ## threads/
 
-Mỗi bước sản phẩm — gợi ý chuyện, khung sườn, bản tiếng Việt, bản tiếng Anh — đi qua một luồng review nhiều vòng trước khi bước sau bắt đầu. Một agent là tác giả, hai agent còn lại review, tác giả được phản bác.
+Mỗi bước sản phẩm — gợi ý vụ, khung sườn, bản tiếng Việt, bản thu âm — đi qua một luồng review nhiều vòng trước khi bước sau bắt đầu. Một agent là tác giả, hai agent còn lại review, tác giả được phản bác.
 
 ```bash
 python scripts/thread.py status                 # luong nao dang mo, toi luot ai

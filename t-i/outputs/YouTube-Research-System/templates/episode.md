@@ -12,6 +12,7 @@
 - Góc kể và giá trị riêng:
 - Kết luận đã biết / chưa biết:
 - Kiểm tra diễn biến mới nhất ngày:
+- Vụ Việt Nam — tư cách tố tụng của từng người tại ngày kiểm tra:
 
 ## Nguồn — sources.csv
 
@@ -67,11 +68,12 @@ asset_id,description,source_id,url,local_path,download_status,rights,credit,plan
 - sources/: tài liệu nghiên cứu thực sự đã lưu.
 - assets/: tài sản dựng thực sự đã lưu.
 - scripts/01-beat-sheet.md: dàn nhịp có nguồn.
-- scripts/02-script-vi.md: bản đầy đủ tiếng Việt để duyệt.
-- scripts/03-script-final-sourced.md: bản cuối có mã chứng cứ.
-- scripts/04-narration-clean.txt: lời đọc sạch theo ngôn ngữ đã chọn.
+- scripts/02-script-vi.md: bản đầy đủ tiếng Việt để Tú duyệt nội dung; cũng là lời kể cuối.
+- scripts/03-script-final-sourced.md: bản cuối có mã chứng cứ, sau khi Tú duyệt.
+- scripts/04-narration-clean.txt: lời đọc sạch tiếng Việt.
+- pronunciation.md: cách đọc tên riêng, viết tắt và con số với giọng TTS đang dùng; ghi đã nghe thử hay chưa.
 - visual-plan.md: hình theo đoạn, phân biệt tư liệu thật và minh họa/tái dựng.
 - packaging.md: 3 tiêu đề, ý tưởng thumbnail, mô tả và nguồn liên kết.
-- quality-review.md: kết quả kiểm tra sự thật, nhịp kể, quảng cáo, quyền tư liệu và định dạng thu âm; nêu hạn chế thực tế.
+- quality-review.md: kết quả kiểm tra sự thật, nhịp kể, quảng cáo, quyền tư liệu, bản địa hoá, thận trọng với vụ án Việt Nam nếu có, và định dạng thu âm; nêu hạn chế thực tế.
 
 Chỉ liệt kê là đã bàn giao những file tồn tại. Bản kịch bản chưa hoàn tất không được gắn trạng thái scripted.

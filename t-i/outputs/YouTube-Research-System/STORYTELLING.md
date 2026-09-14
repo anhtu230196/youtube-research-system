@@ -1,10 +1,10 @@
 # Bộ tiêu chí kể chuyện của kênh
 
-Phiên bản 2 — 2026-09-08. Rút ra từ bảy kịch bản khác nhau người dùng cung cấp qua hai đợt.
+Phiên bản 3 — 2026-09-14. Rút ra từ bảy kịch bản khác nhau người dùng cung cấp qua hai đợt. Bản 3 đổi đích từ kênh tiếng Anh cho khán giả Mỹ sang kênh kỳ án tiếng Việt cho khán giả Việt Nam; phần phân tích mẫu giữ nguyên.
 
 ## Mục tiêu đã thống nhất
 
-Kênh tiếng Anh cho khán giả Mỹ, về bí ẩn internet, lừa đảo và điều tra số. Người dùng duyệt bản đầy đủ tiếng Việt trước. Không đặt số phút cố định. Điều người dùng thích ở mẫu là cách dẫn dắt và mở đầu gây tò mò; lời kêu gọi đăng ký cần đơn giản.
+Kênh kỳ án tiếng Việt cho khán giả Việt Nam: vụ án và bí ẩn có thật, trong và ngoài nước. Người dùng duyệt nội dung bản đầy đủ tiếng Việt, và bản đó cũng là lời kể cuối. Không đặt số phút cố định. Điều người dùng thích ở mẫu là cách dẫn dắt và mở đầu gây tò mò; lời kêu gọi đăng ký cần đơn giản.
 
 Đây là bộ nguyên tắc biên tập để xây giọng riêng, không phải yêu cầu tái tạo nguyên văn phong cách một tác giả. Các nhận xét dưới đây phân tích cách văn bản hoạt động, không xác nhận sự thật của những vụ được kể. Không có dữ liệu giữ chân người xem để khẳng định hiệu quả bằng con số.
 
@@ -15,9 +15,9 @@ Người dùng gửi tổng cộng tám file qua hai đợt, nhưng REF-04 và R
 | Mẫu | Cách tổ chức đáng chú ý | Bài học áp dụng |
 |---|---|---|
 | REF-01: sinh viên trong giảng đường, rồi vụ Damon Nicholson | Mở bằng một cảnh diễn ra về sau: cảnh sát đến giữa buổi học và gọi đúng một người. Quay lại trước vụ việc; đi qua các manh mối mâu thuẫn; trở lại cảnh giảng đường khi đã có bối cảnh. Cuối cùng, lời giải nối các chi tiết tưởng chỉ tới những hướng khác nhau. | Một cảnh mở cụ thể có thể đặt câu hỏi về mối liên hệ, không cần giới thiệu toàn bộ vụ án. Khi quay lại, cảnh đó phải có thêm ý nghĩa. Hướng điều tra sai không nhất thiết là lời giải cuối. |
-| REF-02: bốn câu chuyện gắn với ảnh | Phần mở hứa cho xem ảnh ở cuối từng chuyện. Các vật hoặc hành động được giới thiệu sớm, nhưng ý nghĩa đầy đủ chỉ xuất hiện khi bức ảnh được đưa ra. | Một bằng chứng nhìn thấy được có thể làm điểm trả lời cho lời hứa mở đầu. Với kênh này: bài đăng, email, ảnh chụp giao diện hoặc tài liệu gốc. Chỉ hứa cho xem khi đã có tài sản dùng được hoặc bản minh họa được ghi rõ. |
+| REF-02: bốn câu chuyện gắn với ảnh | Phần mở hứa cho xem ảnh ở cuối từng chuyện. Các vật hoặc hành động được giới thiệu sớm, nhưng ý nghĩa đầy đủ chỉ xuất hiện khi bức ảnh được đưa ra. | Một bằng chứng nhìn thấy được có thể làm điểm trả lời cho lời hứa mở đầu. Với kênh này: tài liệu hồ sơ, vật chứng đã công bố, bản ghi cuộc gọi, bài báo gốc hoặc ảnh tư liệu có quyền dùng. Chỉ hứa cho xem khi đã có tài sản dùng được hoặc bản minh họa được ghi rõ. |
 | REF-03: bốn chuyện không như vẻ ngoài | Mỗi đoạn xây một cách hiểu ban đầu rồi đổi cách hiểu đó: căn phòng quân sự được giải thích qua giấc mơ; biểu hiện tưởng là diễn hài được giải thích khác; cảnh giam giữ được nối với sai sót hành chính. | Kết thúc mạnh có thể thay đổi ý nghĩa của những gì đã thấy, không chỉ thêm một dữ kiện mới. Với chuyện thật, phải phân biệt trải nghiệm chủ quan với thực tế. Không kể giấc mơ, lời đồn hoặc niềm tin sai như sự thật khách quan để đánh lừa. |
-| REF-04: ba kế hoạch và kết quả bất ngờ | Bắt đầu bằng điều một người muốn đạt được, theo các hành động thực hiện, rồi làm lộ hệ quả. Ở chuyện hang động, màu xanh và việc hang biến mất được quay lại giải thích ở cuối. | Mong muốn → lựa chọn → hệ quả là trục kể hữu ích cho vụ lừa đảo. Đặt chi tiết có thể giải thích lại từ đầu. Không ép mọi chuyện thành mô-típ người xấu tự hại mình; các câu chuyện trong cùng mẫu cũng không khớp lời giới thiệu ở cùng mức độ. |
+| REF-04: ba kế hoạch và kết quả bất ngờ | Bắt đầu bằng điều một người muốn đạt được, theo các hành động thực hiện, rồi làm lộ hệ quả. Ở chuyện hang động, màu xanh và việc hang biến mất được quay lại giải thích ở cuối. | Mong muốn → lựa chọn → hệ quả là trục kể hữu ích cho các vụ có kế hoạch: lừa đảo, dàn dựng hiện trường, che giấu danh tính. Đặt chi tiết có thể giải thích lại từ đầu. Không ép mọi chuyện thành mô-típ người xấu tự hại mình; các câu chuyện trong cùng mẫu cũng không khớp lời giới thiệu ở cùng mức độ. |
 
 Hai dạng mở đầu trong mẫu cần phân biệt: REF-01 mở ngay bằng cảnh; các mẫu tổng hợp mở bằng lời hứa chung rồi mới bắt đầu cảnh đầu tiên. Kênh này mặc định ưu tiên cảnh cụ thể khi có chất liệu. Không bắt buộc làm tập tổng hợp chỉ vì phần lớn mẫu là tổng hợp.
 
@@ -38,8 +38,8 @@ Một mở đầu tốt giúp người nghe hình dung được ai đang làm g�
 Ba lựa chọn cho mỗi bản dàn ý:
 
 1. **Một sự việc bình thường bị gián đoạn:** người có mục tiêu cụ thể đang thực hiện việc quen thuộc; một thông báo, người xuất hiện hoặc dữ liệu mới làm tình huống đổi hướng.
-2. **Hai điều khó cùng đúng:** tài liệu xác nhận một điều nhưng hoạt động trên tài khoản lại cho thấy điều khác. Nêu đúng mức độ chứng minh, không biến việc chưa xác minh thành nghịch lý chắc chắn.
-3. **Một vật chứng cần giải thích:** một chi tiết trên email, bài đăng hoặc ảnh dường như nhỏ nhưng khiến người điều tra phải thay đổi câu hỏi. Cho biết chi tiết tồn tại; để lời giải đến khi đủ bối cảnh.
+2. **Hai điều khó cùng đúng:** hồ sơ xác nhận một điều nhưng lời khai hoặc vật chứng lại cho thấy điều khác. Nêu đúng mức độ chứng minh, không biến việc chưa xác minh thành nghịch lý chắc chắn.
+3. **Một vật chứng cần giải thích:** một chi tiết ở hiện trường, trong hồ sơ hoặc trên ảnh dường như nhỏ nhưng khiến người điều tra phải thay đổi câu hỏi. Cho biết chi tiết tồn tại; để lời giải đến khi đủ bối cảnh.
 
 Viết thử ba phương án ngắn bằng tiếng Việt, chọn phương án mạnh nhất trong quá trình biên tập và đưa vào bản đầy đủ; không tạo thêm một vòng xin phép bắt buộc. Chỉ đưa các phương án còn lại cho người dùng nếu chúng giúp lựa chọn thực sự.
 
@@ -53,12 +53,13 @@ Chuỗi ưu tiên: câu hỏi → hành động để trả lời → phát hi�
 
 Trong các mẫu, người kể thường giải thích lại quan hệ và vị trí trước một diễn biến quan trọng: ai là người giữ điện thoại, ai ở cùng tòa nhà, một người đang ở đâu so với vật bên dưới. Chỉ giữ kiểu nhắc lại này khi nó giúp người nghe hiểu bước tiếp theo; lược bỏ lặp ý do bản chép lời hoặc lời đệm.
 
-Áp dụng cho điều tra số:
+Áp dụng cho kỳ án:
 
-- Trước khi kể việc xem log, nói họ cần biết điều gì. Sau đó mới nêu phần dữ liệu liên quan và điều nó cho phép kết luận.
-- Trước khi giải thích công nghệ, cho người nghe thấy hệ quả với người trong chuyện. Chỉ đưa thuật ngữ khi cần hiểu một quyết định hoặc bằng chứng.
-- Một địa chỉ IP, dấu thời gian, ví điện tử hoặc ảnh chụp riêng lẻ không tự xác định danh tính hay động cơ. Giữ đúng giới hạn chứng cứ trong cả dàn ý lẫn lời kể.
-- Khi có nhiều nhân vật/tài khoản, giới thiệu vai trò trước và nhắc vai trò khi trở lại. Không dồn cả danh sách bí danh vào một đoạn.
+- Trước khi kể việc khám nghiệm, xét nghiệm hay đối chiếu hồ sơ, nói người điều tra cần biết điều gì. Sau đó mới nêu kết quả và điều nó cho phép kết luận.
+- Trước khi giải thích kỹ thuật pháp y hay thủ tục, cho người nghe thấy hệ quả với người trong chuyện. Chỉ đưa thuật ngữ khi cần hiểu một quyết định hoặc bằng chứng.
+- Một dấu vân tay, một hồ sơ DNA một phần, một dấu thời gian hay một lời khai riêng lẻ không tự xác định danh tính hay động cơ. Vụ có yếu tố số cũng vậy: một địa chỉ IP, ví điện tử hay ảnh chụp màn hình riêng lẻ không đủ. Giữ đúng giới hạn chứng cứ trong cả dàn ý lẫn lời kể.
+- Khi có nhiều nhân vật, giới thiệu vai trò trước và nhắc vai trò khi trở lại. Không dồn cả danh sách tên vào một đoạn.
+- Vụ nước ngoài: bối cảnh về cảnh sát, toà án, địa lý đặt ngay trước chỗ cần để hiểu bước tiếp theo, không dồn thành một đoạn giới thiệu dài ở đầu tập.
 
 ## 4. Manh mối, căng thẳng và lời giải
 
@@ -66,7 +67,7 @@ Lập bảng manh mối trước khi viết: chi tiết xuất hiện ở đâu,
 
 Chi tiết xuất hiện sớm không cần bị gắn nhãn là quan trọng. Giá trị có thể chỉ rõ ở cuối, khi người nghe nhớ ra mình đã được thấy nó. Tuy nhiên, không giấu một kết quả xét nghiệm, lời giải thích hoặc sự kiện đã biết chỉ để quy chụp một người vô tội trong phần trước.
 
-Căng thẳng có thể đến từ nguy cơ mất tiền, mất quyền kiểm soát tài khoản, mất bằng chứng hoặc một lời giải thích liên tiếp thất bại. Không cần chuyển kênh sang nội dung bạo lực để làm câu chuyện mạnh hơn.
+Căng thẳng có thể đến từ thời gian trôi làm bằng chứng mất dần, một người vô tội đang chịu án, một nghi vấn không ai kiểm được, hoặc một lời giải thích liên tiếp thất bại. Không cần mô tả bạo lực chi tiết để câu chuyện mạnh hơn — kênh kỳ án càng dễ trượt vào đó.
 
 Sau phát hiện quyết định, dành đủ chỗ giải thích cơ chế: chi tiết cũ nào giờ sáng tỏ, giả thuyết nào không còn đứng vững, chuyện gì xảy ra với những người liên quan. Một cái tên bất ngờ chưa phải kết thúc đủ tốt.
 
@@ -82,7 +83,7 @@ Các mẫu có nhiều lời đệm, từ lặp, thẻ [music] và tên riêng �
 
 Không có thời lượng mục tiêu. Nếu một đoạn không phát triển nhân vật, diễn biến, bằng chứng hoặc câu hỏi, cắt hoặc viết lại. Nếu lời giải còn khó hiểu, thêm bối cảnh cần thiết dù tập dài hơn. Ước tính phút sau khi bản kể đã hình thành.
 
-Bản tiếng Việt phải có đầy đủ nhịp kể, các đoạn chuyển, những phát hiện và kết thúc để người dùng duyệt được trải nghiệm thực tế. Bản tiếng Anh viết lại tự nhiên cho người Mỹ, không chỉ dịch từng câu; giữ cấu trúc và sự thật đã duyệt.
+Bản tiếng Việt phải có đầy đủ nhịp kể, các đoạn chuyển, những phát hiện và kết thúc để người dùng duyệt được trải nghiệm thực tế. Đó chính là thứ khán giả sẽ nghe. Viết cho người Việt nghe, không dịch từng câu từ nguồn. Xưng hô, bản địa hoá và cách tránh văn dịch: `.claude/skills/ky-an-viet/references/giong-ke.md`. Sau khi duyệt chỉ chuẩn bị bản thu âm, không viết lại nội dung.
 
 ## 6. Kêu gọi đăng ký
 
@@ -90,7 +91,7 @@ Yêu cầu người dùng: đơn giản. Mặc định biên tập của hệ th
 
 Không dùng tiểu phẩm với nút like, lời kêu gọi thông báo dài, giới thiệu lịch đăng chưa có hoặc nhiều yêu cầu liên tiếp. Không nhập phần tài trợ trong mẫu vào kịch bản của kênh.
 
-Một câu mẫu có thể dùng sau khi kênh xác định tên: “Subscribe for more stories about internet mysteries and digital investigations.” Đây là gợi ý câu CTA, không phải bắt buộc lặp nguyên văn mọi tập.
+Một câu mẫu có thể dùng sau khi kênh xác định tên: “Nếu bạn muốn nghe thêm những kỳ án có thật được kể từ hồ sơ, hãy đăng ký kênh.” Đây là gợi ý câu CTA, không phải bắt buộc lặp nguyên văn mọi tập; cách xưng hô trong câu phải khớp cách xưng hô kênh chốt.
 
 ## 7. Kiểm tra trước khi đưa bản tiếng Việt cho người dùng
 
@@ -104,6 +105,7 @@ Một câu mẫu có thể dùng sau khi kênh xác định tên: “Subscribe f
 - Lời giải có nối được các chi tiết trước đó không? Khoảng trống còn lại có được thừa nhận không?
 - Có thuật ngữ hoặc đoạn lặp nào có thể bỏ mà không mất ý không?
 - Câu CTA có ngắn và nằm sau phần kết không?
+- Đã qua danh sách kiểm ở `.claude/skills/ky-an-viet/references/thi-truong-viet-nam.md` chưa: bản địa hoá, văn dịch, xưng hô, cách gọi người chưa bị kết án, và với vụ Việt Nam là tư cách tố tụng và đời tư?
 
 Ghi nhận kết quả trong quality-review.md. Không chấm một bản là “giữ chân tốt” chỉ dựa vào trực giác; đây là đánh giá biên tập, hiệu quả thực tế cần dữ liệu sau xuất bản.
 
@@ -111,11 +113,11 @@ Ghi nhận kết quả trong quality-review.md. Không chấm một bản là �
 
 ### Một chi tiết có thể làm hai việc
 
-Trong REF-06, việc chuyển nhà và cuộc gọi gia đình tạo bối cảnh đời thường trước khi được nối với diễn biến vụ việc. Khi nghiên cứu chuyện lừa đảo, tìm những chi tiết tương tự có nguồn: một giao dịch nhỏ ban đầu, một lần hỗ trợ tài khoản, một cuộc gọi được hẹn trước. Xem chúng có vừa giải thích vì sao nhân vật tin tưởng, vừa giúp hiểu cơ chế vụ việc ở cuối không. Không ép mọi chi tiết thành manh mối hoặc bịa thêm một hành vi tử tế để tạo tương phản.
+Trong REF-06, việc chuyển nhà và cuộc gọi gia đình tạo bối cảnh đời thường trước khi được nối với diễn biến vụ việc. Khi nghiên cứu vụ án, tìm những chi tiết tương tự có nguồn: một cuộc hẹn, một thói quen bị phá vỡ, một món đồ được mua hay một cuộc gọi trước ngày xảy ra sự việc. Xem chúng có vừa làm rõ con người và các mối quan hệ, vừa giúp hiểu diễn biến vụ việc ở cuối không. Không ép mọi chi tiết thành manh mối hoặc bịa thêm một hành vi tử tế để tạo tương phản.
 
 ### Tăng nghi vấn bằng những câu hỏi có thể kiểm tra
 
-REF-07 cho người cha bắt đầu từ mong muốn lấy lại đồ của con, rồi nhận ra các điểm không khớp. Đây là một cách đưa người nghe từ mục tiêu dễ hiểu sang câu hỏi điều tra. Với kênh số, mỗi điểm bất thường phải có nguồn, cách kiểm tra và các lời giải thích thông thường cần xét. Không cộng nhiều điều chưa giải thích được thành bằng chứng chắc chắn cho âm mưu. Chuyện chưa có lời giải vẫn phải để người nghe biết ranh giới đó.
+REF-07 cho người cha bắt đầu từ mong muốn lấy lại đồ của con, rồi nhận ra các điểm không khớp. Đây là một cách đưa người nghe từ mục tiêu dễ hiểu sang câu hỏi điều tra. Với kỳ án, mỗi điểm bất thường phải có nguồn, cách kiểm tra và các lời giải thích thông thường cần xét. Không cộng nhiều điều chưa giải thích được thành bằng chứng chắc chắn cho âm mưu. Chuyện chưa có lời giải vẫn phải để người nghe biết ranh giới đó.
 
 ### Ghi lại ai biết điều gì, vào lúc nào
 
@@ -133,7 +135,7 @@ Có thể đi từ chuyện đã xảy ra, đến cách nó xảy ra, rồi tớ
 
 ### Phân biệt câu chuyện về lời đồn với lời đồn được kể như sự thật
 
-REF-08 có chất liệu hấp dẫn về điều nhân vật cho rằng đã thấy. Với kênh bí ẩn internet, có thể nghiên cứu bài kể đó xuất hiện ở đâu, bản nào sớm nhất, được thêm thắt ra sao, ảnh chụp có xuất xứ gì và tài liệu nào hỗ trợ từng phần. Phần siêu nhiên chưa được chứng minh phải được giữ là lời kể/niềm tin. Không suy từ việc bài đăng bị xóa sang việc nó đúng hoặc có người muốn che giấu sự thật. Một tài liệu thật chỉ hỗ trợ những gì chính tài liệu đó ghi nhận.
+REF-08 có chất liệu hấp dẫn về điều nhân vật cho rằng đã thấy. Với kỳ án có yếu tố lời đồn — tâm linh, truyền thuyết, câu chuyện lan truyền trên mạng — có thể nghiên cứu bài kể đó xuất hiện ở đâu, bản nào sớm nhất, được thêm thắt ra sao, ảnh chụp có xuất xứ gì và tài liệu nào hỗ trợ từng phần. Phần siêu nhiên chưa được chứng minh phải được giữ là lời kể/niềm tin. Không suy từ việc bài đăng bị xóa sang việc nó đúng hoặc có người muốn che giấu sự thật. Một tài liệu thật chỉ hỗ trợ những gì chính tài liệu đó ghi nhận.
 
 ### Nhịp cảm xúc có chỗ bình thường và nhẹ nhõm
 

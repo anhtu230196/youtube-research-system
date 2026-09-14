@@ -15,6 +15,7 @@ Mọi agent đọc file này trước khi làm bất cứ việc gì. `CLAUDE.md
 | Bất kỳ việc gì trong repo | `AGENTS.md` (file này) |
 | Việc của kênh YouTube | `t-i/outputs/YouTube-Research-System/AGENTS.md`, `README.md`, `registry.json` |
 | Gợi ý góc kể, hook, dàn ý, kịch bản | thêm `t-i/outputs/YouTube-Research-System/STORYTELLING.md` |
+| Gợi ý vụ, nghiên cứu, khung sườn, kịch bản, bản thu âm | thêm `.claude/skills/ky-an-viet/SKILL.md` |
 | Nhận một lượt trong luồng review | thêm `.claude/skills/deliberation/SKILL.md` |
 | Sửa `registry.json` | thêm `.claude/skills/registry-safe-update/SKILL.md` |
 
@@ -25,8 +26,8 @@ Luật nghiệp vụ của kênh nằm trong `t-i/outputs/YouTube-Research-Syste
 | Agent | Việc chính | Không nhận mặc định |
 | --- | --- | --- |
 | **Codex** | Nghiên cứu, tải nguồn, dựng timeline và claim ledger, viết bản tiếng Việt đầy đủ để duyệt | Tự review chính bản mình vừa viết |
-| **Claude Code** | Khung sườn / beat sheet; skill, script, CI, cấu trúc repo; review đối chiếu nguồn bản tiếng Việt; viết bản tiếng Anh thu âm sau khi người dùng đã duyệt | Viết bản tiếng Việt gốc của tập Codex đang giữ |
-| **Gemini / Antigravity** | Kiểm chứng chéo nguồn, kế hoạch hình ảnh theo cảnh, đối chiếu bản Anh với bản Việt đã duyệt | Sửa `registry.json` cho tới khi được giao rõ |
+| **Claude Code** | Khung sườn / beat sheet; skill, script, CI, cấu trúc repo; review đối chiếu nguồn bản tiếng Việt; làm bản thu âm tiếng Việt và đóng gói sau khi người dùng đã duyệt | Viết bản tiếng Việt gốc của tập Codex đang giữ |
+| **Gemini / Antigravity** | Kiểm chứng chéo nguồn, kế hoạch hình ảnh theo cảnh, đối chiếu bản thu âm với bản tiếng Việt đã duyệt | Sửa `registry.json` cho tới khi được giao rõ |
 
 Nguyên tắc đứng sau bảng này: **người viết không phải là người review.** Một tập đi qua ít nhất hai agent trước khi bàn giao.
 
@@ -65,13 +66,13 @@ python scripts/claims.py check
 
 Nếu `<ID>` đã có claim `active` của agent khác: **không làm**, báo người dùng và đề xuất việc khác.
 
-Xong việc: đổi `status: done` trong chính PR kết thúc việc. Bỏ giữa chừng: `status: released` kèm lý do và tình trạng còn dở. Claim `active` quá 7 ngày không cập nhật coi như nguội — agent khác được tiếp quản sau khi hỏi người dùng.
+Xong việc: đổi `status: done` bằng một commit trên `main` khi việc đã vào `main`. Bỏ giữa chừng: `status: released` kèm lý do và tình trạng còn dở. Claim `active` quá 7 ngày không cập nhật coi như nguội — agent khác được tiếp quản sau khi hỏi người dùng.
 
 ## 5. `registry.json` — sổ trạng thái
 
 `t-i/outputs/YouTube-Research-System/registry.json` là nguồn trạng thái duy nhất. Thư mục `episodes/` không phải nguồn trạng thái.
 
-- **Một PR chỉ có một agent sửa `registry.json`.**
+- **Mỗi lúc chỉ một agent sửa `registry.json`.** Commit sửa sổ đứng riêng, không trộn với nội dung khác.
 - Quy trình sửa: đọc bản mới nhất trên `origin/main` → `python scripts/registry.py snapshot` → sửa → `python scripts/registry.py check`.
 - Cấp mã mới: lấy `next_case_number`, tạo case, **bump `next_case_number` trong cùng commit**.
 - Không tạo `episodes/<ID>-slug/` khi chưa có case `<ID>` trong sổ. Lỗi này đã xảy ra thật với NET-0006: thư mục tập và kịch bản tồn tại nhưng sổ không biết, và `next_case_number` vẫn định cấp lại mã đó cho chuyện khác.
@@ -97,7 +98,7 @@ Codex CLI và Claude Code có thể cùng trỏ vào `C:\Users\tu.vu\Documents\C
 
 - Frontmatter có `name` và `description`. Phần thân là quy trình viết cho một agent bất kỳ.
 - Không dùng cú pháp riêng của một nhà cung cấp trong phần thân. File phụ đặt cạnh `SKILL.md`.
-- Thêm hoặc sửa skill = một PR riêng, có claim `sys-skill-<ten>`.
+- Thêm hoặc sửa skill = một commit riêng, có claim `sys-skill-<ten>`.
 - Skill mô tả quy trình đã chạy được thật, không phải ý định. Chưa chạy thử thì ghi rõ phần nào chưa kiểm chứng.
 
 ## 8. Review theo từng bước
@@ -128,10 +129,10 @@ Vai tác giả xoay theo bước, không cố định theo agent. Mục 2 chỉ 
 | 3 | Timeline + claim ledger sau nghiên cứu | Codex | Claude (truy nguồn ngược), Gemini (kiểm chứng chéo) |
 | 4 | **Khung sườn / beat sheet** | Claude | Codex, Gemini |
 | 5 | Bản tiếng Việt đầy đủ | Codex | Claude (đối chiếu nguồn), Gemini — rồi **Tú duyệt nội dung** |
-| 6 | Bản tiếng Anh thu âm | Claude | Codex, Gemini (đối chiếu bản Việt đã duyệt) |
+| 6 | Bản thu âm tiếng Việt + đóng gói (tiêu đề, thumbnail, mô tả) | Claude | Codex, Gemini (đối chiếu với bản tiếng Việt đã duyệt) |
 | 7 | Skill, script, CI, cấu trúc repo | Claude | Codex |
 
-Bước 5 có hai lớp: agent review nguồn và tính nhất quán, **Tú duyệt nội dung**. Agent không thay được lớp thứ hai.
+Bước 5 có hai lớp: agent review nguồn và tính nhất quán, **Tú duyệt nội dung**. Agent không thay được lớp thứ hai. Bước 6 không viết lại nội dung đã duyệt: chỉ chuẩn bị để đọc và đóng gói.
 
 ### Cấu trúc một luồng
 
@@ -269,7 +270,7 @@ Luật an toàn của chế độ tự động:
   AGENT_MODEL_GEMINI=gemini-3.8-flash-high python scripts/orchestrate.py run <slug>
   ```
 
-  Mặc định: Claude `opus --effort max`, Codex `gpt-6-astra` effort `ultra`, Gemini `gemini-3.1-pro-high`. `python scripts/orchestrate.py doctor` in ra model đang có hiệu lực.
+  Mặc định: Claude `opus` với ultracode bật trong `~/.claude/settings.json` (không truyền `--effort` — cờ đó chặn ultracode), Codex `gpt-6-astra` effort `xhigh`, Gemini `gemini-3.1-pro-high`. `python scripts/orchestrate.py doctor` in ra model đang có hiệu lực.
 - **Chỉ lượt tác giả được sửa artifact.** Không lượt nào được sửa `THREAD.md`; orchestrator lấy stdout làm file vòng rồi tự cập nhật sổ.
 - Agent không xuất được khối `points` thì orchestrator **giữ lại file vòng và dừng**, không đoán thay. Sửa tay rồi `thread.py apply`.
 - `run` dừng ngay khi luồng chuyển `settled` hoặc `blocked`, và có trần số lượt riêng.
