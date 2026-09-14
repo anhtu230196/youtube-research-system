@@ -4,22 +4,20 @@
   "channel": {
     "owner": "Tú",
     "topics": [
-      "kỳ án",
-      "án mạng bí ẩn",
-      "mất tích",
-      "án oan",
-      "vụ chưa có lời giải",
-      "lừa đảo và điều tra số khi có chất kỳ án"
+      "bí ẩn internet",
+      "lừa đảo",
+      "điều tra số"
     ],
-    "audience": "VN",
-    "narration_language": "vi",
+    "audience": "US",
+    "narration_language": "en",
     "target_minutes": null,
     "proposed_defaults": {
-      "audience": "VN",
-      "narration_language": "vi",
+      "audience": "US",
+      "narration_language": "en",
       "target_minutes": null
     },
     "review_language": "vi",
+    "vietnamese_review_before_english": true,
     "suggestion_batch_size": 5,
     "previous_external_episodes_imported": false,
     "configuration_history": [
@@ -38,13 +36,9 @@
       {
         "date": "2026-09-08",
         "change": "Imported three additional storytelling samples REF-06 to REF-08. Eight inputs, seven unique references. Added dual-purpose details, evidence accumulation, causal attitude changes, progressive scope reveals and explicit attribution rules. Topic selection remains pending."
-      },
-      {
-        "date": "2026-09-14",
-        "change": "User switched the channel back to a Vietnamese kỳ án (true crime and strange cases) channel for the Vietnamese market, replacing the 2026-09-08 US audience and English narration decision. Narration language vi; the English writing step is removed. The full Vietnamese script still requires user content approval before narration preparation. Case IDs keep the NET-xxxx format. Narrator form of address is not decided yet (narrator_voice null). Existing proposed cases were not re-evaluated."
       }
     ],
-    "duration_policy": "Story-driven, no fixed runtime. The full Vietnamese script is also the final narration after user approval; never pad or invent details.",
+    "duration_policy": "Story-driven, no fixed runtime. Prioritize compelling narration in the full Vietnamese review draft and English final; never pad or invent details.",
     "storytelling_guide": "STORYTELLING.md",
     "reference_manifest": "references/manifest.json",
     "cta_policy": {
@@ -53,10 +47,7 @@
       "max_sentences": 1,
       "like_button_skits": false,
       "interrupt_climax": false
-    },
-    "content_review_before_narration": true,
-    "narrator_voice": null,
-    "script_skill": ".claude/skills/ky-an-viet/SKILL.md"
+    }
   },
   "next_case_number": 7,
   "statuses": [
