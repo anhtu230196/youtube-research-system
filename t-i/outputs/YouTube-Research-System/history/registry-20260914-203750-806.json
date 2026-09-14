@@ -155,7 +155,7 @@
         "https://www.irishtimes.com/life-and-style/food-and-drink/i-made-my-shed-the-top-rated-restaurant-on-trip-advisor-1.3318770",
         "https://www.nprillinois.org/generationlisten/2019-04-23/internet-prankster-oobah-butler-faked-it-until-he-made-it"
       ],
-      "status": "excluded",
+      "status": "proposed",
       "first_proposed_on": "2026-09-08",
       "batch_id": "2026-09-08-01",
       "episode_path": null,
@@ -166,11 +166,6 @@
           "date": "2026-09-08",
           "status": "proposed",
           "reason": "First verified topic shortlist; awaiting user choice."
-        },
-        {
-          "date": "2026-09-14",
-          "status": "excluded",
-          "reason": "Tu loai 2026-09-14: kenh doi sang ky an tieng Viet; nha hang gia tren Tripadvisor la chuyen lua dao mang, khong co chat ky an."
         }
       ]
     },
@@ -206,7 +201,7 @@
         "https://tukaani.org/xz-backdoor/"
       ],
       "coverage_url": "https://www.youtube.com/watch?v=aoag03mSuXQ",
-      "status": "excluded",
+      "status": "proposed",
       "first_proposed_on": "2026-09-08",
       "batch_id": "2026-09-08-01",
       "episode_path": null,
@@ -217,11 +212,6 @@
           "date": "2026-09-08",
           "status": "proposed",
           "reason": "First verified topic shortlist; awaiting user choice."
-        },
-        {
-          "date": "2026-09-14",
-          "status": "excluded",
-          "reason": "Tu loai 2026-09-14: kenh doi sang ky an tieng Viet; backdoor XZ Utils la chuyen ky thuat bao mat, khong co chat ky an."
         }
       ]
     },
