@@ -19,11 +19,11 @@ scope:
 
 **Làm gì:** Skill ky-an-viet: quy trinh kich ban ky an tieng Viet cho khan gia Viet Nam
 
-**Không đụng tới:** `~/.codex/skills/mystery-case-script` (skill toàn cục của máy, dùng chung dự án khác); plugin `mystery-case-script` của Claude; `.agents/skills/`.
+**Không đụng tới:** `~/.codex/skills/mystery-case-script` (skill toàn cục của máy, dùng chung dự án khác); plugin `mystery-case-script` của Claude. Bản `.agents/skills/ky-an-viet/` nằm trong phạm vi cập nhật từ lượt tiếp quản ngày 2026-09-15.
 
 **Ghi chú:** Kế thừa `mystery-case-script` bản 2026-09-08. Phần mới (bản địa hoá, vụ án Việt Nam, cạnh tranh tiếng Việt, TTS tiếng Việt) chưa chạy trên tập thật và chưa qua luồng review bước 7 — ghi rõ trong chính skill. 
 
-**Đóng:** Xong 2026-09-14: skill đã vào `main`. Phần mới chưa chạy trên tập thật và chưa qua luồng review bước 7 — dùng lần đầu thì sửa skill theo thực tế.
+**Lịch sử lượt tạo 2026-09-14 (đã đóng):** skill đã vào `main`. Khi đóng lượt đó, phần mới chưa chạy trên tập thật và chưa qua luồng review bước 7. Trạng thái hiện tại theo frontmatter và lượt tiếp quản bên dưới.
 
 ## Tiếp quản 2026-09-15 — Codex
 

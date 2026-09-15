@@ -1,6 +1,6 @@
 # Bộ tiêu chí kể chuyện của kênh
 
-Phiên bản 3 — 2026-09-14. Rút ra từ bảy kịch bản khác nhau người dùng cung cấp qua hai đợt. Bản 3 đổi đích từ kênh tiếng Anh cho khán giả Mỹ sang kênh kỳ án tiếng Việt cho khán giả Việt Nam; phần phân tích mẫu giữ nguyên.
+Phiên bản 4 — 2026-09-15. Phần 1–8 giữ phân tích bảy kịch bản khác nhau qua hai đợt trước. Bản 3 đổi đích sang khán giả Việt Nam; bản 4 bổ sung cách áp dụng giọng kể từ mẫu Cẩm Tân Đại Lâu / mất tích đêm Trung thu ở phần 9.
 
 ## Mục tiêu đã thống nhất
 
@@ -142,3 +142,13 @@ REF-08 có chất liệu hấp dẫn về điều nhân vật cho rằng đã th
 Các mẫu dành thời gian cho chuyện chuyển nhà, chuyến du lịch, bữa ăn, tiếng nhạc hoặc việc đổi được khách sạn. Chúng giúp người nghe hiểu điều nhân vật muốn giữ hoặc sắp mất. Kịch bản không cần câu nào cũng đe dọa hay úp mở. Đoạn đời thường phải làm rõ con người, niềm tin hoặc hệ quả; cắt khi chỉ kéo dài thời lượng.
 
 Bổ sung vào quality-review.md: kiểm tra nguồn của từng lần đổi thái độ; độ nhất quán của góc nhìn; giải thích thay thế cho các bất thường; các lớp tiết lộ có cùng trả lời câu hỏi trung tâm không; và xác nhận đã trả lời manh mối quan trọng trước CTA.
+
+## 9. Viết thành lời kể tiếng Việt tự nhiên
+
+Tú bổ sung mẫu Cẩm Tân Đại Lâu / Chu Quốc Khâm mất tích đêm Trung thu và yêu cầu cập nhật skill ngày 2026-09-15. Mẫu này dùng để học cách kể, không phải hồ sơ vụ án đã xác minh hoặc chuyện mới trong sổ. Phân tích và ví dụ áp dụng nằm ở [mẫu và thực hành](../../../.claude/skills/ky-an-viet/references/mau-va-thuc-hanh.md); không đổi số hiệu bảy mẫu trong manifest cũ.
+
+Điểm cần học là quan hệ giữa các chi tiết: thói quen đời thường giải thích một lựa chọn; một phát hiện dẫn tới hành động kiểm tra; chi tiết cũ mang nghĩa khác sau khi có chứng cứ. Người kể có thể hỏi, nhắc hoặc phản ứng ngắn giúp người nghe theo kịp. Không cần câu nào cũng úp mở, không bắt buộc thêm hài hước, và không sao chép phần chuyện phụ dài của mẫu.
+
+Khi viết câu văn, đọc cả [giọng kể](../../../.claude/skills/ky-an-viet/references/giong-ke.md) và tài liệu thực hành. Viết từ con người và việc xảy ra, ghép câu cùng ý thành đoạn có nhịp nói. Kiểm đủ giới hạn chứng cứ trong hồ sơ, giữ các giới hạn có ý nghĩa ngay trong lời kể; tránh tự động thêm câu “điều này chưa chứng minh…” sau mọi phát hiện. Không bỏ phản biện hay chứng cứ gỡ tội để làm câu nghe mạnh hơn.
+
+Giọng kể thân mật không biến lời đồn thành sự thật và không cho phép bịa cảnh. Xưng hô chưa chốt thì dùng mặc định biên tập tạm thời trong hướng dẫn giọng kể, ghi rõ ngay khi nộp bản bước 5 hoặc khi trả trích đoạn, bên ngoài phần lời kể. Lượt sửa được giao “không lược chi tiết” phải giữ đủ thông tin; quy tắc cắt phần thừa ở trên chỉ áp dụng khi phạm vi biên tập cho phép.
