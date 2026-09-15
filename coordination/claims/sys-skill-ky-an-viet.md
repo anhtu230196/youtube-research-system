@@ -2,7 +2,7 @@
 id: sys-skill-ky-an-viet
 agent: codex
 branch: codex/ky-an-viet-voice
-status: active
+status: done
 opened: 2026-09-14
 updated: 2026-09-15
 scope:
@@ -30,3 +30,7 @@ scope:
 Tú yêu cầu cập nhật skill theo mẫu Cẩm Tân Đại Lâu / mất tích đêm Trung thu để lời kể tiếng Việt tự nhiên hơn. Lượt tạo của Claude ở trên đã hoàn tất; không có claim active khác cho skill này. Codex cập nhật hướng dẫn giọng kể, ví dụ thực hành, cách nạp hướng dẫn và bản sao `.agents/skills/ky-an-viet/`, kiểm thử trên dữ kiện đóng, tổ chức review trước khi đưa thay đổi nội dung vào main.
 
 Phạm vi không sửa: `registry.json`, trạng thái và lịch sử các case, chức năng gợi ý/chống trùng/nghiên cứu, kịch bản NET-0006 đang trong vòng review, cấu hình model và các skill toàn cục. Mẫu được dùng để học kỹ thuật kể, không được nhập như một case mới hay coi là nguồn xác minh vụ án.
+
+## Hoàn tất lượt 2026-09-15
+
+Gói giọng kể đã vào `main` qua `3dbf6fd` (skill) và `a9b8e72` (tài liệu, kiểm thử, review và handoff). Luồng `sys-skill-ky-an-viet-voice` đã settled sau ba vòng Claude, không còn điểm mở. Hai bản skill đồng bộ, kiểm cấu trúc và ba kiểm tra repo đạt. Giới hạn kiểm thử trích đoạn và phần transcript chưa được review nguồn ghi trong skill cùng handoff; không nhận đã kiểm trọn tập hoặc âm thanh.
