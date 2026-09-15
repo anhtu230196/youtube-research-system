@@ -12,12 +12,14 @@ Viết thử vài mở đầu ngắn rồi tự chọn, trừ khi Tú muốn xem
 
 ## Tránh
 
-- Mở bằng lời chào kênh ("Xin chào các bạn, chào mừng đến với…"). Lời chào đẩy câu hỏi của tập ra xa.
+- Lời chào hoặc giới thiệu kênh dài khiến câu chuyện mãi chưa bắt đầu. Có thể chào ngắn theo giọng riêng nếu hợp yêu cầu của Tú; ưu tiên sớm có người, việc và điều đáng tò mò, không sao chép lời chào đặc trưng của mẫu.
 - Lời hứa chung chung gây sốc: "vụ án rùng rợn nhất…", "bạn sẽ không tin nổi…", "không ai đoán được kết thúc".
 - So sánh bậc nhất không có căn cứ.
 - Tóm tắt mở đầu làm lộ cả cuộc điều tra.
 
 Kiểm tra: người nghe nói ra được mình đang tò mò điều gì không? Nếu chỉ còn cảm giác "sắp có chuyện kinh khủng", mở đầu chưa đủ cụ thể.
+
+Mẫu Cẩm Tân / mất tích đêm Trung thu có một chuyện dẫn dài trước vụ chính. Học cách đặt cảnh và trả chi tiết, không mặc định học độ dài hoặc ghép thêm một chuyện ma không giúp hiểu vụ đang kể. Lời đồn cần được giới thiệu đúng là lời đồn; xem [giọng kể](giong-ke.md).
 
 ## Tiêu đề và thumbnail
 

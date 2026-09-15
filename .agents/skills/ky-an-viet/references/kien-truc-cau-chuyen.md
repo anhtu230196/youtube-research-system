@@ -12,9 +12,13 @@ Chỉ kể khi có thật. Ghi lại ai tin, từ lúc nào, vì sao, và điề
 
 Không có số lượng cố định. Theo dõi lần xuất hiện đầu, cách hiểu lúc đầu, nguồn, cách hiểu về sau và mức không chắc. Những chi tiết như trang sức mất, không có dấu phá khoá hay một vết cắn không tự chứng minh danh tính, quan hệ hay kiểu thủ phạm.
 
+Ghi rõ cách hiểu lúc đầu là của ai: nhân vật, người điều tra, hay một khả năng người nghe có thể nghĩ tới. Không biến dự đoán của tác giả thành giả thuyết cảnh sát từng theo. Tìm chi tiết đời thường có thể mang thêm nghĩa khi có chứng cứ mới; lần đầu không cần gắn nhãn “quan trọng”. Xem [mẫu và thực hành](mau-va-thuc-hanh.md).
+
 ## Bước ngoặt cần nguyên nhân
 
 Một mẫu lưu trữ được xét nghiệm, một hồ sơ được liên kết, một nhân chứng được tìm ra. Giải thích vì sao nó xảy ra vào lúc đó. Không thay bằng linh cảm bất chợt, trừ khi nguồn xác lập đúng như vậy.
+
+Tách timeline sự việc với timeline phát hiện. Có địa chỉ có thể dẫn đến người làm chứng, nhưng chưa ra danh tính; tìm được người liên quan chưa chắc đã biết vai trò hoặc động cơ. Kể các trở ngại có thật này qua hành động tiếp theo, không thêm câu úp mở ở cuối mọi đoạn. Lời thú nhận chỉ mở thêm một lớp bí ẩn khi hồ sơ thật sự có điều cần kiểm tra hoặc mâu thuẫn cần giải quyết.
 
 ## Sau phát hiện
 

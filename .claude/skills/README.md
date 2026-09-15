@@ -6,7 +6,7 @@ Các file `SKILL.md` trong thư mục này là **quy trình dùng chung cho cả
 
 | Skill | Dùng khi |
 | --- | --- |
-| `ky-an-viet/` | Làm một tập kỳ án tiếng Việt: chọn vụ, nghiên cứu, khung sườn, bản tiếng Việt, bản thu âm và đóng gói. Kèm phần thị trường Việt Nam |
+| `ky-an-viet/` | Làm kỳ án cho khán giả Việt: chọn vụ, nghiên cứu, khung sườn, bản tiếng Việt, thu âm và đóng gói; sửa lời kể cứng hoặc văn dịch. Kèm hướng dẫn giọng kể và ví dụ trước–sau từ kỹ thuật trong mẫu Tú gửi |
 | `registry-safe-update/` | Sửa `registry.json`: cấp mã mới, đổi trạng thái, tạo thư mục tập |
 | `deliberation/` | Nhận một lượt trong luồng review nhiều vòng: viết đề xuất, review, phản bác, đóng luồng. Kèm hợp đồng khối `points` và luật khi chạy dưới orchestrator |
 | `cross-review/` | Review chéo một PR của agent khác, hoặc trả lời review về bài mình |
