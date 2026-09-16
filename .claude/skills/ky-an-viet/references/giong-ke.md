@@ -12,7 +12,7 @@ Không gọi người chưa bị kết án là “hắn”, “ả”, “tên s
 
 ## Người kể có mặt để giúp người nghe
 
-Có thể đặt câu hỏi thay người nghe, nhắc một chi tiết sắp được dùng lại, hoặc bình luận ngắn về điều trái với lẽ thường. Phản ứng phải bám vào việc vừa kể: biết địa chỉ rồi nhưng chưa biết người đi cùng là ai, chẳng hạn. Không cứ hết đoạn lại thêm “nhưng sự thật còn đáng sợ hơn”, “câu hỏi vẫn còn đó” hay thông báo bài sắp chuyển phần.
+Có thể đặt câu hỏi thay người nghe, nhắc một chi tiết sắp được dùng lại, hoặc bình luận ngắn về điều trái với lẽ thường. Phản ứng phải bám vào việc vừa kể: biết địa chỉ rồi nhưng chưa biết người đi cùng là ai, chẳng hạn. Không cứ hết đoạn lại thêm “nhưng sự thật còn đáng sợ hơn”, “câu hỏi vẫn còn đó” hay thông báo bài sắp chuyển phần. Muốn giữ tò mò bằng cách nêu nhiều khả năng thay vì kết luận: xem mục “Mở nhánh giả thuyết” ở [kiến trúc câu chuyện](kien-truc-cau-chuyen.md).
 
 Được có nét dí dỏm nhẹ ở chuyện đời thường hoặc ở chính người kể nếu hợp cảnh. Không lấy nỗi đau, thương tích, đời tư hay việc nạn nhân bị lừa làm trò cười. Không áp chỉ tiêu câu hỏi, câu đùa hoặc từ khẩu ngữ. Không chép câu cửa miệng, lời chào đặc trưng hay phần tài trợ trong mẫu.
 
@@ -42,7 +42,7 @@ Nối câu không được tự bổ sung người thực hiện hoặc đườn
 
 ## Không khí, thời gian và lời đồn
 
-Dựng hình dung từ chi tiết có nguồn. Không bịa tiếng động, thời tiết, cử chỉ, lời thoại, cảm giác cơ thể hoặc ý nghĩ riêng. Nói rõ đã chết hay bị giết khi điều đó được xác lập. Chi tiết pháp y chỉ giữ khi cần hiểu kết luận điều tra; không miêu tả thương tích để tăng sợ hãi, không gắn tội phạm với vùng miền hoặc cộng đồng như một lời giải thích.
+Dựng hình dung từ chi tiết có nguồn. Không bịa tiếng động, thời tiết, cử chỉ, lời thoại, cảm giác cơ thể hoặc ý nghĩ riêng. Khi nguồn ghi lại điều một người nói là mình đã nghĩ — lời khai, phỏng vấn, nhật ký, tin nhắn — thì kể lại suy nghĩ đó được, kèm cách quy nguồn tự nhiên như “cô kể”, “anh nói lúc đó mình nghĩ”; xem Ví dụ 5 ở [mẫu và thực hành](mau-va-thuc-hanh.md). Nói rõ đã chết hay bị giết khi điều đó được xác lập. Chi tiết pháp y chỉ giữ khi cần hiểu kết luận điều tra, đặc biệt ưu tiên nhấn mạnh khi chứng cứ khoa học/pháp y lật tẩy được sự mâu thuẫn trong lời khai của nghi phạm; không miêu tả thương tích để tăng sợ hãi, không gắn tội phạm với vùng miền hoặc cộng đồng như một lời giải thích.
 
 Phân biệt thứ tự sự việc xảy ra với thứ tự người điều tra biết được. Khi đổi thời gian hoặc điểm theo dõi, cho người nghe mốc rõ như “ba ngày trước đó”, “lúc này, ở nhà máy”. Không rải “đã, đang, sẽ” theo thì tiếng Anh. Không giấu sự kiện gỡ tội đã biết để dẫn người nghe kết tội sai rồi lật lại.
 
@@ -57,6 +57,12 @@ Giấc mơ, chuyện ma và truyền thuyết có thể là điều nhân vật 
 
 ## Kết thúc
 
-Trả lời câu hỏi mở đầu tới mức chứng cứ cho phép, nối các chi tiết còn cần giải thích và trở về hệ quả với con người. Không kể lại toàn bộ, thêm bài học đạo đức hoặc đổ lỗi cho nạn nhân. Sau đó tối đa một câu kêu gọi đăng ký, có thể bỏ.
+Trả lời câu hỏi mở đầu tới mức chứng cứ cho phép, nối các chi tiết còn cần giải thích và trở về hệ quả với con người. Không kể lại toàn bộ, không giảng đạo và không đổ lỗi cho nạn nhân.
+
+Sau phần trả lời, được thêm một đoạn suy ngẫm ngắn — vài câu chứ không phải một mục riêng — rút thẳng từ dữ kiện vụ án: cái giá con người đã trả, hoặc một cơ chế hành vi mà chính vụ án cho thấy, như việc tự hợp lý hoá từng bước một, lòng tham, hay tin người chỉ vì quen mặt. Ba điều kiện: cơ chế nêu ra phải truy được về những dữ kiện đã xác lập trong tập và nói đúng mức chắc chắn của nguồn — động cơ mới chỉ là suy đoán thì không được gọi là điều vụ án cho thấy, lúc đó chỉ giữ phần hệ quả với con người; không ngụ ý nạn nhân đáng bị như vậy; không lên lớp người nghe. Vụ nào không cho thấy cơ chế nào rõ thì bỏ đoạn này và kết ở hệ quả với con người.
+
+Ranh giới, lấy mẫu Cẩm Tân làm ví dụ: “một người đàn ông đã chết, hai người nhận án chung thân, và một gia đình mất chồng, mất cha đúng vào đêm lẽ ra là đêm đoàn tụ” thì được; “ngoại tình thì phải trả giá như vậy” là đổ lỗi cho nạn nhân, không được.
+
+Sau đó tối đa một câu kêu gọi đăng ký, có thể bỏ.
 
 Ngày, đơn vị, tiền tệ, tên riêng và thuật ngữ: theo [thị trường Việt Nam](thi-truong-viet-nam.md). Sau khi Tú duyệt nội dung mới làm [bản thu âm](ban-thu-am.md); làm tự nhiên không phải cớ viết lại bản đã duyệt.

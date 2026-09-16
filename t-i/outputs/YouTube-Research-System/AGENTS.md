@@ -53,7 +53,7 @@ Hoàn tất nghiên cứu khi câu hỏi trung tâm, diễn biến và kết lu�
 ## Thị trường Việt Nam
 
 - **Lời kể cuối là tiếng Việt**, viết cho người Việt nghe, không dịch từng câu từ nguồn.
-- **Bản địa hoá:** ngày/tháng/năm; hệ mét và độ C với độ chính xác tương đương nguồn; tiền giữ đơn vị gốc, chỉ quy đổi khi giúp hiểu và phải ghi tỷ giá cùng ngày áp tỷ giá; tên người giữ chữ viết gốc; thuật ngữ tư pháp nước ngoài giải thích bằng chức năng, không gán một chế định Việt Nam không tương đương.
+- **Bản địa hoá:** ngày/tháng/năm; hệ mét và độ C với độ chính xác tương đương nguồn; tiền giữ đơn vị gốc, chỉ quy đổi khi giúp hiểu và phải ghi tỷ giá cùng ngày áp tỷ giá; tên viết bằng chữ Latin giữ nguyên, tên người và địa danh gốc Hán (Trung Quốc, Đài Loan, Hồng Kông) dùng âm Hán Việt quen dùng và kịch bản làm việc ghi kèm chữ Hán để đối chiếu, chỉ chuyển khi chữ Hán có trong nguồn (Tú chốt 2026-09-16); thuật ngữ tư pháp nước ngoài giải thích bằng chức năng, không gán một chế định Việt Nam không tương đương.
 - **Suy đoán vô tội:** chưa có bản án kết tội đã có hiệu lực thì gọi đúng tư cách tố tụng của người đó tại ngày kiểm tra, và ghi ngày kiểm tra. Không kết luận thay toà. Không gọi "hắn", "ả" hay dùng cách gọi phán xét với người chưa bị kết án.
 - **Đời tư:** không nêu thông tin nhận diện nạn nhân, người thân, nhân chứng quá mức câu chuyện cần. Không nêu thông tin nhận diện người dưới 18 tuổi. Không nêu danh tính nạn nhân bị xâm hại tình dục.
 - **Báo Tú trước khi đề xuất**, không tự đưa vào đợt gợi ý: vụ Việt Nam đang điều tra, truy tố hoặc xét xử; vụ có yếu tố chính trị, an ninh quốc gia, tôn giáo hoặc dân tộc; vụ liên quan người đang giữ chức vụ.

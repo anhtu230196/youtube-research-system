@@ -12,6 +12,8 @@ Làm sau khi Tú đã duyệt nội dung bản tiếng Việt (bước 5). Bư�
 
 TTS tiếng Việt hay đọc sai tên nước ngoài. Cách xử lý tuỳ engine đang dùng: từ điển phát âm nếu engine hỗ trợ, hoặc viết lại theo âm **chỉ trong file thu âm** — kịch bản làm việc vẫn giữ chữ viết gốc. Ghi cặp "chữ gốc → cách viết để đọc" vào `pronunciation.md`.
 
+Tên đã chuyển sang Hán Việt thì là âm tiếng Việt, engine đọc như chữ thường, không cần viết lại theo âm. Với các tên này, `pronunciation.md` ghi cặp "chữ Hán → Hán Việt" để người sau đối chiếu.
+
 Không chèn phiên âm trong ngoặc vào lời đọc theo mặc định: engine có thể đọc cả hai. Kiểm cách đọc tên qua nguồn phát âm đáng tin khi có; chưa kiểm được thì ghi là chưa kiểm.
 
 ## Số, năm, viết tắt

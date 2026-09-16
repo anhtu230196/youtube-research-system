@@ -8,6 +8,20 @@ Một chuỗi linh hoạt: mở đầu cụ thể → bối cảnh con người 
 
 Chỉ kể khi có thật. Ghi lại ai tin, từ lúc nào, vì sao, và điều gì thách thức nó. Kể nó như lời giải thích tạm thời của người đó, không như sự thật khách quan rồi rút lại. Tránh báo sớm rằng mọi người đều sai, nhưng vẫn giữ quy nguồn và các sự kiện gỡ tội cần thiết. Một manh mối có thể chỉ làm yếu một giả thuyết — đừng gọi đó là bác bỏ.
 
+## Mở nhánh giả thuyết
+
+Khi một dữ kiện đã xác lập mà chưa có lời giải, mở ra các khả năng thay vì kết luận. Đây là cách giữ người nghe mà không cần thêm dữ kiện nào. Mẫu Cẩm Tân dùng kỹ thuật này hai lần: vụ án ở tầng 11 đi qua ba hướng trước khi pháp y chốt, và vụ chính đi qua tình, tiền, thù hận rồi cả ba đều không đứng được.
+
+- Không tự thêm dữ kiện để tạo nhánh. Nhánh phải mọc từ thứ đã kể.
+- Mỗi nhánh phải giải thích được toàn bộ dữ kiện đã nêu tới lúc đó. Nhánh nào mâu thuẫn với một dữ kiện thì nói rõ mâu thuẫn ở đâu — đó chính là cách loại nó về sau.
+- Nói rõ nhánh của ai: cảnh sát từng theo, hay người kể đang nghĩ. Nguồn có ghi cảnh sát xét hướng đó thì kể theo nguồn, mạnh hơn nhiều.
+- Có ít nhất một nhánh bình thường khi dữ kiện cho phép: trùng hợp, sai sót kỹ thuật, hiện trường bị xáo trộn. Toàn nhánh ly kỳ là dấu hiệu đang ép.
+- Hai đến ba nhánh là đủ. Nhiều hơn thì người nghe không giữ nổi trong đầu.
+- Nhánh nào mở ra phải đóng lại: hoặc bị chứng cứ về sau loại, hoặc phần kết nói rõ nó còn để ngỏ. Không để nhánh rơi giữa chừng.
+- Không mở nhánh quy tội cho một người có thể nhận diện khi chưa có bản án kết tội. Một nhóm không xác định — những người hiếu kỳ, một người từng ra vào toà nhà — thì được.
+
+Câu hỏi treo cũng theo luật này: hỏi được, nhưng phải là câu hỏi trả lời được bằng chứng cứ, và tập phải trả lời nó hoặc nói rõ vì sao không trả lời được. Ví dụ ở [mẫu và thực hành](mau-va-thuc-hanh.md), Ví dụ 6.
+
 ## Manh mối
 
 Không có số lượng cố định. Theo dõi lần xuất hiện đầu, cách hiểu lúc đầu, nguồn, cách hiểu về sau và mức không chắc. Những chi tiết như trang sức mất, không có dấu phá khoá hay một vết cắn không tự chứng minh danh tính, quan hệ hay kiểu thủ phạm.

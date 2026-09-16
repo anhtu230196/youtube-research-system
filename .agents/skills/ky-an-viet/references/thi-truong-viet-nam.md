@@ -12,7 +12,7 @@ Luật ràng buộc nằm ở `t-i/outputs/YouTube-Research-System/AGENTS.md`, m
 
 **Tiền:** giữ đơn vị gốc. Chỉ quy đổi sang đồng khi giúp người nghe hình dung quy mô, và kịch bản làm việc ghi tỷ giá cùng ngày áp tỷ giá. Không quy đổi một khoản tiền của nhiều năm trước bằng tỷ giá hôm nay mà không nói rõ.
 
-**Tên:** tên người giữ chữ viết gốc. Tên nước có tên tiếng Việt quen dùng thì dùng (Mỹ, Anh, Pháp, Nhật Bản); bang, thành phố, quận giữ tên gốc.
+**Tên:** tên viết bằng chữ Latin giữ nguyên (Sherri Rasmussen, Los Angeles). Tên người và địa danh Trung Quốc, Đài Loan, Hồng Kông dùng âm Hán Việt như báo Việt quen dùng: Chu Quốc Khâm, Đài Bắc, Đào Viên, Quảng Tây. Kịch bản làm việc ghi kèm chữ Hán để đối chiếu — Chu Quốc Khâm (周國欽) — và tra âm Hán Việt **từ chữ Hán**, không đoán theo âm nghe được: 林森觀光大樓 là Lâm Sâm Quan Quang Đại Lâu, không phải “Lâm Sâm Quang Quang”. Tên Nhật, Hàn dùng cách viết Latin thông dụng (Shinzo Abe, Lee Jae-yong), không tự chuyển sang Hán Việt. Tên nước có tên tiếng Việt quen dùng thì dùng (Mỹ, Anh, Pháp, Nhật Bản); bang, thành phố, quận ở các nước dùng chữ Latin giữ tên gốc. Chỉ chuyển sang Hán Việt khi chữ Hán của tên đó có trong nguồn — báo bản ngữ, bản án, hồ sơ chính thức. Nguồn chỉ có tên Latin hoặc phiên âm mà không có chữ Hán thì giữ nguyên cách viết trong nguồn và ghi trong kịch bản làm việc là chưa tra được chữ Hán; không suy ngược từ phiên âm ra chữ Hán, vì một âm có nhiều chữ và đoán sai là đổi luôn danh tính. Tú chốt cách này ngày 2026-09-16.
 
 **Thuật ngữ tư pháp:** giải thích bằng chức năng khi nó cần cho câu chuyện. Không gán một chế định Việt Nam cho một chế định nước ngoài chỉ vì tên nghe gần. Những chỗ dễ sai:
 
@@ -82,6 +82,8 @@ Bổ sung cho danh sách ở `STORYTELLING.md` mục 7:
 
 - Ngày đã theo ngày/tháng/năm? Đơn vị đã đổi mà không làm tròn sai nghĩa?
 - Mỗi thuật ngữ tư pháp nước ngoài được giải thích bằng chức năng, hoặc không cần cho câu chuyện?
+- Tên Trung Quốc, Đài Loan, Hồng Kông: chữ Hán lấy từ nguồn chứ không suy ngược từ phiên âm? Kịch bản làm việc có kèm chữ Hán chưa? Chưa tra được chữ Hán thì đã giữ cách viết trong nguồn và ghi rõ chưa?
+- Nhánh giả thuyết nào đã mở đều được đóng lại, hoặc được nói rõ là còn để ngỏ chưa?
 - Có đoạn nào nghe như bản dịch không?
 - Xưng hô của người kể nhất quán cả tập?
 - Có "hắn", "ả" hay cách gọi phán xét nào cho người chưa bị kết án không?

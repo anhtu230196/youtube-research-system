@@ -59,6 +59,28 @@ Hải nói với chị rằng sáng thứ Hai sẽ đi tàu thăm bạn, nên ch
 
 Người kể xuất hiện để làm rõ một chỗ người nghe dễ kết luận vội. Đoạn này không cần câu đùa, lời đe doạ hoặc chi tiết giác quan để có giọng nói. Cũng không được thêm lời giải về tấm vé khi dữ kiện dừng ở đây.
 
+## Ví dụ 5 — suy nghĩ của nhân vật khi nguồn có lời khai
+
+**Dữ kiện hư cấu:** trong lời khai, người vợ nói: “Lúc đó tôi nghĩ chắc anh uống say nên quên ca trực, rồi sáng ra đi luôn với nhóm leo núi; mấy chỗ đó không có sóng. Đêm ấy tôi gần như không ngủ.” Không có nguồn nào khác nói về suy nghĩ của cô.
+
+**Cứng:** “Theo lời khai, người vợ cho rằng có khả năng chồng đã quên ca trực và tham gia hoạt động leo núi. Đây là nhận định chủ quan của nhân chứng, chưa được kiểm chứng.”
+
+**Tự nhiên hơn:** “Cô kể lúc ấy mình vẫn nghĩ: chắc tối qua anh uống say, quên ca trực, sáng ra đi luôn với nhóm leo núi, mà mấy chỗ đó vốn không có sóng. Nghĩ vậy, nhưng đêm đó cô gần như không ngủ.”
+
+Suy nghĩ được kể vì chính người đó kể lại; hai chữ “cô kể” đã quy nguồn nên không cần thêm câu nhắc đây là nhận định chủ quan. Không có lời khai như vậy thì chỉ kể việc cô làm: gọi điện, gọi nhà máy, hỏi phòng nhân sự. Không suy từ hành động ra ý nghĩ, không thêm lo sợ hay linh cảm mà nguồn không ghi.
+
+## Ví dụ 6 — mở nhánh thay cho kết luận
+
+**Dữ kiện hư cấu:** hàng xóm báo tin, cảnh sát tới thì trước cửa đã đông người hiếu kỳ. Hiện trường chỉ được phong toả sau khi đám đông đã ra vào. Khám nghiệm thu được vân tay của nhiều người trong đám đông, không có vân tay của nạn nhân và không có vân tay của ai khác.
+
+**Phẳng:** “Khám nghiệm hiện trường thu được nhiều dấu vân tay của người dân hiếu kỳ, không thu được dấu vân tay của nạn nhân hay người nào khác.”
+
+**Mở nhánh:** “Lúc cảnh sát tới nơi, trước cửa đã đông nghịt người hiếu kỳ. Khám nghiệm xong, kết quả mới làm mọi người khựng lại: trong nhà chỉ có vân tay của chính những người vừa kéo tới xem, còn vân tay của nạn nhân, người sống trong căn nhà đó, thì không có lấy một dấu.
+
+Nhà mình ở mà không có vân tay của mình. Chuyện đó có thể giải thích theo vài hướng. Một là có người đã lau hiện trường trước khi đám đông kéo tới. Hai là một trong những người đang đứng ngoài kia đã vào căn nhà này từ trước — nếu vậy thì dấu tay của người đó giờ nằm lẫn với dấu tay của mấy chục người tò mò khác, có tìm thấy cũng có sẵn một lý do để giải thích. Hoặc đơn giản hơn: hiện trường bị hàng chục người ra vào trước khi phong toả, lại thêm chuyện không phải bề mặt nào cũng lưu được vân tay, nên thứ lấy được không còn đủ để so sánh.”
+
+Bản mở nhánh không thêm một dữ kiện nào so với bản phẳng. Sức nặng đến từ việc gọi tên điều bất thường rồi mở khả năng. Ba chỗ cần để ý. Một, câu dẫn nói “có thể giải thích theo vài hướng”, không nói “chỉ có thể là”: dữ kiện chưa loại trừ những cách giải thích khác. Hai, nhánh hai không gọi ai là hung thủ và không gán giới tính — chỉ nói một người đã vào căn nhà từ trước, đúng mức dữ kiện cho phép. Ba, nhánh bình thường gồm cả giới hạn của việc thu mẫu, vì không lấy được vân tay chưa chắc vì có người lau. Khi chứng cứ về sau loại được nhánh nào, nói rõ loại bằng gì; nhánh nào còn lại thì phần kết nhắc lại.
+
 ## Đánh giá một bản sửa
 
 Đọc bản cũ và mới cạnh dữ kiện đầu vào. Chỉ nhận là tiến bộ khi câu dễ theo hơn mà không mất chi tiết, đổi người phát ngôn, thêm nguyên nhân hoặc tăng mức chắc chắn. Cụ thể: chỉ ra được ai làm gì; hiểu vì sao chuyển sang việc tiếp theo; không gặp cùng một ý ở nhiều câu liên tiếp; người kể có ích khi xuất hiện. Không chấm bằng số từ khẩu ngữ hoặc số câu hỏi.
