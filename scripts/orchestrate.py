@@ -275,9 +275,28 @@ def run_cli(name: str, spec: dict, prompt: str, write: bool,
     relock_if_stale(spec)
     template = spec["write_cmd" if write else "cmd"]
     repo = str(th.repo_root())
-    cmd = [prompt if part == "{prompt}"
-           else part.replace("{prompt}", prompt).replace("{repo}", repo)
-           for part in template]
+    # Tren Windows cac CLI nay deu la shim .cmd, va cmd.exe cat dong lenh tai ky
+    # tu xuong dong dau tien: prompt nhieu dong truyen qua argv chi toi duoc dong
+    # dau. Do that 2026-09-16 bang mot file .cmd tu viet: tham so gom hai dong
+    # chi toi duoc dong dau; cung tham so do goi thang .exe thi nguyen ven. Agent
+    # khai prompt_via=stdin thi day prompt qua ong dan; cho {prompt} dat
+    # stdin_token
+    # ("-" voi codex) hoac bo han neu khong khai bao token.
+    stdin_data = None
+    if spec.get("prompt_via") == "stdin":
+        stdin_data = prompt
+        token = spec.get("stdin_token")
+        cmd = []
+        for part in template:
+            if part == "{prompt}":
+                if token:
+                    cmd.append(token)
+                continue
+            cmd.append(part.replace("{repo}", repo))
+    else:
+        cmd = [prompt if part == "{prompt}"
+               else part.replace("{prompt}", prompt).replace("{repo}", repo)
+               for part in template]
     cmd = apply_model_override(name, spec, cmd)
     # Tren Windows, subprocess khong tu ap dung PATHEXT: "gemini" khong chay,
     # phai la duong dan day du toi gemini.CMD.
@@ -307,8 +326,8 @@ def run_cli(name: str, spec: dict, prompt: str, write: bool,
                 cmd, cwd=th.repo_root(),
                 stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                 # Khong co stdin: cac CLI headless doi du lieu ong dan va treo
-                # 3-30s neu de mac dinh.
-                stdin=subprocess.DEVNULL,
+                # 3-30s neu de mac dinh. Tru agent nhan prompt qua stdin.
+                stdin=subprocess.PIPE if stdin_data is not None else subprocess.DEVNULL,
                 text=True, encoding="utf-8", errors="replace",
                 **({} if IS_WIN else {"start_new_session": True}))
         except FileNotFoundError:
@@ -328,7 +347,7 @@ def run_cli(name: str, spec: dict, prompt: str, write: bool,
             return code, out or "", err or "", time.time() - t0
 
         try:
-            out, err = proc.communicate(timeout=secs_cap)
+            out, err = proc.communicate(input=stdin_data, timeout=secs_cap)
             return finish(proc.returncode, out, err)
         except subprocess.TimeoutExpired:
             # subprocess.run(timeout=) mot minh khong du: no giet tien trinh cha
