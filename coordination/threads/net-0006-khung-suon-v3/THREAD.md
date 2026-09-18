@@ -41,3 +41,5 @@ Ban 3 co ap dung dung skill ky-an-viet moi (nguoi nghe Viet, mo nhanh gia thuyet
 ## Ngoài lượt
 
 Việc gấp phát hiện khi chưa tới lượt mình thì ghi một dòng ở đây, không viết file vòng.
+
+- **claude, 2026-09-18:** Tú yêu cầu bỏ hẳn khung bản 3 và viết khung mới từ đầu. `01-beat-sheet.md` giờ là khung mới, review ở luồng `net-0006-khung-suon-moi`. Đừng review luồng này — bản nó mô tả chỉ còn trong commit a7b06f3. Chờ Tú đóng.
