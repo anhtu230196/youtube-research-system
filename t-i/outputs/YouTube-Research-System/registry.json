@@ -58,7 +58,7 @@
     "narrator_voice": null,
     "script_skill": ".claude/skills/ky-an-viet/SKILL.md"
   },
-  "next_case_number": 7,
+  "next_case_number": 8,
   "statuses": [
     "proposed",
     "selected",
@@ -369,6 +369,44 @@
           "date": "2026-09-09",
           "status": "awaiting_review",
           "reason": "Ban tieng Viet day du (scripts/02-script-vi.md) va ban narration sach da nop, cho Tu duyet noi dung truoc khi viet ban tieng Anh."
+        }
+      ]
+    },
+    {
+      "id": "NET-0007",
+      "canonical_title": "Mary Yoder — 2015 colchicine poisoning in Whitestown, New York; Kaitlyn Conley convicted",
+      "aliases": [
+        "Mary Yoder",
+        "Kaitlyn Conley",
+        "People v. Conley",
+        "Yoder chiropractic poisoning",
+        "colchicine poisoning Utica"
+      ],
+      "entities": [
+        "Mary Yoder",
+        "Kaitlyn Conley",
+        "William Yoder",
+        "Adam Yoder",
+        "Oneida County District Attorney"
+      ],
+      "event_dates": [
+        "2015"
+      ],
+      "fingerprint": "mary-yoder|colchicine-poisoning-2015|kaitlyn-conley",
+      "title_vi": null,
+      "scores": [],
+      "sources": [],
+      "status": "selected",
+      "first_proposed_on": "2026-09-22",
+      "batch_id": null,
+      "episode_path": "episodes/NET-0007-mary-yoder",
+      "published_url": null,
+      "included_case_ids": [],
+      "history": [
+        {
+          "date": "2026-09-22",
+          "status": "selected",
+          "reason": "Tu chon truc tiep ngoai luong goi y batch, yeu cau lam va luu thanh phien ban opus-5. Khong co batch_id; scores cham sau nghien cuu."
         }
       ]
     }
