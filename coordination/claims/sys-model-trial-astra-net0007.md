@@ -2,7 +2,7 @@
 id: sys-model-trial-astra-net0007
 agent: codex
 branch: codex/mary-yoder-astra
-status: active
+status: done
 opened: 2026-09-22
 updated: 2026-09-23
 scope:
@@ -15,3 +15,5 @@ scope:
 Tú yêu cầu ngày 22/09/2026 làm mới vụ Mary Yoder & Kaitlyn Conley (2015), lưu folder gpt-6-astra, hoàn toàn độc lập với Opus và Gemini. Chỉ đọc quy tắc chung, registry và metadata claim để phối hợp; không mở hồ sơ, nguồn lưu, khung sườn hay kịch bản của các phiên bản khác. Tự tìm nguồn bên ngoài, viết hồ sơ, timeline, claim ledger, khung và bản tiếng Việt đầy đủ để Tú duyệt.
 
 Chỉ dùng gpt-6-astra cho tác giả và các lượt kiểm độc lập; không gọi Claude/Opus/Gemini theo chỉ dẫn mới nhất. Không coi đây là review liên model theo quy trình mặc định. Không sửa registry (NET-0007 đã awaiting_review), README chung hay các phiên bản khác. Làm trong worktree riêng.
+
+Hoàn tất ngày23/09/2026: bộ nghiên cứu và bản tiếng Việt v2 đã vào main ở commit770ec26. Có16 nguồn dạng saved_excerpt,41 claims,14 đoạn; nguồn kiểm đến22/09. Đã qua các lượt kiểm độc lập trong cùng gpt-6-astra; chưa qua Tú duyệt nội dung, chưa làm bước thu âm. Handoff: coordination/handoffs/2026-09-23-codex-net0007-gpt-6-astra.md. Registry không đổi.
