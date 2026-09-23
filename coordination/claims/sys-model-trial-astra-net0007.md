@@ -4,9 +4,10 @@ agent: codex
 branch: codex/mary-yoder-astra
 status: active
 opened: 2026-09-22
-updated: 2026-09-22
+updated: 2026-09-23
 scope:
   - t-i/outputs/YouTube-Research-System/episodes/NET-0007-mary-yoder/gpt-6-astra/
+  - coordination/handoffs/2026-09-23-codex-net0007-gpt-6-astra.md
 ---
 
 # NET-0007 — bản gpt-6-astra nghiên cứu mới từ đầu

@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-09-23",
+  "source_cutoff": "2026-09-22",
+  "script_version": 2,
+  "source_count": 16,
+  "claim_count": 41,
+  "segment_count": 14,
+  "narration_whitespace_units": 3311,
+  "local_excerpts_sha256": "pass",
+  "claim_source_references": "pass",
+  "local_markdown_links": "pass",
+  "audio_reviewed": false,
+  "original_documents_downloaded": 0
+}
