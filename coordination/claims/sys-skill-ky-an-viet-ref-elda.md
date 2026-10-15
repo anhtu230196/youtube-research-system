@@ -11,6 +11,7 @@ scope:
   - t-i/outputs/YouTube-Research-System/references/ref-09-elda-survivor-account.txt
   - t-i/outputs/YouTube-Research-System/references/manifest.json
   - t-i/outputs/YouTube-Research-System/STORYTELLING.md
+  - t-i/outputs/YouTube-Research-System/AGENTS.md
   - coordination/threads/sys-skill-ky-an-viet-ref-elda/
   - coordination/drafts/sys-skill-ky-an-viet-ref-elda.md
 ---
@@ -24,7 +25,8 @@ scope:
 3. `giong-ke.md` — không tự chẩn đoán tâm lý, không lấy nhận định chung về một nhóm người làm chứng cứ.
 4. `mau-va-thuc-hanh.md` — phân tích mẫu thứ hai và ví dụ hư cấu.
 5. Lưu transcript thành REF-09 trong `references/`, thêm vào `manifest.json`; một đoạn trỏ trong `STORYTELLING.md` mục 9.
+6. Luật nghiệp vụ `t-i/outputs/YouTube-Research-System/AGENTS.md` sửa cho khớp skill (Tú chốt 2026-10-15): dòng 60 thêm khuyết tật, tình trạng sức khoẻ, cấm tự chẩn đoán và áp dụng cho mọi vụ; dòng 68 ghi thêm các mẫu sau bảy mẫu ban đầu.
 
-**Không đụng tới:** `registry.json` và trạng thái case; `episodes/`; luật nghiệp vụ `t-i/outputs/YouTube-Research-System/AGENTS.md` (nếu cần đổi theo, nêu cho Tú quyết); các skill khác; cấu hình model.
+**Không đụng tới:** `registry.json` và trạng thái case; `episodes/`; phần còn lại của luật nghiệp vụ, kể cả quy tắc người dưới 18 tuổi ở dòng 58 (chờ Tú quyết); các skill khác; cấu hình model.
 
 **Ghi chú:** Bước 7, tác giả Claude, người review Codex và Gemini. Gói nội dung nằm trên nhánh `claude/skill-ref-elda` và chỉ vào `main` sau khi luồng chốt.
