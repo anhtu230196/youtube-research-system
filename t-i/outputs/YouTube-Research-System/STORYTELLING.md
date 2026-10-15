@@ -1,6 +1,6 @@
 # Bộ tiêu chí kể chuyện của kênh
 
-Phiên bản 4 — 2026-09-15. Phần 1–8 giữ phân tích bảy kịch bản khác nhau qua hai đợt trước. Bản 3 đổi đích sang khán giả Việt Nam; bản 4 bổ sung cách áp dụng giọng kể từ mẫu Cẩm Tân Đại Lâu / mất tích đêm Trung thu ở phần 9.
+Phiên bản 4 — 2026-09-15. Phần 1–8 giữ phân tích bảy kịch bản khác nhau qua hai đợt trước. Bản 3 đổi đích sang khán giả Việt Nam; bản 4 bổ sung cách áp dụng giọng kể từ mẫu Cẩm Tân Đại Lâu / mất tích đêm Trung thu ở phần 9; ngày 2026-10-15 thêm một đoạn về mẫu REF-09 ở cuối phần 9.
 
 ## Mục tiêu đã thống nhất
 
@@ -152,3 +152,5 @@ Tú bổ sung mẫu Cẩm Tân Đại Lâu / Chu Quốc Khâm mất tích đêm 
 Khi viết câu văn, đọc cả [giọng kể](../../../.claude/skills/ky-an-viet/references/giong-ke.md) và tài liệu thực hành. Viết từ con người và việc xảy ra, ghép câu cùng ý thành đoạn có nhịp nói. Kiểm đủ giới hạn chứng cứ trong hồ sơ, giữ các giới hạn có ý nghĩa ngay trong lời kể; tránh tự động thêm câu “điều này chưa chứng minh…” sau mọi phát hiện. Không bỏ phản biện hay chứng cứ gỡ tội để làm câu nghe mạnh hơn.
 
 Giọng kể thân mật không biến lời đồn thành sự thật và không cho phép bịa cảnh. Xưng hô chưa chốt thì dùng mặc định biên tập tạm thời trong hướng dẫn giọng kể, ghi rõ ngay khi nộp bản bước 5 hoặc khi trả trích đoạn, bên ngoài phần lời kể. Lượt sửa được giao “không lược chi tiết” phải giữ đủ thông tin; quy tắc cắt phần thừa ở trên chỉ áp dụng khi phạm vi biên tập cho phép.
+
+Ngày 2026-10-15, Tú gửi mẫu thứ hai của cùng kênh, vụ Elda ở Tây Ban Nha, lưu thành REF-09 trong `references/` và manifest. Cũng như mọi mẫu khác, đây không phải hồ sơ vụ án hay chuyện trong sổ. Bài học chính: kể lời khai của người trong cuộc rồi lật lại mà vẫn quy nguồn, câu hỏi treo gắn với một việc kiểm tra đang chờ kết quả, và dùng trải nghiệm đời sống Việt Nam để giải thích cơ chế. Mẫu này cũng có những lỗi cần tránh, như gắn khuyết tật với động cơ phạm tội. Phân tích nằm ở [mẫu và thực hành](../../../.claude/skills/ky-an-viet/references/mau-va-thuc-hanh.md), mục "Điều học từ mẫu thứ hai: vụ Elda".

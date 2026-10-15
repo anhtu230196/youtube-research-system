@@ -70,5 +70,14 @@
     "duplicate_of": null,
     "purpose": "User-provided storytelling reference only; factual content unverified; not a covered episode",
     "imported_on": "2026-09-08"
+  },
+  {
+    "id": "REF-09",
+    "original_path": "Pasted into Claude Code chat by Tú, session 5640bec7-f1e0-4d56-99fd-78afc46e50eb, 2026-10-15; no attachment file",
+    "local_path": "references/ref-09-elda-survivor-account.txt",
+    "sha256": "10CE1378AB2C943748B25356983F140A0CB4722D9EE7F037C6856B8683E0394C",
+    "duplicate_of": null,
+    "purpose": "User-provided storytelling reference only (Truyện Ma Bẻ Lái episode: Carlos II intro, then the 2017 Elda, Spain case); factual content and names unverified; not a covered episode; analysis in .claude/skills/ky-an-viet/references/mau-va-thuc-hanh.md",
+    "imported_on": "2026-10-15"
   }
 ]

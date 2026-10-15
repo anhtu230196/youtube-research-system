@@ -19,6 +19,29 @@ Mẫu là transcript mở bằng lời chào kênh Truyện Ma Bẻ Lái, kể v
 
 Mẫu cũng có điều không nên bê nguyên: phần chuyện Cẩm Tân và đoạn chuyển chiếm khoảng một phần ba văn bản trước khi vào vụ chính; nhiều lời đệm, tên chép chưa nhất quán và nhận định chưa có nguồn kèm theo. Không coi độ dài ấy là công thức giữ chân. Một đoạn phụ chỉ nên ở lại khi nó phục vụ đúng câu hỏi hoặc chủ đề tập đang hứa kể. Không nhập phần tài trợ, câu cửa miệng hoặc suy luận thiếu chứng cứ vào phong cách mới.
 
+## Điều học từ mẫu thứ hai: vụ Elda
+
+Ngày 2026-10-15, Tú gửi transcript một tập khác của cùng kênh Truyện Ma Bẻ Lái: mở bằng chuyện vua Carlos II của Tây Ban Nha, rồi vào một vụ năm 2017 ở thị trấn Elda. Bản lưu trong repo: `t-i/outputs/YouTube-Research-System/references/ref-09-elda-survivor-account.txt`, mã REF-09 trong `manifest.json`. Tú dặn bỏ qua phần Carlos II. Theo transcript, người phụ nữ duy nhất còn sống trong căn hộ kể rằng hai người đàn ông đội mũ bảo hiểm xông vào, trói cô và giết cậu con nuôi của bạn trai cô; về sau cảnh sát kết luận cô đã dựng chuyện. Tên, ngày và tình tiết dưới đây chỉ định vị trong transcript, chưa kiểm chứng. Tỷ lệ đếm theo ký tự của transcript, không theo thời lượng video.
+
+| Quan sát trong mẫu | Tác dụng trong câu chuyện | Cách áp dụng |
+| --- | --- | --- |
+| Lời khai của người sống sót được kể như cảnh thật. Cảnh sát theo nó qua người yêu cũ, đối thủ thể thao, ký hiệu của băng trộm, lá thư nặc danh. Khoảng 60% phần vụ án trôi qua trước khi lời kể bắt đầu bị lật. | Người nghe tin cùng cảnh sát, nên cú lật đổi nghĩa cả phần trước. | Hình dạng "lời kể của người trong cuộc bị lật" ở [kiến trúc câu chuyện](kien-truc-cau-chuyen.md): quy nguồn một lần kèm lý do, kể đủ lời khai, không kể như sự thật khách quan. Ví dụ 7. |
+| Mọi thứ "hai kẻ đột nhập" dùng — dao, kéo, dây, gậy — đều có sẵn trong nhà, và đều nằm ngay trong lời khai. | Tới đoạn lật chỉ cần xếp chúng cạnh nhau; người nghe nhận ra mình đã được nghe đủ từ đầu. | Kể đủ chi tiết lời khai, lần đầu không gắn nhãn đáng ngờ. |
+| Đoạn lật đi qua từng chỗ vênh: vết keo băng dính quanh miệng cậu bé mà lúc hàng xóm vào không còn băng dính, ngăn kéo khoá không cái nào bị phá, camera không thấy hai người kia, lỗi chính tả trong thư nặc danh chỗ sai chỗ đúng. | Mỗi chỗ là một câu hỏi "làm vậy để làm gì", cộng lại thành lời giải. | Dựng từng cặp lời kể–vật chứng và nói đúng sức nặng của từng cặp. Mẫu nói quá ở camera ("một là phép thuật, hai là cô ta nói dối") và ở nhận định chung về trẻ tự kỷ; kênh này không làm vậy. |
+| Camera được nêu là đang thu "nhưng cần thời gian"; lá thư nặc danh xuất hiện ngày thứ ba; cả hai được trả ở đoạn lật. | Người nghe biết mình đang chờ kết quả của việc gì. | Câu hỏi treo gắn với một việc kiểm tra có thật đang chờ kết quả: [kiến trúc câu chuyện](kien-truc-cau-chuyen.md), mục Mở nhánh giả thuyết. |
+| Giờ ăn tối muộn của người Tây Ban Nha, đồ biker ở châu Âu so với ở Việt Nam, trò nhét tờ rơi khe cửa, lỗi chính tả do phát âm. | Người nghe hiểu cơ chế bằng trải nghiệm của chính mình. | So sánh với đời sống Việt Nam theo điều kiện ở [thị trường Việt Nam](thi-truong-viet-nam.md). Ví dụ 8. |
+| Người yêu cũ đang ở tù, người về nhì cuộc thi có ngoại phạm — mỗi hướng loại bằng một dữ kiện. Khi điều tra bế tắc, mẫu kể việc dư luận chê cảnh sát. | Đoạn giữa có nhịp mà không kéo dài. | Mục "Khi điều tra đi vào bế tắc" ở [kiến trúc câu chuyện](kien-truc-cau-chuyen.md). |
+
+Không bê nguyên những điểm sau:
+
+- Lời khai được kể như cảnh thật, kể xong mới có một câu nói đó là lời khai của cô.
+- Chuyện mẹ nuôi từng phàn nàn — cậu bé không được thay quần áo, bị để một mình trong phòng — chỉ được kể sau khi lộ, nên lời giải thiếu công bằng.
+- Khoảng 6% transcript là phân tích tâm lý do người kể tự dựng, nối khuyết tật bẩm sinh với động cơ giết người, kèm "theo thống kê" không nguồn, rồi kết bằng một đoạn giảng về "khiếm khuyết trong tâm hồn". Xem [giọng kể](giong-ke.md), mục Không khí và mục Kết thúc.
+- "Bảng ký hiệu của kẻ trộm" ở Anh và Trung Quốc được kể như sự thật mà không nói nguồn.
+- Transcript tự mâu thuẫn: băng dính lúc được nói là loại có trong nhà, lúc là loại bản lớn mua ở siêu thị; "9 tháng kể từ ngày vụ án" đi liền với phiên toà tháng 11/2020; tên người chép nhiều kiểu. Mức án "chung thân" cần đối chiếu với chế định gốc của Tây Ban Nha.
+- Phần Carlos II và đoạn luật hôn nhân Việt Nam chiếm khoảng 15% transcript mà không phục vụ vụ chính.
+- Lời chào kênh, phần giới thiệu gian hàng, lời mời bình luận đoán khẩu hình.
+
 ## Ví dụ 1 — nói rõ con người thay cho ý niệm
 
 **Dữ kiện hư cấu để luyện câu:** cảnh sát tìm thấy một chiếc điện thoại trong tủ đồ của Minh; trước đó mẹ Minh khai anh dùng một máy khác. Chưa biết ai đặt chiếc máy trong tủ hoặc nó có liên quan vụ mất tích không.
@@ -80,6 +103,30 @@ Suy nghĩ được kể vì chính người đó kể lại; hai chữ “cô k�
 Nhà mình ở mà không có vân tay của mình. Chuyện đó có thể giải thích theo vài hướng. Một là có người đã lau hiện trường trước khi đám đông kéo tới. Hai là một trong những người đang đứng ngoài kia đã vào căn nhà này từ trước — nếu vậy thì dấu tay của người đó giờ nằm lẫn với dấu tay của mấy chục người tò mò khác, có tìm thấy cũng có sẵn một lý do để giải thích. Hoặc đơn giản hơn: hiện trường bị hàng chục người ra vào trước khi phong toả, lại thêm chuyện không phải bề mặt nào cũng lưu được vân tay, nên thứ lấy được không còn đủ để so sánh.”
 
 Bản mở nhánh không thêm một dữ kiện nào so với bản phẳng. Sức nặng đến từ việc gọi tên điều bất thường rồi mở khả năng. Ba chỗ cần để ý. Một, câu dẫn nói “có thể giải thích theo vài hướng”, không nói “chỉ có thể là”: dữ kiện chưa loại trừ những cách giải thích khác. Hai, nhánh hai không gọi ai là hung thủ và không gán giới tính — chỉ nói một người đã vào căn nhà từ trước, đúng mức dữ kiện cho phép. Ba, nhánh bình thường gồm cả giới hạn của việc thu mẫu, vì không lấy được vân tay chưa chắc vì có người lau. Khi chứng cứ về sau loại được nhánh nào, nói rõ loại bằng gì; nhánh nào còn lại thì phần kết nhắc lại.
+
+## Ví dụ 7 — kể lời khai sẽ bị lật
+
+**Toàn bộ dữ kiện hư cấu cho đoạn này:** tối thứ Sáu, Lan trực một mình ở cửa hàng điện thoại. Cô báo cảnh sát rằng gần giờ đóng cửa, hai người đàn ông đội mũ bảo hiểm kín mặt bước vào; một người giữ cô, người kia lấy con dao rọc giấy trên quầy cắt dây điện thoại bàn, vào kho lấy cuộn băng dính đóng hàng quấn tay cô, rồi mở két lấy tiền. Cô nói từ đầu đến cuối hai người không nói câu nào. Cảnh sát xác định két không có dấu cạy, được mở bằng mã; chủ tiệm cho biết chỉ ông và Lan biết mã. Dao rọc giấy và cuộn băng dính là đồ của tiệm. Camera của tiệm bên cạnh quay ra vỉa hè, không ghi được ai đội mũ bảo hiểm đi vào trong khung giờ đó; camera này không quay được lối sau. Ba tuần sau, Lan thừa nhận đã tự dựng chuyện để lấy tiền trả nợ. Toà kết án Lan.
+
+**Đoạn kể lời khai:**
+
+Tối thứ Sáu ấy, trong cửa hàng chỉ có một mình Lan, nên những gì xảy ra sau giờ đóng cửa cũng chỉ đến từ lời cô. Lan kể với cảnh sát rằng gần lúc đóng cửa, hai người đàn ông đội mũ bảo hiểm kín mặt bước vào. Một người giữ chặt cô. Người kia lấy con dao rọc giấy trên quầy cắt dây điện thoại bàn, rồi vào kho lấy cuộn băng dính đóng hàng quấn tay cô lại. Xong, họ mở két, lấy tiền và đi. Lan nói suốt từ đầu đến cuối, hai người không nói với cô một câu nào.
+
+**Đoạn lật, nhiều đoạn sau:**
+
+Két không hề bị cạy. Nó được mở bằng mã, và theo chủ tiệm, mã ấy chỉ ông và Lan biết. Mà Lan nói hai người kia không nói với cô câu nào. Vậy họ mở két bằng cách nào? Rồi tới những thứ họ dùng: con dao trên quầy, cuộn băng dính trong kho, đều là đồ của tiệm. Đi cướp mà thứ để trói người cũng phải vào tận kho tìm — không phải không thể, nhưng là chuyện khó hiểu. Camera của tiệm bên cạnh không ghi được ai đội mũ bảo hiểm đi vào giờ đó. Có điều camera ấy chỉ quay ra vỉa hè, lối sau thì không thấy, nên riêng nó chưa nói được là không có ai vào. Thứ khiến lời kể khó đứng là tất cả những điểm ấy cộng lại. Ba tuần sau, Lan thừa nhận cô đã tự dựng chuyện để lấy tiền trả nợ, và toà sau đó kết án cô.
+
+Câu đầu quy nguồn một lần và nói luôn vì sao chỉ có lời kể này; sau đó lời khai được kể liền mạch, không chen "theo lời Lan" vào từng câu. Chi tiết "không nói câu nào" được kể như mọi chi tiết khác, không gắn nhãn, rồi thành chỗ vênh lớn nhất khi đặt cạnh cái két mở bằng mã. Đoạn lật đi từng cặp lời kể–kết quả kiểm. Camera giữ đúng giới hạn góc quay. Câu nhận xét của người kể ("không phải không thể, nhưng là chuyện khó hiểu") không biến thành kết luận. Lời giải dựa vào lời thừa nhận và bản án, không dựa vào một chi tiết đơn lẻ.
+
+## Ví dụ 8 — so sánh với đời sống Việt Nam
+
+**Dữ kiện hư cấu:** lúc 22 giờ, điện thoại của Quân kết nối với một trạm phát sóng có vùng phủ khoảng 3 ki-lô-mét quanh nhà kho. Chưa có dữ liệu vị trí nào chính xác hơn.
+
+**Cứng:** “Dữ liệu trạm phát sóng xác định thiết bị của Quân nằm trong vùng phủ sóng của trạm gần nhà kho lúc 22 giờ. Tuy nhiên, dữ liệu này có độ chính xác hạn chế về vị trí.”
+
+**Có so sánh:** “Lúc 22 giờ, điện thoại của Quân kết nối với trạm phát sóng gần nhà kho. Cái này giống như mình biết một người đang ở trong phường nào, chứ chưa biết người đó ở nhà nào: vùng phủ của trạm rộng khoảng ba cây số quanh nhà kho. Chiếc điện thoại ở đâu đó trong vùng ấy, còn Quân có cầm máy không, có vào nhà kho hay không thì dữ liệu này chưa trả lời được.”
+
+Phép so sánh giống đúng ở một điểm — biết vùng chứ chưa biết chỗ — và câu sau nói luôn giới hạn, kể cả giới hạn giữa chiếc máy và người. Chỉ dùng nó cho điểm đó; không suy tiếp rằng vùng phủ của trạm có ranh giới rõ như địa giới phường.
 
 ## Đánh giá một bản sửa
 

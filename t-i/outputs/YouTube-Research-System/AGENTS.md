@@ -55,9 +55,9 @@ Hoàn tất nghiên cứu khi câu hỏi trung tâm, diễn biến và kết lu�
 - **Lời kể cuối là tiếng Việt**, viết cho người Việt nghe, không dịch từng câu từ nguồn.
 - **Bản địa hoá:** ngày/tháng/năm; hệ mét và độ C với độ chính xác tương đương nguồn; tiền giữ đơn vị gốc, chỉ quy đổi khi giúp hiểu và phải ghi tỷ giá cùng ngày áp tỷ giá; tên viết bằng chữ Latin giữ nguyên, tên người và địa danh gốc Hán (Trung Quốc, Đài Loan, Hồng Kông) dùng âm Hán Việt quen dùng và kịch bản làm việc ghi kèm chữ Hán để đối chiếu, chỉ chuyển khi chữ Hán có trong nguồn (Tú chốt 2026-09-16); thuật ngữ tư pháp nước ngoài giải thích bằng chức năng, không gán một chế định Việt Nam không tương đương.
 - **Suy đoán vô tội:** chưa có bản án kết tội đã có hiệu lực thì gọi đúng tư cách tố tụng của người đó tại ngày kiểm tra, và ghi ngày kiểm tra. Không kết luận thay toà. Không gọi "hắn", "ả" hay dùng cách gọi phán xét với người chưa bị kết án.
-- **Đời tư:** không nêu thông tin nhận diện nạn nhân, người thân, nhân chứng quá mức câu chuyện cần. Không nêu thông tin nhận diện người dưới 18 tuổi. Không nêu danh tính nạn nhân bị xâm hại tình dục.
+- **Đời tư:** không nêu thông tin nhận diện nạn nhân, người thân, nhân chứng quá mức câu chuyện cần. Không nêu thông tin nhận diện người dưới 18 tuổi; ngoại lệ duy nhất là nạn nhân trẻ em đã mất trong vụ nước ngoài, được gọi bằng đúng dạng tên đã công khai rộng rãi trên báo chính thống nước đó, không nêu thêm thông tin nhận diện nào khác (Tú chốt 2026-10-15). Không nêu danh tính nạn nhân bị xâm hại tình dục.
 - **Báo Tú trước khi đề xuất**, không tự đưa vào đợt gợi ý: vụ Việt Nam đang điều tra, truy tố hoặc xét xử; vụ có yếu tố chính trị, an ninh quốc gia, tôn giáo hoặc dân tộc; vụ liên quan người đang giữ chức vụ.
-- Không miệt thị hay phân biệt vùng miền, tôn giáo, dân tộc, giới tính. Không gắn hành vi phạm tội với quê quán như một lời giải thích.
+- Không miệt thị hay phân biệt vùng miền, tôn giáo, dân tộc, giới tính, khuyết tật hay tình trạng sức khoẻ. Không gắn hành vi phạm tội với quê quán, khuyết tật, chẩn đoán bệnh hay một nhóm người như một lời giải thích. Không tự chẩn đoán rối loạn tâm thần hay nhân cách cho người trong vụ khi hồ sơ không có giám định hoặc kết luận chuyên môn. Áp dụng cho mọi vụ, trong và ngoài nước (Tú chốt 2026-10-15).
 - **Đây là kiểm tra biên tập, không phải tư vấn pháp lý.** Rủi ro pháp lý không tự đánh giá được thì dừng chi tiết đó, báo Tú, làm tiếp phần còn lại.
 - Xưng hô của người kể **chưa chốt** (`channel.narrator_voice` trong registry.json). Tú chốt thì ghi vào registry theo quy trình sửa sổ.
 
@@ -65,7 +65,7 @@ Cách áp dụng và danh sách kiểm: `.claude/skills/ky-an-viet/references/th
 
 ## Kịch bản
 
-STORYTELLING.md lưu phân tích bảy mẫu duy nhất người dùng cung cấp qua hai đợt và các quy tắc đã thích nghi cho kênh. Các file references/ chỉ là mẫu kể chuyện, không phải nguồn chứng minh vụ việc và không phải tập của người dùng đã kể. Không đưa chúng vào registry.cases khi chưa có yêu cầu chọn hoặc loại trừ câu chuyện cụ thể.
+STORYTELLING.md lưu phân tích bảy mẫu duy nhất người dùng cung cấp qua hai đợt đầu (REF-01 đến REF-08, REF-05 trùng REF-04), hai mẫu bổ sung về sau — Cẩm Tân Đại Lâu (2026-09-15, không lưu file trong repo) và vụ Elda (REF-09, 2026-10-15) — và các quy tắc đã thích nghi cho kênh. Các file references/ chỉ là mẫu kể chuyện, không phải nguồn chứng minh vụ việc và không phải tập của người dùng đã kể. Không đưa chúng vào registry.cases khi chưa có yêu cầu chọn hoặc loại trừ câu chuyện cụ thể.
 
 Theo hướng dẫn kể chuyện: theo dõi ai biết/tin điều gì tại từng đoạn, nguyên nhân của thay đổi thái độ, chức năng của chi tiết và các lớp tiết lộ. Phân biệt lời kể, niềm tin, chứng cứ và suy luận; nhiều bất thường chưa được giải thích không tự chứng minh một âm mưu. Tài liệu xác nhận một phần sự việc không xác nhận toàn bộ câu chuyện lan truyền.
 

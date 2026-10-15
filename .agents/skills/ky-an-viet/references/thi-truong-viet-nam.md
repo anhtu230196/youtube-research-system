@@ -22,8 +22,19 @@ Luật ràng buộc nằm ở `t-i/outputs/YouTube-Research-System/AGENTS.md`, m
 | district attorney | viện kiểm sát | Đây là một chức danh công tố ở cấp địa phương, thường do bầu cử; viện kiểm sát là cả một hệ thống cơ quan. |
 | parole | đặc xá | Parole gần với "tha tù trước thời hạn có điều kiện" nhưng không giống hệt; đặc xá là chế định khác. Tốt nhất là mô tả cơ chế. |
 | first-degree murder | "giết người cấp độ một" | Luật Việt Nam không phân "cấp độ" tội giết người theo kiểu này. Mô tả nghĩa theo luật của nơi xét xử, hoặc giữ tên tội danh gốc kèm giải thích. |
+| prisión permanente revisable (Tây Ban Nha) | tù chung thân | Hình phạt tù không thời hạn, được xem xét lại sau một thời gian tối thiểu do luật Tây Ban Nha quy định. Điều kiện xem xét lại khác tù chung thân ở Việt Nam; mô tả cơ chế, kèm tên gốc trong kịch bản làm việc. |
+
+Tên tội danh nước ngoài cũng vậy: không đổi sang tên một tội trong Bộ luật Hình sự Việt Nam chỉ vì nghe gần ("khai báo gian dối", "báo tin giả"). Giữ tên gốc trong kịch bản làm việc, kể bằng hành vi bị buộc tội.
 
 **Bối cảnh:** chỉ giải thích phần hệ thống nước ngoài cần để hiểu bước tiếp theo, đặt ngay trước chỗ cần. Không bịa phép so sánh kiểu "giống như ở ta…" khi hai thứ không thật sự giống.
+
+**So sánh với đời sống Việt Nam** thì nên dùng khi nó giải thích đúng cơ chế người nghe cần hiểu. REF-09 có vài chỗ làm tốt: giờ ăn tối muộn của người Tây Ban Nha giải thích vì sao toà nhà vắng mà quán dưới đường lại đông; trò nhét tờ rơi vào khe cửa giải thích cách kẻ trộm dò nhà có người hay không; lỗi chính tả do phát âm giải thích vì sao sai nhất quán là sai tự nhiên, còn chỗ sai chỗ đúng là cố ý. Điều kiện:
+
+- Hai bên giống nhau ở đúng điểm đang giải thích; nói rõ điểm giống, không để người nghe suy rộng ra những điểm khác.
+- Đặt ngay chỗ cần, một hai câu, rồi quay lại vụ án.
+- Không dùng để coi hai chế định pháp lý là tương đương — bảng ở trên vẫn áp dụng.
+- Ví dụ về giọng vùng miền chỉ nói chuyện phát âm và chính tả; không nối giọng nói với học vấn, trí tuệ hay đạo đức. Chính REF-09 lỡ đặt "lỗi chính tả" cạnh "trình độ học vấn thấp" ngay trước ví dụ phương ngữ.
+- Dữ kiện trong phép so sánh — giờ ăn, thói quen, cách làm của kẻ trộm — cũng cần nguồn như mọi dữ kiện khác.
 
 ## Vụ án tại Việt Nam
 
@@ -45,7 +56,8 @@ Xem [nghiên cứu và kiểm chứng](nghien-cuu-va-kiem-chung.md), mục Vụ 
 ### Đời tư và người dễ tổn thương
 
 - Không nêu tên đầy đủ, địa chỉ, nơi làm việc, ảnh nhận diện được của nạn nhân, người thân, nhân chứng — trừ khi đã công khai rộng rãi qua nguồn chính thống **và** thật sự cần cho câu chuyện.
-- Người dưới 18 tuổi: không nêu thông tin giúp nhận diện, dù họ là nạn nhân, nhân chứng hay người phạm tội.
+- Người dưới 18 tuổi: không nêu thông tin giúp nhận diện, dù họ là nạn nhân, nhân chứng hay người phạm tội. Quy tắc này áp dụng cho mọi vụ, trong và ngoài nước.
+- Ngoại lệ duy nhất, Tú chốt 2026-10-15: nạn nhân trẻ em **đã mất** trong vụ **nước ngoài** được gọi bằng tên đã công khai rộng rãi trên báo chính thống của nước đó. Dùng đúng dạng tên đã công khai — báo chỉ nêu tên gọi hay chữ viết tắt thì kịch bản cũng chỉ dùng như vậy. Không nêu thêm thông tin nhận diện nào khác: ảnh hay video, trường học, địa chỉ, ngày sinh. Kịch bản làm việc ghi các nguồn báo đã nêu tên và ngày kiểm. Trẻ em còn sống trong cùng vụ — anh chị em, nhân chứng — vẫn theo quy tắc chung. Vụ Việt Nam không có ngoại lệ này.
 - Nạn nhân bị xâm hại tình dục: không nêu danh tính trong mọi trường hợp.
 - Thông tin nhân thân đã bị ẩn trong bản án thì giữ ẩn.
 
@@ -60,7 +72,9 @@ Không tự đưa vào đợt gợi ý. Nêu vụ và lý do để Tú quyết:
 
 ### Ngôn từ
 
-Không miệt thị, không phân biệt vùng miền, tôn giáo, dân tộc, giới tính. Không gắn hành vi phạm tội với quê quán hay một nhóm người như một lời giải thích.
+Áp dụng cho mọi vụ, không riêng vụ Việt Nam.
+
+Không miệt thị, không phân biệt vùng miền, tôn giáo, dân tộc, giới tính, khuyết tật hay tình trạng sức khoẻ. Không gắn hành vi phạm tội với quê quán, khuyết tật, chẩn đoán bệnh hay một nhóm người như một lời giải thích. Không tự chẩn đoán rối loạn tâm thần hay rối loạn nhân cách cho người trong vụ; chỉ nêu khi hồ sơ có giám định hoặc kết luận chuyên môn, kèm quy nguồn. Cách viết: [giọng kể](giong-ke.md), mục "Không khí, thời gian và lời đồn".
 
 ## Tra cạnh tranh
 
@@ -87,5 +101,8 @@ Bổ sung cho danh sách ở `STORYTELLING.md` mục 7:
 - Có đoạn nào nghe như bản dịch không?
 - Xưng hô của người kể nhất quán cả tập?
 - Có "hắn", "ả" hay cách gọi phán xét nào cho người chưa bị kết án không?
+- Có chỗ nào gắn hành vi phạm tội với khuyết tật, chẩn đoán bệnh hay một nhóm người, hoặc tự chẩn đoán tâm lý người trong vụ không?
+- Mỗi phép so sánh với đời sống Việt Nam có giống đúng ở điểm đang giải thích và có nguồn cho dữ kiện bên vụ án không?
+- Người dưới 18 tuổi, mọi vụ: có thông tin nhận diện nào không? Nếu dùng tên nạn nhân trẻ em đã mất ở vụ nước ngoài: đúng dạng tên báo chính thống nước đó đã công khai, có ghi nguồn và ngày kiểm, và không kèm ảnh, trường, địa chỉ hay ngày sinh?
 - Vụ Việt Nam: tư cách tố tụng đúng tại ngày kiểm tra, có ghi ngày? Có thông tin nhận diện người dễ tổn thương không?
 - Có vụ nào thuộc danh sách phải báo Tú trước mà chưa báo?
