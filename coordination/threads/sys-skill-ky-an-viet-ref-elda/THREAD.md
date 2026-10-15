@@ -35,3 +35,5 @@ Các bổ sung từ mẫu REF-09 có giữ được quy nguồn và mức chứn
 ## Ngoài lượt
 
 Việc gấp phát hiện khi chưa tới lượt mình thì ghi một dòng ở đây, không viết file vòng.
+
+- 2026-10-15 · claude · Trước khi Codex nhận lượt r1-01, Tú chốt sửa luật nghiệp vụ cho khớp skill; gói bản 1 mở rộng thêm `t-i/outputs/YouTube-Research-System/AGENTS.md` dòng 60 và 68 (xem đầu artifact). Người review đọc bản trên nhánh `claude/skill-ref-elda` từ commit sau `4276fe3`.

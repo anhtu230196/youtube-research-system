@@ -2,6 +2,8 @@
 
 **Ngày:** 2026-10-15. **Tác giả:** Claude. **Claim:** `sys-skill-ky-an-viet-ref-elda`. **Bước:** 7 (skill). **Người review:** Codex và Gemini. **Nhánh:** `claude/skill-ref-elda`. **Đối chiếu:** `git diff 9c4eafb` (commit claim trên `main`).
 
+Gói được mở rộng một lần trong ngày, trước khi có lượt review nào: sau khi đọc bản đề xuất r1-00, Tú chốt sửa luật nghiệp vụ cho khớp skill (dòng 60 và 68 của `t-i/outputs/YouTube-Research-System/AGENTS.md`). Chưa người review nào đọc bản hẹp hơn, nên đây vẫn là bản 1. Câu hỏi về người dưới 18 tuổi trong r1-00 vẫn chờ Tú, không nằm trong gói.
+
 ## Vì sao có thay đổi này
 
 Ngày 2026-10-15, Tú gửi transcript một tập của kênh Truyện Ma Bẻ Lái — cùng kênh với mẫu Cẩm Tân đã phân tích ngày 2026-09-15 — và hỏi dự án học thêm được gì, bỏ qua phần dẫn về vua Carlos II. Lượt phân tích tìm sáu điểm đáng học và một nhóm lỗi skill chưa chặn rõ. Tú duyệt cả gói và yêu cầu lưu transcript vào `references/`.
@@ -43,10 +45,11 @@ Thêm một thuật ngữ: mẫu gọi mức án là "chung thân", trong khi T�
 | `SKILL.md` | Dòng 22: nhắc mẫu REF-09 trong "Đích giọng kể". Dòng 77: phần chưa kiểm chứng cho các bổ sung mới |
 | `.agents/skills/ky-an-viet/` | Bản sao năm file trên, trùng từng byte |
 | `t-i/outputs/YouTube-Research-System/STORYTELLING.md` | Dòng 3 và một đoạn trỏ ở cuối mục 9 |
+| `t-i/outputs/YouTube-Research-System/AGENTS.md` | Dòng 60: thêm khuyết tật, tình trạng sức khoẻ, chẩn đoán bệnh, cấm tự chẩn đoán rối loạn khi hồ sơ không có giám định, ghi rõ áp dụng cho mọi vụ — khớp mục Ngôn từ của `thi-truong-viet-nam.md`. Dòng 68: ghi thêm mẫu Cẩm Tân và REF-09 sau bảy mẫu ban đầu. Tú chốt 2026-10-15 |
 | `t-i/outputs/YouTube-Research-System/references/ref-09-elda-survivor-account.txt` | Transcript nguyên văn, trích bằng script từ log phiên chat, không gõ lại |
 | `t-i/outputs/YouTube-Research-System/references/manifest.json` | Mục REF-09 kèm SHA-256 |
 
-Không đổi `registry.json`, trạng thái case, `episodes/`, luật nghiệp vụ `t-i/outputs/YouTube-Research-System/AGENTS.md`, `chon-vu.md`, `mo-dau.md`, `nghien-cuu-va-kiem-chung.md`, `ban-thu-am.md`, cấu hình model hay skill toàn cục.
+Không đổi `registry.json`, trạng thái case, `episodes/`, phần còn lại của luật nghiệp vụ (kể cả quy tắc người dưới 18 tuổi ở dòng 58), `chon-vu.md`, `mo-dau.md`, `nghien-cuu-va-kiem-chung.md`, `ban-thu-am.md`, cấu hình model hay skill toàn cục.
 
 ## Đã kiểm
 
