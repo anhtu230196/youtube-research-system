@@ -19,7 +19,7 @@ Trước mọi việc của kênh, đọc `README.md`, `registry.json` và — v
 
 ## Đích giọng kể
 
-Theo yêu cầu ngày 2026-09-15 và mẫu Cẩm Tân Đại Lâu / mất tích đêm Trung thu: lời kể gần gũi, có người dẫn chuyện, để người nghe lần theo từng việc và hiểu lại chi tiết cũ khi có chứng cứ mới. Viết thẳng bằng tiếng Việt từ dữ kiện; không dùng bản tiếng Việt như bản dịch trung gian hoặc đọc bảng kiểm chứng thành lời kể.
+Theo yêu cầu ngày 2026-09-15, mẫu Cẩm Tân Đại Lâu / mất tích đêm Trung thu và mẫu vụ Elda (REF-09, 2026-10-15): lời kể gần gũi, có người dẫn chuyện, để người nghe lần theo từng việc và hiểu lại chi tiết cũ khi có chứng cứ mới. Viết thẳng bằng tiếng Việt từ dữ kiện; không dùng bản tiếng Việt như bản dịch trung gian hoặc đọc bảng kiểm chứng thành lời kể.
 
 Khi viết hoặc sửa câu văn, đọc [giọng kể](references/giong-ke.md) và [mẫu và thực hành](references/mau-va-thuc-hanh.md). Khi dựng khung, đọc thêm [kiến trúc câu chuyện](references/kien-truc-cau-chuyen.md). Học cách dẫn dắt trong mẫu, không chép câu cửa miệng hay nhập lời đồn vào hồ sơ sự thật.
 
@@ -73,3 +73,5 @@ Yêu cầu viết kịch bản bao gồm luôn quyền nghiên cứu, dựng khu
 Tạo ngày 2026-09-14; cập nhật giọng kể ngày 2026-09-15. Phần kế thừa — nghiên cứu, claim ledger, kiến trúc câu chuyện, các bất biến — đã chạy thật trên NET-0006. Phần bản địa hoá, thận trọng với vụ án trong nước, tra cạnh tranh trên YouTube tiếng Việt và chuẩn bị TTS tiếng Việt **chưa chạy trọn trên tập thật nào**. Kiểm thử trích đoạn và review của lần cập nhật giọng kể được ghi riêng ở `coordination/drafts/sys-skill-ky-an-viet-voice.md`; không suy từ bài thử sang chất lượng cả tập hoặc số liệu giữ chân. Dùng trên tập thật thì ghi lại chỗ không khớp thực tế để sửa skill.
 
 Ở một lượt thử hướng dẫn mới, người viết tự thêm người thực hiện khi nối câu, trong khi baseline không thêm. Đã bổ sung quy tắc giữ đúng đường đi của thông tin trong hướng dẫn giọng kể; lượt kiểm lại chỉ dùng cùng bộ dữ kiện đã phát hiện lỗi, chưa thử quy tắc này trên bộ khác. Đây là lỗi cần rà khi dùng skill, chưa đủ dữ liệu để quy kết nguyên nhân cho một câu hướng dẫn cụ thể.
+
+Các phần thêm ngày 2026-10-15 từ mẫu REF-09 — lời kể của người trong cuộc bị lật, câu hỏi treo gắn với việc đang chờ kết quả, đoạn giữa khi điều tra bế tắc, so sánh với đời sống Việt Nam, Ví dụ 7 và 8 — **chưa dùng trên tập thật hay bài thử nào**. Rủi ro cần rà khi dùng lần đầu: người viết kể lời khai như sự thật khách quan sau câu quy nguồn đầu tiên, hoặc thêm một phép so sánh mà phần dữ kiện bên vụ án không có nguồn.
