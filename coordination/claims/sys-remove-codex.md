@@ -2,7 +2,7 @@
 id: sys-remove-codex
 agent: claude
 branch: main
-status: active
+status: done
 opened: 2026-10-15
 updated: 2026-10-15
 scope:
@@ -30,3 +30,7 @@ scope:
 **Không đụng tới:** lịch sử — file vòng, handoff, claim đã đóng, `history/`, `registry.json`, bản tập và thử model đã làm bằng Codex. Script vẫn đọc được `codex` trong hồ sơ cũ để `check` không báo lỗi trên lịch sử.
 
 **Ghi chú:** Tú yêu cầu commit và đẩy thẳng; không mở luồng review cho thay đổi này. Gemini đọc lại sau khi vào `main`.
+
+## Hoàn tất 2026-10-15
+
+Đã vào `main` cùng commit này và commit trước. Ba lệnh kiểm repo đều qua; `thread.py new`, `claims.py new` và `orchestrate.py start` từ chối `codex`. Không có lượt review: Tú yêu cầu commit và đẩy thẳng. Còn treo: luồng `net-0006-ban-tieng-viet` có Codex là tác giả, chờ Tú giao lại.
