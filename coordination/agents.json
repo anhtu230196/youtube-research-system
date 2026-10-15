@@ -1,5 +1,5 @@
 {
-  "_doc": "Cach goi CLI cua tung agent o che do headless. {prompt} duoc thay bang noi dung that, {repo} bang duong dan goc repo. 'cmd' dung cho luot review: phai DOC va TRUY CAP WEB duoc nhung KHONG GHI duoc. 'write_cmd' dung cho luot tac gia. 'output_file_flag' danh cho CLI co stdout lan nhieu: orchestrator them co do kem mot file tam va doc ket qua tu do. 'model_flag' cho phep doi model mot lan chay bang bien moi truong AGENT_MODEL_<TEN> (vi du AGENT_MODEL_GEMINI=gemini-3.8-flash-high). 'write_unlock' mo tam quyen ghi o tang settings cho dung luot tac gia roi tra lai ngay sau do. Xem AGENTS.md muc 8.",
+  "_doc": "Cach goi CLI cua tung agent o che do headless. {prompt} duoc thay bang noi dung that, {repo} bang duong dan goc repo. 'cmd' dung cho luot review: phai DOC va TRUY CAP WEB duoc nhung KHONG GHI duoc. 'write_cmd' dung cho luot tac gia. 'output_file_flag' danh cho CLI co stdout lan nhieu: orchestrator them co do kem mot file tam va doc ket qua tu do. 'model_flag' cho phep doi model mot lan chay bang bien moi truong AGENT_MODEL_<TEN> (vi du AGENT_MODEL_GEMINI=gemini-3.8-flash-high). 'write_unlock' mo tam quyen ghi o tang settings cho dung luot tac gia roi tra lai ngay sau do. Xem AGENTS.md muc 8. Codex da ngung dung tu 2026-10-15 (AGENTS.md dau file); cau hinh cu cua no nam trong lich su git.",
   "agents": {
     "claude": {
       "bin": "claude",
@@ -73,38 +73,6 @@
       "timeout": 1800,
       "verified": true,
       "note": "Antigravity CLI (agy), khong phai 'gemini' CLI nua: Google da ngat OAuth cua gemini CLI cho tai khoan ca nhan tu 2026-06-18 (Gemini Code Assist for individuals / AI Pro / Ultra), chi con API key tra tien moi dung duoc. Dang nhap: agy dung chung phien voi app Antigravity da cai san. Model mac dinh gemini-3.1-pro-high; doi sang gemini-3.8-flash-high cho luot nhe bang AGENT_MODEL_GEMINI. Canh bao: 'agy models' co ca claude-opus-4-6-thinking va gpt-oss-120b — cam nham vao ghe nay thi luong mat gia tri ba model doc lap soi nhau. QUYEN GHI (do lai 2026-09-10, ket qua khac lan truoc): --mode plan va --dangerously-skip-permissions deu KHONG phai hang rao va cung khong mo duoc khoa; thu chan/mo duy nhat co tac dung la permissions.deny trong ~/.gemini/antigravity-cli/settings.json — deny that su chan, loi tra ve nguyen van 'Matches user-configured deny rule'. Vi vay luot tac gia dung write_unlock: orchestrator go tam 'write_file(*)' khoi deny, chay, roi tra lai trong finally. Bay them: khong co --add-dir thi agy ghi vao thu muc scratch cua no (~/.gemini/antigravity-cli/scratch/) chu khong bao loi — nhin ben ngoai giong het nhu bi chan ghi. 'command(*)' van nam trong deny ca o luot tac gia: Gemini duoc ghi file, khong duoc chay shell."
-    },
-    "codex": {
-      "bin": "codex",
-      "cmd": [
-        "codex",
-        "exec",
-        "{prompt}",
-        "--sandbox",
-        "read-only",
-        "-m",
-        "gpt-5.6-terra",
-        "-c",
-        "model_reasoning_effort=high"
-      ],
-      "write_cmd": [
-        "codex",
-        "exec",
-        "{prompt}",
-        "--sandbox",
-        "workspace-write",
-        "-m",
-        "gpt-5.6-terra",
-        "-c",
-        "model_reasoning_effort=high"
-      ],
-      "model_flag": "-m",
-      "timeout": 1800,
-      "verified": true,
-      "note": "Da kiem chung 2026-09-09: doc OK, web OK, ghi bi chan o --sandbox read-only. stdout lan nhieu (web search:, tokens used) nen lay ket qua qua --output-last-message. Model chot: -m gpt-6-astra. Dat thang o day thay vi dua vao ~/.codex/config.toml de cau hinh luong khong phu thuoc may. Effort ha xuong 'max' ngay 2026-09-11 theo yeu cau cua Tu: 'ultra' dot token qua nhanh. Thang day du cua gpt-6-astra lay tu ~/.codex/models_cache.json (supported_reasoning_levels): low -> medium -> high -> xhigh -> max -> ultra. Khac biet giua hai bac cuoi khong phai do sau suy luan: 'max' = 'Maximum reasoning depth for the hardest problems', 'ultra' = 'Maximum reasoning with automatic task delegation' — phan tu chia viec cho sub-task moi la cho ton token. Ha ultra->max giu nguyen do sau, bo phan delegation. SUA 2026-09-11 (ban ghi truoc SAI: da ha xuong 'max'): trong thang Tu thay tren UI, duoi 'ultra' la 'xhigh' (Extra High) chu khong phai 'max'. Bang chung: API chi nhan none/minimal/low/medium/high/xhigh/max — 'ultra' KHONG phai gia tri effort cua API ma la che do phia client ('Maximum reasoning with automatic task delegation'), va menu UI khong co 'max'. Nen ha ultra -> xhigh giu nguyen do sau suy luan tho va bo phan tu chia viec cho sub-task, do la cho dot token. CANH BAO KIEM CHUNG: codex KHONG bao loi ra stdout khi -c model_reasoning_effort sai — dat 'zzz' van chay binh thuong. Muon biet gia tri nao thuc su duoc nhan thi doc file rollout moi nhat trong ~/.codex/sessions/<nam>/<thang>/<ngay>/ va tim truong reasoning_effort; gia tri sai se kem mot invalid_enum_value trong do. SUA 2026-09-16: prompt nhieu dong truyen qua argv bi cat tai dong dau vi codex tren may nay la shim .cmd va cmd.exe dung phan tich tai ky tu xuong dong. Bang chung: ba lan chay lien tiep, rollout trong ~/.codex/sessions chi co dung dong dau cua prompt, khong co chu 'LUAT REVIEW'; do lai bang mot file .cmd tu viet thi tham so gom hai dong chi con dong dau, cung tham so do goi thang .exe thi nguyen ven. Tu do prompt di qua stdin: codex exec doc prompt tu stdin khi vi tri PROMPT la '-' (ghi trong codex exec --help).",
-      "output_file_flag": "--output-last-message",
-      "prompt_via": "stdin",
-      "stdin_token": "-"
     }
   }
 }

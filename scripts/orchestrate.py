@@ -514,7 +514,7 @@ def cmd_start(args) -> int:
     topic = args.topic.strip()
     slug = args.slug or slugify(topic)
     author = args.author
-    reviewers = [a for a in th.AGENTS if a != author]
+    reviewers = [a for a in th.ACTIVE_AGENTS if a != author]
     artifact = args.artifact or f"coordination/drafts/{slug}.md"
 
     d = th.threads_dir() / slug
@@ -543,8 +543,8 @@ def main() -> int:
     p_start = sub.add_parser(
         "start", help="mo luong moi tu mot cau yeu cau roi chay luon")
     p_start.add_argument("topic", help='vi du: "xay dung kich ban chu de vu an X"')
-    p_start.add_argument("--author", default="codex", choices=th.AGENTS,
-                         help="agent viet ban dau tien (mac dinh codex)")
+    p_start.add_argument("--author", default="claude", choices=th.ACTIVE_AGENTS,
+                         help="agent viet ban dau tien (mac dinh claude)")
     p_start.add_argument("--artifact", help="mac dinh coordination/drafts/<slug>.md")
     p_start.add_argument("--slug", help="mac dinh suy ra tu topic")
     p_start.add_argument("--step", help="so buoc trong bang AGENTS.md muc 8")

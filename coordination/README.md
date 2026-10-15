@@ -19,7 +19,7 @@ Sửa luật review ở `AGENTS.md` mục 8 thì phải áp lại tay vào `coor
 | Thư mục | Dùng để |
 | --- | --- |
 | `claims/` | Một file cho một việc đang giữ. Chống hai agent làm trùng. |
-| `threads/` | Luồng review nhiều vòng trên một sản phẩm trung gian. Nơi ba agent thật sự tranh luận. |
+| `threads/` | Luồng review nhiều vòng trên một sản phẩm trung gian. Nơi hai agent thật sự tranh luận. |
 | `reviews/` | Báo cáo review chéo dài cho một PR, khi comment không đủ chỗ. |
 | `handoffs/` | Ghi chú bàn giao khi việc chuyển từ agent này sang agent khác. |
 
@@ -30,7 +30,7 @@ Một file một claim, tên theo mã việc: `NET-0006.md`, `sys-skill-library.
 Tạo nhanh:
 
 ```bash
-python scripts/claims.py new NET-0007 --agent codex --branch codex/net-0007-research --task "Nghien cuu va tai nguon"
+python scripts/claims.py new NET-0008 --agent claude --branch claude/net-0008-research --task "Nghien cuu va tai nguon"
 ```
 
 Kiểm tra trước khi bắt đầu bất cứ việc gì:
@@ -58,12 +58,12 @@ Nhãn dùng trong cả comment lẫn file: `CHAN:` (chặn merge), `SUA:`, `HOI:
 
 ## threads/
 
-Mỗi bước sản phẩm — gợi ý vụ, khung sườn, bản tiếng Việt, bản thu âm — đi qua một luồng review nhiều vòng trước khi bước sau bắt đầu. Một agent là tác giả, hai agent còn lại review, tác giả được phản bác.
+Mỗi bước sản phẩm — gợi ý vụ, khung sườn, bản tiếng Việt, bản thu âm — đi qua một luồng review nhiều vòng trước khi bước sau bắt đầu. Một agent là tác giả, agent còn lại review, tác giả được phản bác.
 
 ```bash
 python scripts/thread.py status                 # luong nao dang mo, toi luot ai
 python scripts/thread.py next <slug>            # in cau can dan cho agent ke tiep
-python scripts/thread.py new <slug> --artifact <path>     --author claude --reviewers gemini,codex --question "..."
+python scripts/thread.py new <slug> --artifact <path>     --author claude --reviewers gemini --question "..."
 ```
 
 `THREAD.md` trong mỗi luồng là thứ duy nhất cần đọc để biết làm gì tiếp: đang vòng mấy, tới lượt ai, điểm `D**` nào còn mở.

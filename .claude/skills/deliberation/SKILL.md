@@ -1,11 +1,11 @@
 ---
 name: deliberation
-description: Cách nhận một lượt trong luồng review nhiều vòng giữa Codex, Claude và Gemini — viết bản đề xuất, viết bản review có mã điểm D**, phản bác một yêu cầu sửa, và đóng luồng. Dùng khi được giao một lượt trong coordination/threads/, khi review khung sườn hoặc kịch bản của agent khác, hoặc khi cần phản bác nhận xét. Deliberation, thread turn, phan bac, khung suon review.
+description: Cách nhận một lượt trong luồng review nhiều vòng giữa Claude và Gemini — viết bản đề xuất, viết bản review có mã điểm D**, phản bác một yêu cầu sửa, và đóng luồng. Dùng khi được giao một lượt trong coordination/threads/, khi review khung sườn hoặc kịch bản của agent khác, hoặc khi cần phản bác nhận xét. Deliberation, thread turn, phan bac, khung suon review.
 ---
 
 # Nhận một lượt trong luồng review
 
-Luồng review là cách ba agent tranh luận nhiều vòng trên một sản phẩm trung gian trước khi bước sau bắt đầu. Luật đầy đủ: [`AGENTS.md`](../../../AGENTS.md) mục 8.
+Luồng review là cách hai agent tranh luận nhiều vòng trên một sản phẩm trung gian trước khi bước sau bắt đầu. Luật đầy đủ: [`AGENTS.md`](../../../AGENTS.md) mục 8.
 
 Luôn bắt đầu bằng:
 
@@ -124,7 +124,7 @@ Việc của bạn chỉ là cho đúng trạng thái từng điểm trong khố
 
 ## Cái skill này không làm được
 
-Không biến ba agent thành một cuộc họp. Ngay cả khi `orchestrate.py` chạy trọn luồng, đó vẫn là ba lượt độc lập nối tiếp nhau, không phải ba bên cùng nói. Không agent nào thấy agent khác đang nghĩ gì — chỉ thấy cái đã viết ra.
+Không biến hai agent thành một cuộc họp. Ngay cả khi `orchestrate.py` chạy trọn luồng, đó vẫn là các lượt độc lập nối tiếp nhau, không phải hai bên cùng nói. Không agent nào thấy agent khác đang nghĩ gì — chỉ thấy cái đã viết ra.
 
 Không thay được bước Tú duyệt nội dung bản tiếng Việt. Review chéo kiểm nguồn, chứng cứ và cấu trúc; nó không quyết định câu chuyện có đáng kể hay không.
 

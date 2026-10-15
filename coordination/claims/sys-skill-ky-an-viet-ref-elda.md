@@ -29,4 +29,4 @@ scope:
 
 **Không đụng tới:** `registry.json` và trạng thái case; `episodes/`; phần còn lại của luật nghiệp vụ; các skill khác; cấu hình model.
 
-**Ghi chú:** Bước 7, tác giả Claude, người review Codex và Gemini. Gói nội dung nằm trên nhánh `claude/skill-ref-elda` và chỉ vào `main` sau khi luồng chốt.
+**Ghi chú:** Bước 7, tác giả Claude. Người review ban đầu là Codex và Gemini; Tú ngừng dùng Codex ngày 2026-10-15 nên chỉ còn Gemini. Cũng ngày đó, theo chỉ dẫn của Tú, nhánh `claude/skill-ref-elda` được gộp vào `main` (`c644bdd`) trước khi có lượt review. Claim còn active tới khi Gemini review xong và các điểm được xử lý.

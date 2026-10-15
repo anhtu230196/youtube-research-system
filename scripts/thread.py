@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Luong review nhieu vong giua cac agent tren mot san pham trung gian.
 
-Dung chung cho moi agent (Codex, Claude, Gemini). Xem AGENTS.md muc 8.
+Dung chung cho moi agent (Claude, Gemini). Xem AGENTS.md muc 8.
 
     python scripts/thread.py new net-0007-khung-suon \\
         --artifact t-i/outputs/.../scripts/01-beat-sheet.md \\
-        --author claude --reviewers gemini,codex \\
+        --author claude --reviewers gemini \\
         --question "Khung nay co nut that nao khong co chung cu do khong?"
     python scripts/thread.py status
     python scripts/thread.py next net-0007-khung-suon
@@ -20,7 +20,11 @@ import sys
 from datetime import date
 from pathlib import Path
 
+# AGENTS gom ca agent da ngung dung de luong cu van qua check.
+# Codex ngung dung tu 2026-10-15 (AGENTS.md dau file): khong vao luong moi.
 AGENTS = ["codex", "claude", "gemini"]
+RETIRED = {"codex": "2026-10-15"}
+ACTIVE_AGENTS = [a for a in AGENTS if a not in RETIRED]
 STATUSES = ["open", "blocked", "settled"]
 ROLES = ["author", "reviewer"]
 MAX_ROUND = 3
@@ -309,10 +313,10 @@ def cmd_new(args) -> int:
     slug = args.slug
     if not SLUG_RE.match(slug):
         sys.exit("slug chi gom chu thuong, so va dau gach ngang.")
-    if args.author not in AGENTS:
-        sys.exit(f"author phai thuoc {AGENTS}.")
+    if args.author not in ACTIVE_AGENTS:
+        sys.exit(f"author phai thuoc {ACTIVE_AGENTS}.")
     reviewers = [r.strip() for r in args.reviewers.split(",") if r.strip()]
-    bad = [r for r in reviewers if r not in AGENTS]
+    bad = [r for r in reviewers if r not in ACTIVE_AGENTS]
     if bad:
         sys.exit(f"reviewer khong hop le: {bad}")
     if args.author in reviewers:
@@ -487,6 +491,10 @@ def cmd_check(args) -> int:
             problems.append(f"{rel}: turn_role {data['turn_role']!r} khong thuoc {ROLES}.")
         if data["turn"] not in people:
             problems.append(f"{rel}: turn {data['turn']!r} khong phai nguoi tham gia luong.")
+        if data["status"] == "open" and data["turn"] in RETIRED:
+            notes.append(
+                f"{rel}: dang toi luot {data['turn']}, agent da ngung dung tu "
+                f"{RETIRED[data['turn']]}. Tu can giao lai luot nay.")
         if data["turn_role"] == "author" and data["turn"] != data["author"]:
             problems.append(f"{rel}: turn_role la author nhung turn khong phai tac gia.")
 
@@ -548,8 +556,8 @@ def main() -> int:
     p_new = sub.add_parser("new", help="mo mot luong review moi")
     p_new.add_argument("slug")
     p_new.add_argument("--artifact", required=True)
-    p_new.add_argument("--author", required=True, choices=AGENTS)
-    p_new.add_argument("--reviewers", required=True, help="vi du gemini,codex")
+    p_new.add_argument("--author", required=True, choices=ACTIVE_AGENTS)
+    p_new.add_argument("--reviewers", required=True, help="vi du gemini")
     p_new.add_argument("--question", required=True)
     p_new.add_argument("--step", help="so buoc trong bang o AGENTS.md muc 8")
     p_new.set_defaults(func=cmd_new)

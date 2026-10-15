@@ -1,10 +1,11 @@
 # Quy tắc phối hợp nhiều agent
 
-Repo này được nhiều agent cùng chỉnh sửa:
+Repo này được hai agent cùng chỉnh sửa:
 
-- **Codex (ChatGPT)** — chạy cloud qua pull request, và có thể chạy CLI ngay trên thư mục local này.
 - **Claude Code** — chạy local, commit thẳng lên `main` (mục 3).
-- **Antigravity (Gemini)** — dự kiến bổ sung sau, dùng chung luật này.
+- **Antigravity (Gemini)** — dùng chung luật này.
+
+**Tú quyết ngày 2026-10-15: ngừng dùng Codex (ChatGPT)** vì không còn gói ChatGPT Plus. Không giao việc, không claim, không mở luồng review có Codex nữa. Hồ sơ cũ mang tên Codex — file vòng, handoff, claim đã đóng, bản thử model — giữ nguyên làm lịch sử; script vẫn đọc được chúng.
 
 Mọi agent đọc file này trước khi làm bất cứ việc gì. `CLAUDE.md` và `GEMINI.md` ở thư mục gốc chỉ là con trỏ về đây — không viết luật riêng trong hai file đó.
 
@@ -25,13 +26,12 @@ Luật nghiệp vụ của kênh nằm trong `t-i/outputs/YouTube-Research-Syste
 
 | Agent | Việc chính | Không nhận mặc định |
 | --- | --- | --- |
-| **Codex** | Nghiên cứu, tải nguồn, dựng timeline và claim ledger, viết bản tiếng Việt đầy đủ để duyệt | Tự review chính bản mình vừa viết |
-| **Claude Code** | Khung sườn / beat sheet; skill, script, CI, cấu trúc repo; review đối chiếu nguồn bản tiếng Việt; làm bản thu âm tiếng Việt và đóng gói sau khi người dùng đã duyệt | Viết bản tiếng Việt gốc của tập Codex đang giữ |
-| **Gemini / Antigravity** | Kiểm chứng chéo nguồn, kế hoạch hình ảnh theo cảnh, đối chiếu bản thu âm với bản tiếng Việt đã duyệt | Sửa `registry.json` cho tới khi được giao rõ |
+| **Claude Code** | Gợi ý vụ; nghiên cứu, tải nguồn, dựng timeline và claim ledger; khung sườn / beat sheet; viết bản tiếng Việt đầy đủ để duyệt; làm bản thu âm tiếng Việt và đóng gói sau khi người dùng đã duyệt; skill, script, CI, cấu trúc repo | Tự review chính bản mình vừa viết |
+| **Gemini / Antigravity** | Review mọi bước Claude viết: chống trùng, truy nguồn và kiểm chứng chéo, đối chiếu nguồn bản tiếng Việt, kế hoạch hình ảnh theo cảnh, đối chiếu bản thu âm với bản tiếng Việt đã duyệt | Sửa `registry.json` cho tới khi được giao rõ |
 
 Nguyên tắc đứng sau bảng này: **người viết không phải là người review.** Một tập đi qua ít nhất hai agent trước khi bàn giao.
 
-Bảng này nói ai **cầm** bước nào. Nó không cho ai quyền bỏ qua review: mỗi bước vẫn đi qua một luồng review nhiều vòng với hai agent còn lại (mục 8), và vai tác giả xoay theo bước chứ không cố định theo agent.
+Bảng này nói ai **cầm** bước nào. Nó không cho ai quyền bỏ qua review: mỗi bước vẫn đi qua một luồng review nhiều vòng với agent còn lại (mục 8). Mặc định Claude viết, Gemini review; Tú giao Gemini viết thì Claude review.
 
 Vai là mặc định, không phải hàng rào. Người dùng giao khác thì làm theo người dùng — nhưng vẫn phải claim theo mục 4.
 
@@ -40,11 +40,11 @@ Vai là mặc định, không phải hàng rào. Người dùng giao khác thì 
 **Tú quyết ngày 2026-09-09: commit thẳng lên `main`, không mở pull request.** Chỉ dẫn này ghi đè phần PR ở bản trước của file. Đổi lại thì sửa mục này và mục 8.
 
 - Commit thẳng lên `main`. Fetch và rebase lên `origin/main` trước khi đẩy; không force-push `main`.
-- Commit message thêm trailer `Agent: codex` / `Agent: claude` / `Agent: gemini` để tra lại được ai làm gì.
+- Commit message thêm trailer `Agent: claude` / `Agent: gemini` để tra lại được ai làm gì.
 - Message nêu rõ: mã `NET-xxxx` đụng tới, có sửa `registry.json` hay không, đang giữ claim nào — trước đây những thứ này nằm ở thân PR, giờ không có chỗ nào khác để ghi.
 - **Chạy ba lệnh kiểm ở mục 10 trước khi đẩy.** CI `agent-checks` vẫn chạy trên mọi push lên `main`, nhưng giờ nó bắt lỗi *sau khi* lỗi đã vào `main` — không còn cổng chặn trước.
 - Commit nhỏ và đẩy sớm. Giữ việc lâu trong working copy là nguyên nhân chính gây lệch trạng thái ở repo nhiều agent.
-- Vẫn dùng nhánh `codex/<slug>`, `claude/<slug>`, `gemini/<slug>` khi việc còn dở dang qua nhiều phiên, hoặc khi hai agent chạy song song (mục 6). Nhánh là chỗ làm việc, không còn là cổng duyệt.
+- Vẫn dùng nhánh `claude/<slug>`, `gemini/<slug>` khi việc còn dở dang qua nhiều phiên, hoặc khi hai agent chạy song song (mục 6). Nhánh là chỗ làm việc, không còn là cổng duyệt.
 
 ## 4. Claim — chống hai agent làm trùng
 
@@ -55,7 +55,7 @@ Trước khi bắt tay vào một việc, tạo một file claim: `coordination/
 **Claim phải nhìn thấy được trên `main` trước khi làm việc nặng:**
 
 - Agent push được lên `main`: commit riêng chỉ chứa file claim, đẩy ngay.
-- Agent chỉ mở được PR (Codex cloud): claim là commit **đầu tiên** của nhánh, hoặc mở một PR nhỏ tên `claim: <ID>` để người dùng merge sớm.
+- Agent chỉ mở được PR: claim là commit **đầu tiên** của nhánh, hoặc mở một PR nhỏ tên `claim: <ID>` để người dùng merge sớm.
 
 Trước khi làm:
 
@@ -81,7 +81,7 @@ Xong việc: đổi `status: done` bằng một commit trên `main` khi việc �
 
 ## 6. Hai agent cùng chạy local
 
-Codex CLI và Claude Code có thể cùng trỏ vào `C:\Users\tu.vu\Documents\Codex\2026-09-08`. Hai tiến trình sửa chung một working copy là cách hỏng việc nhanh nhất.
+Claude Code và Antigravity có thể cùng trỏ vào một thư mục repo trên cùng máy. Hai tiến trình sửa chung một working copy là cách hỏng việc nhanh nhất.
 
 - Ưu tiên: agent thứ hai làm trong worktree riêng.
 
@@ -94,7 +94,7 @@ Codex CLI và Claude Code có thể cùng trỏ vào `C:\Users\tu.vu\Documents\C
 
 ## 7. Thư viện skill dùng chung
 
-`.claude/skills/<ten-skill>/SKILL.md` là **thư viện skill chung cho cả ba agent**, không phải riêng Claude. Đặt ở đó vì Claude Code tự nạp được thư mục này; Codex và Gemini đọc như tài liệu markdown bình thường khi AGENTS.md hoặc người dùng chỉ tới.
+`.claude/skills/<ten-skill>/SKILL.md` là **thư viện skill chung cho cả hai agent**, không phải riêng Claude. Đặt ở đó vì Claude Code tự nạp được thư mục này; Gemini đọc như tài liệu markdown bình thường khi AGENTS.md hoặc người dùng chỉ tới.
 
 - Frontmatter có `name` và `description`. Phần thân là quy trình viết cho một agent bất kỳ.
 - Không dùng cú pháp riêng của một nhà cung cấp trong phần thân. File phụ đặt cạnh `SKILL.md`.
@@ -103,7 +103,7 @@ Codex CLI và Claude Code có thể cùng trỏ vào `C:\Users\tu.vu\Documents\C
 
 ## 8. Review theo từng bước
 
-Ba agent **không có kênh nói chuyện trực tiếp**. Không agent nào gọi được agent khác, không agent nào chờ được agent khác trả lời trong cùng một phiên. Cái chung duy nhất là repo, và người chuyển lượt là Tú. Đừng thiết kế hay hứa hẹn như thể có kênh thời gian thực.
+Hai agent **không có kênh nói chuyện trực tiếp**. Không agent nào gọi được agent kia, không agent nào chờ được agent khác trả lời trong cùng một phiên. Cái chung duy nhất là repo, và người chuyển lượt là Tú. Đừng thiết kế hay hứa hẹn như thể có kênh thời gian thực.
 
 Nhưng "không nói chuyện thời gian thực" không có nghĩa là chỉ review một lần ở cuối. Review ở mức pull request là quá muộn: một khung sườn sai từ đầu thì cả bản viết dựng trên nền đó cũng sai, và lúc phát hiện thì sửa đã đắt.
 
@@ -111,10 +111,10 @@ Nhưng "không nói chuyện thời gian thực" không có nghĩa là chỉ rev
 
 ### Nguyên tắc
 
-Ba agent là một nhóm làm việc, không phải ba dây chuyền song song. Với mỗi bước:
+Hai agent là một nhóm làm việc, không phải hai dây chuyền song song. Với mỗi bước:
 
 - Một agent là **tác giả** — người viết ra sản phẩm bước đó.
-- Hai agent còn lại là **người review** — đọc và nêu điểm chưa hợp lý, có dẫn chiếu cụ thể.
+- Agent còn lại là **người review** — đọc và nêu điểm chưa hợp lý, có dẫn chiếu cụ thể.
 - Tác giả **được phản bác**. Yêu cầu sửa không phải mệnh lệnh. Nhưng phản bác phải thuộc loại lý do được chấp nhận ở dưới, không phải "tôi thích viết khác".
 - Người review phải trả lời phản bác: chấp nhận, hoặc đưa chứng cứ mới, hoặc đẩy lên Tú. Không lặp lại nguyên văn ý cũ.
 
@@ -124,13 +124,13 @@ Vai tác giả xoay theo bước, không cố định theo agent. Mục 2 chỉ 
 
 | # | Sản phẩm bước | Tác giả mặc định | Người review |
 | --- | --- | --- | --- |
-| 1 | Danh sách gợi ý chuyện mới | Codex | Claude (chống trùng `registry.json`), Gemini |
-| 2 | Câu hỏi trung tâm và góc kể | Codex | Claude, Gemini |
-| 3 | Timeline + claim ledger sau nghiên cứu | Codex | Claude (truy nguồn ngược), Gemini (kiểm chứng chéo) |
-| 4 | **Khung sườn / beat sheet** | Claude | Codex, Gemini |
-| 5 | Bản tiếng Việt đầy đủ | Codex | Claude (đối chiếu nguồn), Gemini — rồi **Tú duyệt nội dung** |
-| 6 | Bản thu âm tiếng Việt + đóng gói (tiêu đề, thumbnail, mô tả) | Claude | Codex, Gemini (đối chiếu với bản tiếng Việt đã duyệt) |
-| 7 | Skill, script, CI, cấu trúc repo | Claude | Codex |
+| 1 | Danh sách gợi ý chuyện mới | Claude | Gemini (chống trùng `registry.json`) |
+| 2 | Câu hỏi trung tâm và góc kể | Claude | Gemini |
+| 3 | Timeline + claim ledger sau nghiên cứu | Claude | Gemini (truy nguồn ngược, kiểm chứng chéo) |
+| 4 | **Khung sườn / beat sheet** | Claude | Gemini |
+| 5 | Bản tiếng Việt đầy đủ | Claude | Gemini (đối chiếu nguồn) — rồi **Tú duyệt nội dung** |
+| 6 | Bản thu âm tiếng Việt + đóng gói (tiêu đề, thumbnail, mô tả) | Claude | Gemini (đối chiếu với bản tiếng Việt đã duyệt) |
+| 7 | Skill, script, CI, cấu trúc repo | Claude | Gemini |
 
 Bước 5 có hai lớp: agent review nguồn và tính nhất quán, **Tú duyệt nội dung**. Agent không thay được lớp thứ hai. Bước 6 không viết lại nội dung đã duyệt: chỉ chuẩn bị để đọc và đóng gói.
 
@@ -141,7 +141,6 @@ coordination/threads/<slug>/
   THREAD.md                    trạng thái: vòng mấy, tới lượt ai, điểm nào còn mở
   r1-00-proposal-claude.md     tác giả nộp bản v1
   r1-01-review-gemini.md
-  r1-02-review-codex.md
   r2-00-response-claude.md     nhận điểm nào, phản bác điểm nào, ra v2
   r2-01-review-gemini.md
   ...
@@ -207,7 +206,7 @@ Phản bác phải trả lời đúng điểm được nêu. Không im lặng b�
 - Hết vòng mà còn điểm mở: `THREAD.md` chuyển `status: blocked`, liệt kê điểm mở, Tú quyết.
 - Không mở luồng mới cho một điểm đã chốt.
 
-Mục tiêu là **đủ tốt và có căn cứ**, không phải hoàn hảo. Ba agent để tự do sẽ sinh vòng review vô hạn vì vòng nào cũng tìm được thứ để nói. Trần này là cố ý, đừng nới nó vì thấy còn góp ý được.
+Mục tiêu là **đủ tốt và có căn cứ**, không phải hoàn hảo. Agent để tự do sẽ sinh vòng review vô hạn vì vòng nào cũng tìm được thứ để nói. Trần này là cố ý, đừng nới nó vì thấy còn góp ý được.
 
 ### Khối `points` — hợp đồng giữa agent và sổ luồng
 
@@ -236,7 +235,7 @@ Không agent nào tự đánh thức agent khác.
 
 **Thủ công:** `python scripts/thread.py next <slug>` in ra đúng câu cần dán cho agent kế tiếp. Tú dán, agent làm, rồi `thread.py apply`.
 
-**Tự động bằng CLI:** `scripts/orchestrate.py` gọi thẳng CLI của từng agent ở chế độ headless — `claude -p`, `agy -p` (Antigravity CLI), `codex exec` — nên chạy bằng subscription đã trả, không tính theo token như gọi API. Cấu hình lệnh ở `coordination/agents.json`.
+**Tự động bằng CLI:** `scripts/orchestrate.py` gọi thẳng CLI của từng agent ở chế độ headless — `claude -p`, `agy -p` (Antigravity CLI) — nên chạy bằng subscription đã trả, không tính theo token như gọi API. Cấu hình lệnh ở `coordination/agents.json`.
 
 ```bash
 python scripts/orchestrate.py doctor --probe   # CLI nao dung duoc, con dang nhap khong
@@ -246,9 +245,9 @@ python scripts/orchestrate.py run <slug>       # chay den khi hoi tu hoac het tr
 ```
 
 `start` là cửa vào cho một yêu cầu mới nói bằng lời thường. Nó suy slug từ câu yêu cầu,
-mở luồng với tác giả mặc định `codex` và hai agent còn lại làm người review, đặt artifact
+mở luồng với tác giả mặc định `claude` và agent còn lại làm người review, đặt artifact
 ở `coordination/drafts/<slug>.md` nếu không chỉ định `--artifact`, rồi chạy tới khi hội tụ
-hoặc chạm trần. Đổi người viết bản đầu bằng `--author claude`.
+hoặc chạm trần. Đổi người viết bản đầu bằng `--author gemini`.
 
 Luật an toàn của chế độ tự động:
 
@@ -256,12 +255,11 @@ Luật an toàn của chế độ tự động:
 
   | Agent | Chặn ghi bằng gì |
   | --- | --- |
-  | Codex | `--sandbox read-only` — cờ này chặn thật |
   | Claude | `--allowedTools` không có Write/Edit. Không dùng `--permission-mode plan`: nó chặn luôn WebFetch |
   | Gemini (`agy`) | `permissions.deny` trong `~/.gemini/antigravity-cli/settings.json` — chặn thật, lỗi trả về nguyên văn `Matches user-configured deny rule`. **`--mode plan` và `--dangerously-skip-permissions` đều không phải hàng rào**, và cũng không mở được khóa đó |
 
   Thêm một agent mới thì phải đo thật xem nó có ghi được không, đừng tin tên cờ.
-- **Cả ba ghế đều làm tác giả được.** Codex ghi bằng `--sandbox workspace-write`, Claude bằng `--allowedTools` có Write/Edit. Gemini không có cờ nào lấy được quyền ghi, nên `orchestrate.py` gỡ tạm `write_file(*)` khỏi `permissions.deny` đúng trong lượt tác giả rồi trả lại trong `finally` (khai báo ở khoá `write_unlock` của `coordination/agents.json`). `command(*)` vẫn nằm trong deny cả ở lượt tác giả: Gemini được ghi file, không được chạy shell. Bị giết cứng giữa chừng thì bản khoá nằm ở `settings.json.orchestrate-bak`, và lần chạy sau tự khôi phục trước khi gọi CLI. Bảng bước ở trên không giao ghế tác giả cho Gemini, nhưng Tú giao tay thì nó chạy được.
+- **Cả hai ghế đều làm tác giả được.** Claude ghi bằng `--allowedTools` có Write/Edit. Gemini không có cờ nào lấy được quyền ghi, nên `orchestrate.py` gỡ tạm `write_file(*)` khỏi `permissions.deny` đúng trong lượt tác giả rồi trả lại trong `finally` (khai báo ở khoá `write_unlock` của `coordination/agents.json`). `command(*)` vẫn nằm trong deny cả ở lượt tác giả: Gemini được ghi file, không được chạy shell. Bị giết cứng giữa chừng thì bản khoá nằm ở `settings.json.orchestrate-bak`, và lần chạy sau tự khôi phục trước khi gọi CLI. Bảng bước ở trên không giao ghế tác giả cho Gemini, nhưng Tú giao tay thì nó chạy được.
 - ⚠️ **Bẫy `--add-dir`:** thiếu cờ này thì `agy` ghi vào thư mục scratch của nó (`~/.gemini/antigravity-cli/scratch/`) chứ **không báo lỗi** — nhìn từ ngoài giống hệt bị chặn ghi. Rất có thể đây là thứ làm phép đo ngày 2026-09-09 kết luận nhầm về `--mode plan`. `write_cmd` của Gemini đã có `--add-dir {repo}`; `{repo}` được thay bằng đường dẫn gốc repo lúc chạy.
 - **Hợp đồng đầu ra tách theo vai.** Dòng "KHÔNG tạo file" chỉ đúng cho lượt review; ở lượt tác giả nó mâu thuẫn với chính việc phải làm — đo lại 2026-09-10 thì Gemini đọc xong bỏ hẳn việc ghi artifact và chỉ báo cáo là mình bị chặn.
 - **Đổi model cho một lần chạy** bằng biến môi trường `AGENT_MODEL_<TÊN>`, không phải sửa `agents.json`:
@@ -270,7 +268,7 @@ Luật an toàn của chế độ tự động:
   AGENT_MODEL_GEMINI=gemini-3.8-flash-high python scripts/orchestrate.py run <slug>
   ```
 
-  Mặc định: Claude `opus` với ultracode bật trong `~/.claude/settings.json` (không truyền `--effort` — cờ đó chặn ultracode), Codex `gpt-6-astra` effort `xhigh`, Gemini `gemini-3.1-pro-high`. `python scripts/orchestrate.py doctor` in ra model đang có hiệu lực.
+  Mặc định: Claude `opus` với ultracode bật trong `~/.claude/settings.json` (không truyền `--effort` — cờ đó chặn ultracode), Gemini `gemini-3.1-pro-high`. `python scripts/orchestrate.py doctor` in ra model đang có hiệu lực.
 - **Chỉ lượt tác giả được sửa artifact.** Không lượt nào được sửa `THREAD.md`; orchestrator lấy stdout làm file vòng rồi tự cập nhật sổ.
 - Agent không xuất được khối `points` thì orchestrator **giữ lại file vòng và dừng**, không đoán thay. Sửa tay rồi `thread.py apply`.
 - `run` dừng ngay khi luồng chuyển `settled` hoặc `blocked`, và có trần số lượt riêng.
@@ -294,7 +292,7 @@ Mỗi ý kèm `file:dòng`, và kèm `claim_id` hoặc `source_id` khi nói về
 
 Người quyết cuối là Tú, sau khi code đã vào `main`. Đây là đánh đổi có chủ đích: đi nhanh hơn, và trả giá bằng việc lỗi có thể vào `main` rồi mới bị phát hiện. Sửa thì sửa tiếp bằng commit mới, không viết lại lịch sử `main`.
 
-Khi nào có PR mở ra thật (Tú tự mở, hoặc Codex cloud), review nó bằng các lệnh này:
+Khi nào có PR mở ra thật (Tú tự mở), review nó bằng các lệnh này:
 
 ```bash
 gh pr view <n> --json title,body,files

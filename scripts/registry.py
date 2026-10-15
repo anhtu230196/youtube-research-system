@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Kiem tra tinh nhat quan cua registry.json va luu snapshot truoc khi sua.
 
-Dung chung cho moi agent (Codex, Claude, Gemini). Xem AGENTS.md muc 5 va 10.
+Dung chung cho moi agent (Claude, Gemini). Xem AGENTS.md muc 5 va 10.
 
     python scripts/registry.py check
     python scripts/registry.py check --diff-base origin/main

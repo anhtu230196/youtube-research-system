@@ -1,7 +1,7 @@
 ---
 id: NET-0000
-agent: codex
-branch: codex/vi-du-slug
+agent: claude
+branch: claude/vi-du-slug
 status: active
 opened: 2026-01-01
 updated: 2026-01-01

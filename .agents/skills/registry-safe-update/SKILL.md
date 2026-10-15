@@ -5,7 +5,7 @@ description: Quy trình sửa an toàn registry.json của YouTube Research Syst
 
 # Sửa registry.json an toàn
 
-`t-i/outputs/YouTube-Research-System/registry.json` là nguồn trạng thái duy nhất của kênh. Nhiều agent cùng sửa nó là nguyên nhân lệch dữ liệu số một trong repo này. Skill này là quy trình bắt buộc, dùng chung cho Codex, Claude và Gemini.
+`t-i/outputs/YouTube-Research-System/registry.json` là nguồn trạng thái duy nhất của kênh. Nhiều agent cùng sửa nó là nguyên nhân lệch dữ liệu số một trong repo này. Skill này là quy trình bắt buộc, dùng chung cho Claude và Gemini.
 
 Luật nền: [`AGENTS.md`](../../../AGENTS.md) mục 5. Luật nghiệp vụ: `t-i/outputs/YouTube-Research-System/AGENTS.md`.
 

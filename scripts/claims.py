@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Quan ly va kiem tra file claim trong coordination/claims/.
 
-Dung chung cho moi agent (Codex, Claude, Gemini). Xem AGENTS.md muc 4.
+Dung chung cho moi agent (Claude, Gemini). Xem AGENTS.md muc 4.
 
     python scripts/claims.py check
     python scripts/claims.py list
-    python scripts/claims.py new NET-0007 --agent codex --branch codex/net-0007 --task "Nghien cuu"
+    python scripts/claims.py new NET-0008 --agent claude --branch claude/net-0008 --task "Nghien cuu"
 """
 from __future__ import annotations
 
@@ -16,7 +16,11 @@ import sys
 from datetime import date, datetime
 from pathlib import Path
 
+# AGENTS gom ca agent da ngung dung de claim cu van qua check.
+# Codex ngung dung tu 2026-10-15 (AGENTS.md dau file): khong nhan claim moi.
 AGENTS = {"codex", "claude", "gemini"}
+RETIRED = {"codex": "2026-10-15"}
+ACTIVE_AGENTS = AGENTS - set(RETIRED)
 STATUSES = {"active", "done", "released"}
 ID_RE = re.compile(r"^(NET-\d{4}|sys-[a-z0-9][a-z0-9-]*)$")
 REQUIRED = ["id", "agent", "branch", "status", "opened", "updated"]
@@ -114,6 +118,10 @@ def cmd_check(args) -> int:
             problems.append(f"{rel}: ten file phai trung id ({cid}.md).")
         if data["agent"] not in AGENTS:
             problems.append(f"{rel}: agent {data['agent']!r} khong thuoc {sorted(AGENTS)}.")
+        elif data["agent"] in RETIRED and data.get("status") == "active":
+            problems.append(
+                f"{rel}: claim active cua {data['agent']}, agent da ngung dung tu "
+                f"{RETIRED[data['agent']]}. Doi sang released hoac giao lai.")
         status = str(data["status"])
         if status not in STATUSES:
             problems.append(f"{rel}: status {status!r} khong thuoc {sorted(STATUSES)}.")
@@ -125,7 +133,7 @@ def cmd_check(args) -> int:
                 and not branch.startswith(tuple(f"{a}/" for a in AGENTS))):
             problems.append(
                 f"{rel}: branch {branch!r} phai la nhanh mac dinh (main/master) "
-                f"hoac bat dau bang codex/, claude/ hoac gemini/."
+                f"hoac bat dau bang claude/ hoac gemini/ (codex/ chi con trong claim cu)."
             )
 
         opened = parse_day(data["opened"])
@@ -186,8 +194,8 @@ def cmd_new(args) -> int:
     cid = args.id
     if not ID_RE.match(cid):
         sys.exit(f"id {cid!r} phai la NET-xxxx hoac sys-<slug>.")
-    if args.agent not in AGENTS:
-        sys.exit(f"agent phai thuoc {sorted(AGENTS)}.")
+    if args.agent not in ACTIVE_AGENTS:
+        sys.exit(f"agent phai thuoc {sorted(ACTIVE_AGENTS)}.")
     dest = claims_dir() / f"{cid}.md"
     if dest.exists() and not args.force:
         sys.exit(f"{dest.relative_to(repo_root()).as_posix()} da ton tai. Doc no truoc khi ghi de.")
@@ -231,9 +239,9 @@ def main() -> int:
 
     p_new = sub.add_parser("new", help="tao mot claim moi")
     p_new.add_argument("id", help="NET-0007 hoac sys-<slug>")
-    p_new.add_argument("--agent", required=True, choices=sorted(AGENTS))
+    p_new.add_argument("--agent", required=True, choices=sorted(ACTIVE_AGENTS))
     p_new.add_argument("--branch", required=True,
-                       help="nhanh mac dinh (master/main) hoac vi du codex/net-0007-research")
+                       help="nhanh mac dinh (master/main) hoac vi du claude/net-0008-research")
     p_new.add_argument("--task", required=True, help="mo ta viec trong mot dong")
     p_new.add_argument("--scope", action="append", help="duong dan nam trong pham vi (lap lai duoc)")
     p_new.add_argument("--force", action="store_true", help="ghi de claim da co")

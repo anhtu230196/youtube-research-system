@@ -19,7 +19,7 @@ Quy trình làm một tập — chọn vụ, nghiên cứu, khung sườn, bản
 
 ## Nhiều agent cùng làm
 
-Repo này được Codex (ChatGPT), Claude Code và sau này Antigravity (Gemini) cùng chỉnh sửa. Luật phối hợp — phân vai, claim chống làm trùng, commit thẳng lên `main`, review theo từng bước — nằm ở [`AGENTS.md`](AGENTS.md). Mọi agent đọc file đó trước.
+Repo này được Claude Code và Antigravity (Gemini) cùng chỉnh sửa; Codex (ChatGPT) đã ngừng dùng từ 2026-10-15. Luật phối hợp — phân vai, claim chống làm trùng, commit thẳng lên `main`, review theo từng bước — nằm ở [`AGENTS.md`](AGENTS.md). Mọi agent đọc file đó trước.
 
 ```bash
 python scripts/claims.py check     # ai dang giu viec gi

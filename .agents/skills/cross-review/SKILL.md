@@ -1,11 +1,11 @@
 ---
 name: cross-review
-description: Quy trình review chéo giữa Codex, Claude và Gemini trên một pull request của repo này — đọc PR, đối chiếu nguồn, viết nhận xét theo nhãn CHAN/SUA/HOI/OK, trả lời review. Dùng khi được giao review bài của agent khác, khi nhận review về bài mình, hoặc khi hai agent bất đồng. Cross review, PR review, doi chieu nguon.
+description: Quy trình review chéo giữa Claude và Gemini trên một pull request của repo này — đọc PR, đối chiếu nguồn, viết nhận xét theo nhãn CHAN/SUA/HOI/OK, trả lời review. Dùng khi được giao review bài của agent khác, khi nhận review về bài mình, hoặc khi hai agent bất đồng. Cross review, PR review, doi chieu nguon.
 ---
 
 # Review chéo giữa các agent
 
-Ba agent không nói chuyện trực tiếp được. Pull request là kênh duy nhất họ thật sự trao đổi với nhau. Skill này là cách dùng kênh đó cho đúng.
+Hai agent không nói chuyện trực tiếp được. Pull request là kênh duy nhất họ thật sự trao đổi với nhau. Skill này là cách dùng kênh đó cho đúng.
 
 Luật nền: [`AGENTS.md`](../../../AGENTS.md) mục 8.
 

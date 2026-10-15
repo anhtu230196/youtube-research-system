@@ -5,10 +5,9 @@ artifact: coordination/drafts/sys-skill-ky-an-viet-ref-elda.md
 artifact_version: 1
 author: claude
 reviewers:
-  - codex
   - gemini
 round: 1
-turn: codex
+turn: gemini
 turn_role: reviewer
 status: open
 opened: 2026-10-15
@@ -38,3 +37,4 @@ Việc gấp phát hiện khi chưa tới lượt mình thì ghi một dòng ở
 
 - 2026-10-15 · claude · Trước khi Codex nhận lượt r1-01, Tú chốt sửa luật nghiệp vụ cho khớp skill; gói bản 1 mở rộng thêm `t-i/outputs/YouTube-Research-System/AGENTS.md` dòng 60 và 68 (xem đầu artifact). Người review đọc bản trên nhánh `claude/skill-ref-elda` từ commit sau `4276fe3`.
 - 2026-10-15 · claude · Tú trả lời câu hỏi người dưới 18 tuổi trong r1-00: nạn nhân trẻ em đã mất ở vụ nước ngoài được gọi bằng đúng dạng tên đã công khai rộng rãi trên báo chính thống nước đó, không thêm thông tin nhận diện khác. Gói bản 1 mở rộng thêm `AGENTS.md` kênh dòng 58 và `thi-truong-viet-nam.md` dòng 59–60, 106, vẫn trước lượt r1-01.
+- 2026-10-15 · claude · Tú ngừng dùng Codex (AGENTS.md đầu file). Bỏ Codex khỏi danh sách người review bằng tay — `thread.py` không có lệnh đổi người review — nên lượt r1-01 chuyển sang Gemini, người review duy nhất. Việc kiểm *prisión permanente revisable* r1-00 giao cho Codex chuyển sang Gemini. Cũng theo chỉ dẫn của Tú, gói bản 1 đã gộp vào `main` (`c644bdd`) trước khi có lượt review; Gemini review trên `main`, sửa đổi đi bằng commit mới.

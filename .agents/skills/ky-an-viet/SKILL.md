@@ -7,9 +7,9 @@ description: Làm kỳ án tiếng Việt cho khán giả Việt Nam — chọn 
 
 Kênh kể các vụ án và bí ẩn có thật cho khán giả Việt Nam, lời kể tiếng Việt. Tú chốt hướng này ngày 2026-09-14, thay cho quyết định 2026-09-08 (khán giả Mỹ, lời kể tiếng Anh).
 
-Skill này dùng chung cho Codex, Claude Code và Gemini. Nó kế thừa phần nghiên cứu, kiến trúc câu chuyện và các bất biến biên tập của `mystery-case-script` (bản đã chỉnh ngày 2026-09-08), nhưng đổi đích đến: bản tiếng Việt là sản phẩm cuối, không còn bước viết lời kể tiếng Anh.
+Skill này dùng chung cho Claude Code và Gemini. Nó kế thừa phần nghiên cứu, kiến trúc câu chuyện và các bất biến biên tập của `mystery-case-script` (bản đã chỉnh ngày 2026-09-08), nhưng đổi đích đến: bản tiếng Việt là sản phẩm cuối, không còn bước viết lời kể tiếng Anh.
 
-**Không dùng `mystery-case-script` cho kênh này nữa.** Skill đó — dù nằm ở `~/.codex/skills/` hay là plugin của Claude — được viết để ra lời kể tiếng Anh cho khán giả Mỹ, và sẽ kéo bài viết về sai đích.
+**Không dùng `mystery-case-script` cho kênh này nữa.** Skill đó — dù là bản cài trên máy hay plugin của Claude — được viết để ra lời kể tiếng Anh cho khán giả Mỹ, và sẽ kéo bài viết về sai đích.
 
 ## Thứ tự ưu tiên
 

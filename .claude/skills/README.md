@@ -1,8 +1,8 @@
 # Thư viện skill dùng chung
 
-Các file `SKILL.md` trong thư mục này là **quy trình dùng chung cho cả ba agent** — Codex, Claude Code và Antigravity — chứ không phải riêng Claude.
+Các file `SKILL.md` trong thư mục này là **quy trình dùng chung cho cả hai agent** — Claude Code và Antigravity — chứ không phải riêng Claude. Codex đã ngừng dùng từ 2026-10-15.
 
-Đặt ở `.claude/skills/` vì Claude Code tự nạp được thư mục này. Codex và Gemini đọc như tài liệu markdown bình thường, khi `AGENTS.md` hoặc người dùng chỉ tới.
+Đặt ở `.claude/skills/` vì Claude Code tự nạp được thư mục này. Gemini đọc như tài liệu markdown bình thường, khi `AGENTS.md` hoặc người dùng chỉ tới.
 
 | Skill | Dùng khi |
 | --- | --- |

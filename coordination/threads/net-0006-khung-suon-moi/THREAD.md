@@ -5,14 +5,13 @@ artifact: t-i/outputs/YouTube-Research-System/episodes/NET-0006-sherri-rasmussen
 artifact_version: 1
 author: claude
 reviewers:
-  - codex
   - gemini
 round: 1
-turn: codex
+turn: gemini
 turn_role: reviewer
 status: open
 opened: 2026-09-18
-updated: 2026-09-18
+updated: 2026-10-15
 ---
 
 # net-0006-khung-suon-moi
@@ -42,3 +41,4 @@ Khung moi (K01-K18, hai soi day hoi tu) co ap dung dung skill ky-an-viet: mo dau
 ## Ngoài lượt
 
 Việc gấp phát hiện khi chưa tới lượt mình thì ghi một dòng ở đây, không viết file vòng.
+- 2026-10-15 · claude · Tú ngừng dùng Codex (AGENTS.md đầu file). Bỏ Codex khỏi danh sách người review bằng tay; lượt r1 chuyển sang Gemini, người review duy nhất. Luồng không đổi nội dung nào khác.
