@@ -25,7 +25,8 @@ from pathlib import Path
 AGENTS = ["codex", "claude", "gemini"]
 RETIRED = {"codex": "2026-10-15"}
 ACTIVE_AGENTS = [a for a in AGENTS if a not in RETIRED]
-STATUSES = ["open", "blocked", "settled"]
+# closed: Tu dung luong ma khong chot; diem mo giu nguyen lam ho so.
+STATUSES = ["open", "blocked", "settled", "closed"]
 ROLES = ["author", "reviewer"]
 MAX_ROUND = 3
 MAX_REBUTTALS = 2
@@ -441,6 +442,8 @@ def cmd_apply(args) -> int:
     if not m:
         sys.exit(f"{f.name}: sai dinh dang r<vong>-<NN>-<loai>-<agent>.md")
     actor = m.group(4)
+    if data.get("status") == "closed":
+        sys.exit(f"Luong {args.slug} da dong (closed). Lam tiep thi mo luong moi.")
     if actor != data.get("turn"):
         sys.exit(f"{f.name} la cua {actor} nhung dang toi luot {data.get('turn')}.")
 

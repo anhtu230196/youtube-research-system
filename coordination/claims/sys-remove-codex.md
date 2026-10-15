@@ -33,4 +33,6 @@ scope:
 
 ## Hoàn tất 2026-10-15
 
-Đã vào `main` cùng commit này và commit trước. Ba lệnh kiểm repo đều qua; `thread.py new`, `claims.py new` và `orchestrate.py start` từ chối `codex`. Không có lượt review: Tú yêu cầu commit và đẩy thẳng. Còn treo: luồng `net-0006-ban-tieng-viet` có Codex là tác giả, chờ Tú giao lại.
+Đã vào `main` cùng commit này và commit trước. Ba lệnh kiểm repo đều qua; `thread.py new`, `claims.py new` và `orchestrate.py start` từ chối `codex`. Không có lượt review: Tú yêu cầu commit và đẩy thẳng. Luồng `net-0006-ban-tieng-viet` có Codex là tác giả, chờ Tú giao lại.
+
+Bổ sung cùng ngày: Tú đóng luồng `net-0006-ban-tieng-viet`. `thread.py` có thêm trạng thái `closed` (Tú dừng luồng mà không chốt, điểm mở giữ làm hồ sơ, `apply` từ chối file vòng mới); `AGENTS.md` mục 8 và skill `deliberation` ghi thêm trạng thái này. Làm tiếp bản tiếng Việt NET-0006 thì mở luồng mới.

@@ -118,7 +118,7 @@ Lệnh này cập nhật bảng điểm, đổi lượt, bump `artifact_version`
 
 ## Đóng luồng
 
-Bạn không tự đóng luồng. `thread.py apply` chuyển sang `settled` khi lượt review cuối của một vòng không còn điểm mở, và sang `blocked` khi hết 3 vòng mà vẫn còn.
+Bạn không tự đóng luồng. `thread.py apply` chuyển sang `settled` khi lượt review cuối của một vòng không còn điểm mở, và sang `blocked` khi hết 3 vòng mà vẫn còn. Chỉ Tú đóng luồng không chốt (`closed`); luồng đã `closed` thì không nhận file vòng mới.
 
 Việc của bạn chỉ là cho đúng trạng thái từng điểm trong khối `points`. Đừng cố kết thúc sớm bằng cách đánh dấu `chốt:` cho một điểm bạn chưa thật sự giải quyết — `thread.py check` từ chối `settled` khi còn điểm mở, nhưng nó không biết bạn có trung thực hay không.
 

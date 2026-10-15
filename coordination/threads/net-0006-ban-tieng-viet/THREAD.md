@@ -10,9 +10,9 @@ reviewers:
 round: 1
 turn: gemini
 turn_role: reviewer
-status: open
+status: closed
 opened: 2026-09-09
-updated: 2026-09-09
+updated: 2026-10-15
 ---
 
 # net-0006-ban-tieng-viet
@@ -47,3 +47,4 @@ Việc gấp phát hiện khi chưa tới lượt mình thì ghi một dòng ở
 - **claude, 2026-09-09:** kịch bản dẫn chiếu `C01`–`C26` và `S01`–`S05`, `S07` nhưng trong repo không có claim ledger hay danh mục nguồn nào để tra. Chưa có file đó thì không ai review nguồn được — đây là việc đầu tiên của lượt tác giả. `S06` không xuất hiện ở đâu trong kịch bản.
 - **claude, 2026-09-09:** thư mục tập thiếu `sources/` và `assets/`.
 - 2026-10-15 · claude · Tú ngừng dùng Codex (AGENTS.md đầu file). Codex là tác giả luồng này nên khi Gemini review xong, lượt tác giả không còn ai nhận. Tú cần giao lại: Claude tiếp quản bản tiếng Việt NET-0006 bằng một luồng mới, hoặc đóng luồng này. Chưa đổi gì trong frontmatter.
+- 2026-10-15 · claude · Tú đóng luồng (`status: closed`) vì Codex, tác giả luồng, đã ngừng dùng. Không chốt điểm nào: D01–D07 của Claude vẫn mở, giữ làm hồ sơ. Khi làm tiếp bản tiếng Việt NET-0006 thì mở luồng mới và đối chiếu lại bảy điểm này.

@@ -205,6 +205,7 @@ Phản bác phải trả lời đúng điểm được nêu. Không im lặng b�
 - **Một điểm tối đa 2 lần phản bác qua lại.** Lần thứ ba tự động chuyển `đẩy lên Tú`.
 - Hết vòng mà còn điểm mở: `THREAD.md` chuyển `status: blocked`, liệt kê điểm mở, Tú quyết.
 - Không mở luồng mới cho một điểm đã chốt.
+- Tú có thể đóng một luồng mà không chốt — chẳng hạn khi tác giả không còn được dùng: `status: closed`, lý do ghi ở mục "Ngoài lượt". Điểm mở giữ nguyên làm hồ sơ; làm tiếp thì mở luồng mới và chép sang những điểm còn giá trị.
 
 Mục tiêu là **đủ tốt và có căn cứ**, không phải hoàn hảo. Agent để tự do sẽ sinh vòng review vô hạn vì vòng nào cũng tìm được thứ để nói. Trần này là cố ý, đừng nới nó vì thấy còn góp ý được.
 
