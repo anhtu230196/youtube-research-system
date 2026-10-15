@@ -56,7 +56,8 @@ Xem [nghiên cứu và kiểm chứng](nghien-cuu-va-kiem-chung.md), mục Vụ 
 ### Đời tư và người dễ tổn thương
 
 - Không nêu tên đầy đủ, địa chỉ, nơi làm việc, ảnh nhận diện được của nạn nhân, người thân, nhân chứng — trừ khi đã công khai rộng rãi qua nguồn chính thống **và** thật sự cần cho câu chuyện.
-- Người dưới 18 tuổi: không nêu thông tin giúp nhận diện, dù họ là nạn nhân, nhân chứng hay người phạm tội.
+- Người dưới 18 tuổi: không nêu thông tin giúp nhận diện, dù họ là nạn nhân, nhân chứng hay người phạm tội. Quy tắc này áp dụng cho mọi vụ, trong và ngoài nước.
+- Ngoại lệ duy nhất, Tú chốt 2026-10-15: nạn nhân trẻ em **đã mất** trong vụ **nước ngoài** được gọi bằng tên đã công khai rộng rãi trên báo chính thống của nước đó. Dùng đúng dạng tên đã công khai — báo chỉ nêu tên gọi hay chữ viết tắt thì kịch bản cũng chỉ dùng như vậy. Không nêu thêm thông tin nhận diện nào khác: ảnh hay video, trường học, địa chỉ, ngày sinh. Kịch bản làm việc ghi các nguồn báo đã nêu tên và ngày kiểm. Trẻ em còn sống trong cùng vụ — anh chị em, nhân chứng — vẫn theo quy tắc chung. Vụ Việt Nam không có ngoại lệ này.
 - Nạn nhân bị xâm hại tình dục: không nêu danh tính trong mọi trường hợp.
 - Thông tin nhân thân đã bị ẩn trong bản án thì giữ ẩn.
 
@@ -102,5 +103,6 @@ Bổ sung cho danh sách ở `STORYTELLING.md` mục 7:
 - Có "hắn", "ả" hay cách gọi phán xét nào cho người chưa bị kết án không?
 - Có chỗ nào gắn hành vi phạm tội với khuyết tật, chẩn đoán bệnh hay một nhóm người, hoặc tự chẩn đoán tâm lý người trong vụ không?
 - Mỗi phép so sánh với đời sống Việt Nam có giống đúng ở điểm đang giải thích và có nguồn cho dữ kiện bên vụ án không?
+- Người dưới 18 tuổi, mọi vụ: có thông tin nhận diện nào không? Nếu dùng tên nạn nhân trẻ em đã mất ở vụ nước ngoài: đúng dạng tên báo chính thống nước đó đã công khai, có ghi nguồn và ngày kiểm, và không kèm ảnh, trường, địa chỉ hay ngày sinh?
 - Vụ Việt Nam: tư cách tố tụng đúng tại ngày kiểm tra, có ghi ngày? Có thông tin nhận diện người dễ tổn thương không?
 - Có vụ nào thuộc danh sách phải báo Tú trước mà chưa báo?
